@@ -1,0 +1,18 @@
+# Enter SiPM tray numbers to process in batch
+# Comments can be made using the '#' character
+
+$START
+#251016-1806-results
+#251016-1806-Fan-13-Mix-6
+#251016-1806-April20
+#251016-1806-April21
+#251016-1806-April22
+#251016-1806-April24
+#251016-1806-Wild-Temp
+#251016-1806-April26
+#sps-smooth-all
+#new-results-A
+#new-results-B
+#new-results-C
+#new-results-D
+250911-1606

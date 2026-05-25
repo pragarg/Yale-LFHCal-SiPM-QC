@@ -1,0 +1,16 @@
+# Enter SiPM tray numbers to process in batch
+# Comments can be made using the '#' character
+
+$START
+250911-1607
+250911-1607-cross_check_run
+250911-1607-cross_check_run-rc_2
+250911-1607-cross_check_run-rc_3
+250911-1607-cross_check_run-rc_4
+250911-1607-cross_check_run-rc_5
+250911-1607-cross_check_run-rc_6
+250911-1607-cross_check_run-rc_7
+# Note that currently the SPS results were copied to avoid an error in the SiPMDataReader
+# I need to fix this so that it can run with either only IV or only SPS.
+
+

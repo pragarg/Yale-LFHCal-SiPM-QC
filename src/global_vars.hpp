@@ -17,8 +17,11 @@
 // Terminal output color modifiers
 // Example: std::cout << t_red << "ex." << t_def << std::endl;
 Color::TextModifier t_red(Color::TEXT_RED);
+Color::TextModifier t_mgn(Color::TEXT_MAGENTA);
 Color::TextModifier t_grn(Color::TEXT_GREEN);
+Color::TextModifier t_yll(Color::TEXT_YELLOW);
 Color::TextModifier t_blu(Color::TEXT_BLUE);
+Color::TextModifier t_cyn(Color::TEXT_CYAN);
 Color::TextModifier t_def(Color::TEXT_DEFAULT);
 
 // Tags and Identifiers
@@ -59,6 +62,15 @@ Int_t plot_colors[3] = {
 Int_t plot_colors_alt[3] = {
   kViolet+3, kOrange+2, kRed+2
 };
+
+
+// Plot settings
+
+// Tray display mode for dark current histogram:
+//  0 - No tray numbers are displayed
+//  1 - All tray numbers are displayed
+//  2 - Tray numbers are displayed in condensed notation
+const int tray_display_mode = 0;
 
 
 #endif /* global_vars_h */

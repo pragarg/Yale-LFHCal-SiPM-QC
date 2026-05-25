@@ -1,0 +1,37 @@
+# Enter SiPM tray numbers to process in batch
+# Comments can be made using the '#' character
+
+$START
+250717-1302-tempscan-1
+250717-1302-tempscan-2
+250717-1302-tempscan-3
+250717-1302-tempscan-4
+250717-1302-tempscan-5
+250717-1302-tempscan-6
+250717-1302-tempscan-6-rc_2
+250717-1302-tempscan-6-rc_3
+250717-1302-tempscan-6-rc_4
+250717-1302-tempscan-6-rc_5
+250717-1302-tempscan-6-rc_6
+250717-1302-tempscan-6-rc_7
+250717-1302-tempscan-6-rc_8
+250717-1302-tempscan-6-rc_9
+250717-1302-tempscan-6-rc_10
+250717-1302-tempscan-17
+250717-1302-tempscan-18
+250717-1302-tempscan-18-rc_2
+250717-1302-tempscan-18-rc_3
+250717-1302-tempscan-18-rc_4
+250717-1302-tempscan-18-rc_5
+# Performed after cycle test, may have additional systematics folded in.
+# Comment out if there is a large deviation.
+250717-1302-tempscan-later-1
+250717-1302-tempscan-later-1-rc_2
+250717-1302-tempscan-later-1-rc_3
+250717-1302-tempscan-later-1-rc_4
+250717-1302-tempscan-later-1-rc_5
+250717-1302-tempscan-later-1-rc_6
+250717-1302-tempscan-later-1-rc_7
+250717-1302-tempscan-later-1-rc_8
+250717-1302-tempscan-later-1-rc_9
+250717-1302-tempscan-later-1-rc_10

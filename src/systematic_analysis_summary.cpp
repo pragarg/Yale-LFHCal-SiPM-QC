@@ -96,6 +96,7 @@ void systematic_analysis_summary() {
   // Initialize canvases
   gStyle->SetOptStat(0);
   gStyle->SetPalette(TH2_palette);
+  gErrorIgnoreLevel = kWarning;
   
   gCanvas_solo = new TCanvas();
   gCanvas_surfacecorr = new TCanvas();
@@ -103,7 +104,8 @@ void systematic_analysis_summary() {
   // *-- Analysis tasks: Reproducibility
   
   // Read IV and SPS data for reproducibility tests
-  reader->ReadFile("../batch_data_repsyst.txt");
+  reader->SetSubDirectory("repsyst");
+  reader->ReadFile("../data/syst_traylist_repsyst.txt");
   reader->ReadDataIV();
   reader->ReadDataSPS();
   
@@ -136,7 +138,8 @@ void systematic_analysis_summary() {
   
   // Read IV and SPS data for vop scan
   reader->SetFlatTrayString(); // Don't require parent directories end in "-results"
-  reader->AppendFile("../batch_data_vopscan.txt");
+  reader->SetSubDirectory("vopscan");
+  reader->ReadFile("../data/syst_traylist_vopscan.txt");
   reader->ReadDataIV();
   reader->ReadDataSPS();
   
@@ -144,7 +147,8 @@ void systematic_analysis_summary() {
   
   // *-- Analysis tasks: Temperature
   reader->SetFlatTrayString(); // Don't require parent directories end in "-results"
-  reader->AppendFile("../batch_data_tempscan.txt");
+  reader->SetSubDirectory("tempscan");
+  reader->ReadFile("../data/syst_traylist_tempscan.txt");
   reader->ReadDataIV();
   reader->ReadDataSPS();
   
@@ -152,7 +156,8 @@ void systematic_analysis_summary() {
   
   // *-- Analysis tasks: Cycle scan
   reader->SetFlatTrayString(); // Don't require parent directories end in "-results"
-  reader->AppendFile("../batch_data_cyclescan.txt");
+  reader->SetSubDirectory("cyclescan");
+  reader->ReadFile("../data/syst_traylist_cyclescan.txt");
   reader->ReadDataIV();
   reader->ReadDataSPS();
   
@@ -168,7 +173,8 @@ void systematic_analysis_summary() {
   // Do SiPMs with obstructed surfaces behave more poorly?
   global_flag_run_at_25_celcius = true;
   reader->SetDefTrayString(); // return to requiring "-results" for normal data
-  reader->ReadFile("../batch_data.txt"); // read in only real test results
+  reader->SetSubDirectory("production");
+  reader->ReadFile("../data/batch_traylist_production.txt"); // read in only real test results
   reader->ReadDataIV();
   reader->ReadDataSPS();
   makeSurfaceImperfectionCorrelation();
@@ -526,7 +532,7 @@ void makeReproducabilityHist(std::string base_tray_id) {
     for (int s = 0; s < 32; ++s) {
       cassette_pads[3-s%4][7-s/4]->cd();
       gPad->SetTicks(1,1);
-      std::cout << t_red << "debug!" << t_def << std::endl;
+//      std::cout << t_red << "debug!" << t_def << std::endl;
       
       // Add extra padding to the canvases to split them from flush if desired
       if (flag_padded) {
@@ -717,7 +723,10 @@ void makeTemperatureScan() {
     
     for (int i_sipm = 0; i_sipm < current_Vbr_IV->size(); ++i_sipm) {
       if (current_Vbr_IV->at(i_sipm) == -999) continue;
-      if (temp_debug) std::cout << "IV V_br for SiPM " << i_sipm << " = " << current_Vbr_IV->at(i_sipm) << std::endl;
+      if (temp_debug) {
+        std::cout << "IV V_br for SiPM " << i_sipm << " = " << current_Vbr_IV->at(i_sipm) << std::endl;
+        std::cout << "SPS V_br for SiPM " << i_sipm << " = " << current_Vbr_SPS->at(i_sipm) << std::endl;
+      }
       
       // Append data so that each vector is one SiPM--for converting to TGraph later
       if (i_temp == 0) {

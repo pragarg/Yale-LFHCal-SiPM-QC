@@ -21,20 +21,21 @@
 //========================================================================== Forward declarations
 
 // Correlations and comparisons
-void makeCorrelationIV(std::string tray1, std::string tray2, bool flag_run_at_25_celcius = true);
-void makeCorrelationSPS(std::string tray1, std::string tray2, bool flag_run_at_25_celcius = true);
-void makeCorrelationDarkCurrent(std::string tray1, std::string tray2, bool below_breakdown = true);
+void makeCorrelationIV(std::string tray, bool flag_run_at_25_celcius = true);
+void makeCorrelationSPS(std::string tray, bool flag_run_at_25_celcius = true);
+void makeCorrelationDarkCurrent(std::string tray, bool below_breakdown = true);
 
 //========================================================================== Macro Main
 
 // Main macro method: generate SiPM data
-void sipm_batch_summary_sheet() {
+void compare_robot_cassette() {
   SiPMDataReader* reader = new SiPMDataReader();
   gErrorIgnoreLevel = kWarning;
   
   
   // Check robot
-  reader->ReadFile("../batch_data_robotcheck.txt");
+  reader->SetSubDirectory("robotcheck");
+  reader->ReadFile("../data/batch_traylist_robotcheck.txt");
 //  reader->SetPrintSPS();
 //  reader->SetFlatTrayString();  // Do not require "-results" in text file
   
@@ -68,12 +69,13 @@ void sipm_batch_summary_sheet() {
   
   makeHist_DarkCurrent();
   
-  makeCorrelationIV("250911-1606", "250911-1606-robot", false);
-  makeCorrelationIV("250911-1606", "250911-1606-robot", true);
-  makeCorrelationSPS("250911-1606", "250911-1606-robot", false);
-  makeCorrelationSPS("250911-1606", "250911-1606-robot", true);
-  makeCorrelationDarkCurrent("250911-1606", "250911-1606-robot", false);
-  makeCorrelationDarkCurrent("250911-1606", "250911-1606-robot", true);
+  // Draw correlations between results in cassette and robot setup
+  makeCorrelationIV("250911-1606", false);
+  makeCorrelationIV("250911-1606", true);
+  makeCorrelationSPS("250911-1606", false);
+  makeCorrelationSPS("250911-1606", true);
+  makeCorrelationDarkCurrent("250911-1606", false);
+  makeCorrelationDarkCurrent("250911-1606", true);
 }// End of compare_robot_cassette::main
 
 
@@ -82,7 +84,7 @@ void sipm_batch_summary_sheet() {
 
 
 // Draw a 2D correlation plot of the IV results between two trays stored in the reader
-void makeCorrelationIV(std::string tray1, std::string tray2, bool flag_run_at_25_celcius) {
+void makeCorrelationIV(std::string tray, bool flag_run_at_25_celcius) {
   
   gCanvas_solo->Clear();
   gCanvas_solo->SetCanvasSize(600, 600);
@@ -98,15 +100,19 @@ void makeCorrelationIV(std::string tray1, std::string tray2, bool flag_run_at_25
   int index_1 = -1;
   int index_2 = -1;
   for (int i_tray = 0; i_tray < gReader->GetTrayStrings()->size(); ++i_tray) {
-    if (tray1.compare(gReader->GetTrayStrings()->at(i_tray)) == 0) index_1 = i_tray;
-    if (tray2.compare(gReader->GetTrayStrings()->at(i_tray)) == 0) index_2 = i_tray;
+    if (tray.compare(gReader->GetTrayStrings()->at(i_tray)) == 0) {
+      // Cassette data
+      if (gReader->GetTrayModes()->at(i_tray) == 0) index_1 = i_tray;
+      // Robot data
+      else if (gReader->GetTrayModes()->at(i_tray) == 1) index_2 = i_tray;
+    }
   }// End of tray loop
   bool failed_to_find_tray = false;
   if (index_1 == -1) {
-    std::cerr << "Error in <sipm_batch_summary_sheet::makeCorrelationIV>: input tray 1 not found." << std::endl;
+    std::cerr << "Error in <sipm_batch_summary_sheet::makeCorrelationIV>: input tray cassette data not found." << std::endl;
     failed_to_find_tray = true;
   } if (index_2 == -1) {
-    std::cerr << "Error in <sipm_batch_summary_sheet::makeCorrelationIV>: input tray 2 not found." << std::endl;
+    std::cerr << "Error in <sipm_batch_summary_sheet::makeCorrelationIV>: input tray robot data not found." << std::endl;
     failed_to_find_tray = true;
   } if (failed_to_find_tray) return;
   
@@ -138,8 +144,8 @@ void makeCorrelationIV(std::string tray1, std::string tray2, bool flag_run_at_25
   
   // Label axes
   graph_correlation->SetTitle("");
-  graph_correlation->GetXaxis()->SetTitle(Form("%s V_{br}^{IV}",tray1.c_str()));
-  graph_correlation->GetYaxis()->SetTitle(Form("%s V_{br}^{IV}",tray2.c_str()));
+  graph_correlation->sTitle(Form("%s Cassette V_{br}^{IV}",tray.c_str()));
+  graph_correlation->GetYaxis()->SetTitle(Form("%s Robot V_{br}^{IV}",tray.c_str()));
   
   // Draw
   graph_correlation->SetMarkerColor(plot_colors[0]);
@@ -191,10 +197,9 @@ void makeCorrelationIV(std::string tray1, std::string tray2, bool flag_run_at_25
   drawText(Form("Hamamatsu #bf{%s}", Hamamatsu_SiPM_Code), 1-gPad->GetRightMargin(), 0.965, true, kBlack, 0.03);
   drawText(Form("%s", string_tempcorr[flag_run_at_25_celcius]), 1-gPad->GetRightMargin(), 0.935, true, kBlack, 0.023);
   
-  gCanvas_solo->SaveAs(Form("../plots/single_plots/correlations/IVcorr_Vbr%s_%s_%s.pdf",
+  gCanvas_solo->SaveAs(Form("../plots/single_plots/correlations/IVcorrl_robot_cassette_Vbr%s_%s.pdf",
                             string_tempcorr_short[flag_run_at_25_celcius],
-                            gReader->GetTrayStrings()->at(index_1).c_str(),
-                            gReader->GetTrayStrings()->at(index_2).c_str()));
+                            gReader->GetTrayStrings()->at(index_1).c_str()));
   
   return;
 }// End of sipm_batch_summary_sheet::makeCorrelationIV
@@ -202,7 +207,7 @@ void makeCorrelationIV(std::string tray1, std::string tray2, bool flag_run_at_25
 
 
 // Draw a 2D correlation plot of the SPS results between two trays stored in the reader
-void makeCorrelationSPS(std::string tray1, std::string tray2, bool flag_run_at_25_celcius) {
+void makeCorrelationSPS(std::string tray, bool flag_run_at_25_celcius) {
   
   gCanvas_solo->Clear();
   gCanvas_solo->SetCanvasSize(800, 800);
@@ -218,15 +223,19 @@ void makeCorrelationSPS(std::string tray1, std::string tray2, bool flag_run_at_2
   int index_1 = -1;
   int index_2 = -1;
   for (int i_tray = 0; i_tray < gReader->GetTrayStrings()->size(); ++i_tray) {
-    if (tray1.compare(gReader->GetTrayStrings()->at(i_tray)) == 0) index_1 = i_tray;
-    if (tray2.compare(gReader->GetTrayStrings()->at(i_tray)) == 0) index_2 = i_tray;
+    if (tray.compare(gReader->GetTrayStrings()->at(i_tray)) == 0) {
+      // Cassette data
+      if (gReader->GetTrayModes()->at(i_tray) == 0) index_1 = i_tray;
+      // Robot data
+      else if (gReader->GetTrayModes()->at(i_tray) == 1) index_2 = i_tray;
+    }
   }// End of tray loop
   bool failed_to_find_tray = false;
   if (index_1 == -1) {
-    std::cerr << "Error in <sipm_batch_summary_sheet::makeCorrelationSPS>: input tray 1 not found." << std::endl;
+    std::cerr << "Error in <sipm_batch_summary_sheet::makeCorrelationSPS>: input tray cassette data not found." << std::endl;
     failed_to_find_tray = true;
   } if (index_2 == -1) {
-    std::cerr << "Error in <sipm_batch_summary_sheet::makeCorrelationSPS>: input tray 2 not found." << std::endl;
+    std::cerr << "Error in <sipm_batch_summary_sheet::makeCorrelationSPS>: input tray robot data not found." << std::endl;
     failed_to_find_tray = true;
   } if (failed_to_find_tray) return;
   
@@ -258,8 +267,8 @@ void makeCorrelationSPS(std::string tray1, std::string tray2, bool flag_run_at_2
   
   // Label axes
   graph_correlation->SetTitle("");
-  graph_correlation->GetXaxis()->SetTitle(Form("%s V_{br}^{SPS}",tray1.c_str()));
-  graph_correlation->GetYaxis()->SetTitle(Form("%s V_{br}^{SPS}",tray2.c_str()));
+  graph_correlation->GetXaxis()->SetTitle(Form("%s Cassette V_{br}^{SPS}",tray.c_str()));
+  graph_correlation->GetYaxis()->SetTitle(Form("%s Robot V_{br}^{SPS}",tray.c_str()));
   
   graph_correlation->SetMarkerColor(plot_colors[1]);
   graph_correlation->SetMarkerStyle(21);
@@ -310,10 +319,9 @@ void makeCorrelationSPS(std::string tray1, std::string tray2, bool flag_run_at_2
   drawText(Form("Hamamatsu #bf{%s}", Hamamatsu_SiPM_Code), 1-gPad->GetRightMargin(), 0.965, true, kBlack, 0.03);
   drawText(Form("%s", string_tempcorr[flag_run_at_25_celcius]), 1-gPad->GetRightMargin(), 0.935, true, kBlack, 0.023);
   
-  gCanvas_solo->SaveAs(Form("../plots/single_plots/correlations/SPScorr_Vbr%s_%s_%s.pdf",
+  gCanvas_solo->SaveAs(Form("../plots/single_plots/correlations/SPScorrl_robot_cassette_Vbr%s_%s.pdf",
                             string_tempcorr_short[flag_run_at_25_celcius],
-                            gReader->GetTrayStrings()->at(index_1).c_str(),
-                            gReader->GetTrayStrings()->at(index_2).c_str()));
+                            gReader->GetTrayStrings()->at(index_1).c_str()));
   
   return;
 }// End of sipm_batch_summary_sheet::makeCorrelationSPS
@@ -321,7 +329,7 @@ void makeCorrelationSPS(std::string tray1, std::string tray2, bool flag_run_at_2
 
 
 // Draw a 2D correlation plot of the Dark Current results between two trays stored in the reader
-void makeCorrelationDarkCurrent(std::string tray1, std::string tray2, bool below_breakdown) {
+void makeCorrelationDarkCurrent(std::string tray, bool below_breakdown) {
   
   gCanvas_solo->Clear();
   gCanvas_solo->SetCanvasSize(800, 800);
@@ -337,15 +345,19 @@ void makeCorrelationDarkCurrent(std::string tray1, std::string tray2, bool below
   int index_1 = -1;
   int index_2 = -1;
   for (int i_tray = 0; i_tray < gReader->GetTrayStrings()->size(); ++i_tray) {
-    if (tray1.compare(gReader->GetTrayStrings()->at(i_tray)) == 0) index_1 = i_tray;
-    if (tray2.compare(gReader->GetTrayStrings()->at(i_tray)) == 0) index_2 = i_tray;
+    if (tray.compare(gReader->GetTrayStrings()->at(i_tray)) == 0) {
+      // Cassette data
+      if (gReader->GetTrayModes()->at(i_tray) == 0) index_1 = i_tray;
+      // Robot data
+      else if (gReader->GetTrayModes()->at(i_tray) == 1) index_2 = i_tray;
+    }
   }// End of tray loop
   bool failed_to_find_tray = false;
   if (index_1 == -1) {
-    std::cerr << "Error in <sipm_batch_summary_sheet::makeCorrelationDarkCurrent>: input tray 1 not found." << std::endl;
+    std::cerr << "Error in <sipm_batch_summary_sheet::makeCorrelationDarkCurrent>: input tray cassette data not found." << std::endl;
     failed_to_find_tray = true;
   } if (index_2 == -1) {
-    std::cerr << "Error in <sipm_batch_summary_sheet::makeCorrelationDarkCurrent>: input tray 2 not found." << std::endl;
+    std::cerr << "Error in <sipm_batch_summary_sheet::makeCorrelationDarkCurrent>: input tray robot data not found." << std::endl;
     failed_to_find_tray = true;
   } if (failed_to_find_tray) return;
   
@@ -377,8 +389,8 @@ void makeCorrelationDarkCurrent(std::string tray1, std::string tray2, bool below
   
   // Label axes
   graph_correlation->SetTitle("");
-  graph_correlation->GetXaxis()->SetTitle(Form("%s I_{Dark}",tray1.c_str()));
-  graph_correlation->GetYaxis()->SetTitle(Form("%s I_{Dark}",tray2.c_str()));
+  graph_correlation->GetXaxis()->SetTitle(Form("%s #color[2]{Cassette} I_{Dark}",tray.c_str()));
+  graph_correlation->GetYaxis()->SetTitle(Form("%s #color[880]{Robot} I_{Dark}",tray.c_str()));
   
   graph_correlation->SetMarkerColor(plot_colors[2]);
   graph_correlation->SetMarkerStyle(33);
@@ -426,10 +438,9 @@ void makeCorrelationDarkCurrent(std::string tray1, std::string tray2, bool below
   drawText(Form("Dark Current at %s", string_dark_current_types_long[below_breakdown]), 1-gPad->GetRightMargin(), 0.935, true, kBlack, 0.023);
   
   
-  gCanvas_solo->SaveAs(Form("../plots/single_plots/correlations/IDark_corrl_Vbr%s_%s_%s.pdf",
+  gCanvas_solo->SaveAs(Form("../plots/single_plots/correlations/IDark_corrl_robot_cassette_Vbr%s_%s.pdf",
                             string_dark_current_types[below_breakdown],
-                            gReader->GetTrayStrings()->at(index_1).c_str(),
-                            gReader->GetTrayStrings()->at(index_2).c_str()));
+                            gReader->GetTrayStrings()->at(index_1).c_str()));
   
   return;
 }// End of sipm_batch_summary_sheet::makeCorrelationDarkCurrent

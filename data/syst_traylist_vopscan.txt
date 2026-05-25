@@ -1,0 +1,9 @@
+# Enter SiPM tray numbers to process in batch
+# Comments can be made using the '#' character
+
+$START
+250717-1302-vopscan-30
+250717-1302-vopscan-35
+250717-1302-vopscan-40
+250717-1302-vopscan-45
+250717-1302-vopscan-50

@@ -59,12 +59,16 @@ void makeHist_DarkCurrent();
 //========================================================================== Macro Main
 
 // Main macro method: generate SiPM data
-void sipm_batch_summary_sheet() {
+void sipm_batch_summary_sheet(const char* traylist_identifier = "production") {
+  
+  // TODO stat directories
+  
   SiPMDataReader* reader = new SiPMDataReader();
   gErrorIgnoreLevel = kWarning;
   
   // Read in trays to treat as current batch
-  reader->ReadFile("../batch_data.txt");
+  reader->SetSubDirectory(traylist_identifier);
+  reader->ReadFile(Form("../data/batch_traylist_%s.txt",traylist_identifier));
   
   // Read IV and SPS data
   reader->ReadDataIV();
@@ -93,7 +97,7 @@ void sipm_batch_summary_sheet() {
   int n_trays = gReader->GetTrayStrings()->size();
   for (int i_tray = 0; i_tray < n_trays; ++i_tray) {
     std::cout << "Average V_bd (25C) for tray " << gReader->GetTrayStrings()->at(i_tray) << " \t:: " << getAvgVbreakdown(i_tray, true);
-    std::cout << " (" << t_red << countOutliersVbreakdown(i_tray, true) << t_def << " Outliers beyond tray avg +/-" << declare_Vbd_outlier_range << "V)" << std::endl;
+    std::cout << " (" << t_mgn << countOutliersVbreakdown(i_tray, true) << t_def << " Outliers beyond tray avg +/-" << declare_Vbd_outlier_range << "V)" << std::endl;
   }
   
   // Make series at ambient temp and 25C corrected
@@ -186,7 +190,6 @@ void makeHist_IV_Vbreakdown(bool flag_run_at_25_celcius) {
 // TODO return TObjectArray for summary sheet
 void makeHist_DarkCurrent() {
   
-  
   // TODO currently runs over all trays but would be good to check it for single trays
   
   gCanvas_solo->Clear();
@@ -199,35 +202,71 @@ void makeHist_DarkCurrent() {
   
   
   // Make histograms
-  TH1D* hist_dark_current_undervoltage = new TH1D("hist_dark_current_undervoltage",
-                                                  ";Dark Current I_{dark} [nA];Count of SiPMs",
-                                                  2*darkcurr_limits[1], darkcurr_limits[0], darkcurr_limits[1]);
-  TH1D* hist_dark_current_overvoltage = new TH1D("hist_dark_current_overvoltage",
-                                                 ";Dark Current I_{dark} [nA];Count of SiPMs",
-                                                 2*darkcurr_limits[1], darkcurr_limits[0], darkcurr_limits[1]);
+  TH1D* hist_dark_current_undervoltage[2];
+  hist_dark_current_undervoltage[0] = new TH1D("hist_dark_current_undervoltage_cassette",
+                                               ";Dark Current I_{dark} [nA];Count of SiPMs",
+                                               2*darkcurr_limits[1], darkcurr_limits[0], darkcurr_limits[1]);
+  hist_dark_current_undervoltage[1] = new TH1D("hist_dark_current_undervoltage_robot",
+                                               ";Dark Current I_{dark} [nA];Count of SiPMs",
+                                               2*darkcurr_limits[1], darkcurr_limits[0], darkcurr_limits[1]);
+  TH1D* hist_dark_current_overvoltage[2];
+  hist_dark_current_overvoltage[0] = new TH1D("hist_dark_current_overvoltage_cassette",
+                                              ";Dark Current I_{dark} [nA];Count of SiPMs",
+                                              2*darkcurr_limits[1], darkcurr_limits[0], darkcurr_limits[1]);
+  hist_dark_current_overvoltage[1] = new TH1D("hist_dark_current_overvoltage_robot",
+                                              ";Dark Current I_{dark} [nA];Count of SiPMs",
+                                              2*darkcurr_limits[1], darkcurr_limits[0], darkcurr_limits[1]);
   
   // Gather all tray data
+  std::vector<int>* modes = gReader->GetTrayModes();
   for (int i_tray = 0; i_tray < gReader->GetTrayStrings()->size(); ++i_tray) {
     int IV_size = gReader->GetIV()->at(i_tray)->IV_Vpeak->size();
     for (int i_IV = 1; i_IV <= IV_size; ++i_IV) {
-      hist_dark_current_undervoltage->Fill(gReader->GetIV()->at(i_tray)->Idark_3below->at(i_IV - 1));
-      hist_dark_current_overvoltage->Fill(gReader->GetIV()->at(i_tray)->Idark_4above->at(i_IV - 1));
+      if (modes->at(i_tray) == 0) { //cassette
+        hist_dark_current_undervoltage[0]->Fill(gReader->GetIV()->at(i_tray)->Idark_3below->at(i_IV - 1));
+        hist_dark_current_overvoltage[0]->Fill(gReader->GetIV()->at(i_tray)->Idark_4above->at(i_IV - 1));
+      } else if (modes->at(i_tray) == 1) { // robot
+        hist_dark_current_undervoltage[1]->Fill(gReader->GetIV()->at(i_tray)->Idark_3below->at(i_IV - 1));
+        hist_dark_current_overvoltage[1]->Fill(gReader->GetIV()->at(i_tray)->Idark_4above->at(i_IV - 1));
+      }
     }
   }
   
   // plot histograms
-  hist_dark_current_undervoltage->SetLineColor(plot_colors[0]);
-  hist_dark_current_undervoltage->SetFillColorAlpha(plot_colors[0], 0.4);
-  hist_dark_current_overvoltage->SetLineColor(plot_colors[1]);
-  hist_dark_current_overvoltage->SetFillColorAlpha(plot_colors[1], 0.4);
+  hist_dark_current_undervoltage[0]->SetLineColor(plot_colors_alt[0]);
+  hist_dark_current_undervoltage[0]->SetFillColorAlpha(plot_colors_alt[0], 0.2);
+  hist_dark_current_overvoltage[0]->SetLineColor(plot_colors[0]);
+  hist_dark_current_overvoltage[0]->SetFillColorAlpha(plot_colors[0], 0.2);
+  hist_dark_current_undervoltage[1]->SetLineColor(plot_colors_alt[1]);
+  hist_dark_current_undervoltage[1]->SetFillColorAlpha(plot_colors_alt[1], 0.2);
+  hist_dark_current_overvoltage[1]->SetLineColor(plot_colors[1]);
+  hist_dark_current_overvoltage[1]->SetFillColorAlpha(plot_colors[1], 0.2);
   
   
-  double range_Idark_plot[2] = {0.5, hist_dark_current_undervoltage->GetMaximum() * 3.75};
-  hist_dark_current_undervoltage->GetYaxis()->SetRangeUser(range_Idark_plot[0], range_Idark_plot[1]);
-  hist_dark_current_undervoltage->GetXaxis()->SetTitleOffset(1.2);
+  double range_Idark_plot[2] = {0.5, 3.75*TMath::Max(hist_dark_current_undervoltage[0]->GetMaximum(),
+                                                      hist_dark_current_undervoltage[1]->GetMaximum()) };
+  hist_dark_current_undervoltage[0]->GetYaxis()->SetRangeUser(range_Idark_plot[0], range_Idark_plot[1]);
+  hist_dark_current_undervoltage[0]->GetXaxis()->SetTitleOffset(1.2);
+  hist_dark_current_undervoltage[1]->GetYaxis()->SetRangeUser(range_Idark_plot[0], range_Idark_plot[1]);
+  hist_dark_current_undervoltage[1]->GetXaxis()->SetTitleOffset(1.2);
   
-  hist_dark_current_undervoltage->Draw("hist");
-  hist_dark_current_overvoltage->Draw("hist same");
+  // Draw the histograms
+  if (hist_dark_current_undervoltage[0]->GetEntries() > 0 &&
+      hist_dark_current_undervoltage[1]->GetEntries() > 0) {
+    hist_dark_current_undervoltage[0]->Draw("hist");
+    hist_dark_current_overvoltage[0]->Draw("hist same");
+    hist_dark_current_undervoltage[1]->Draw("hist same");
+    hist_dark_current_overvoltage[1]->Draw("hist same");
+    drawText("Cassette + Robotic Setup", 1.-gPad->GetRightMargin(), 0.96, true, kBlack, 0.045);
+  } else if (hist_dark_current_undervoltage[0]->GetEntries() > 0) {
+    hist_dark_current_undervoltage[0]->Draw("hist");
+    hist_dark_current_overvoltage[0]->Draw("hist same");
+    drawText("Cassette Setup", 1.-gPad->GetRightMargin(), 0.96, true, kBlack, 0.045);
+  } else if (hist_dark_current_undervoltage[1]->GetEntries() > 0) {
+    hist_dark_current_undervoltage[1]->Draw("hist");
+    hist_dark_current_overvoltage[1]->Draw("hist same");
+    drawText("Robotic Setup", 1.-gPad->GetRightMargin(), 0.96, true, kBlack, 0.045);
+  } else return;
   
   // Draw lines representing spec sheet limits
   TLine* contract_line = new TLine();
@@ -242,25 +281,86 @@ void makeHist_DarkCurrent() {
   // Legend for the two histograms
   TLegend* dark_current_legend = new TLegend(0.2, 0.68, 0.5, 0.85);
   dark_current_legend->SetLineWidth(0);
-  dark_current_legend->AddEntry(hist_dark_current_undervoltage, "I_{dark} at V = (V_{br} #minus 3)", "f");
-  dark_current_legend->AddEntry(hist_dark_current_overvoltage, "I_{dark} at V = (V_{br} + 4)", "f");
+  if (hist_dark_current_undervoltage[0]->GetEntries() > 0) {
+    dark_current_legend->AddEntry(hist_dark_current_undervoltage[0], "I_{dark} at V = (V_{br} #minus 3) [cassette]", "f");
+    dark_current_legend->AddEntry(hist_dark_current_overvoltage[0], "I_{dark} at V = (V_{br} + 4) [cassette]", "f");
+  } if (hist_dark_current_undervoltage[1]->GetEntries() > 0) {
+    dark_current_legend->AddEntry(hist_dark_current_undervoltage[1], "I_{dark} at V = (V_{br} #minus 3) [robot]", "f");
+    dark_current_legend->AddEntry(hist_dark_current_overvoltage[1], "I_{dark} at V = (V_{br} + 4) [robot]", "f");
+  }
   dark_current_legend->Draw();
   
-  // Add a note for which SiPM trays are included in the data
+  // Display tray numbers according to the value in the config file
+  float text_size = 0.022;
   float hamamatsu_tray_xpos = specmax_position + 0.06;
   float hamamatsu_tray_ypos = 1 - gPad->GetTopMargin() - 0.06;
   drawText(Form("Hamamatsu #bf{%s}",Hamamatsu_SiPM_Code), 0.97, hamamatsu_tray_ypos+0.075, true, kBlack, 0.035);
-  drawText("Data SiPM Tray IDs:", hamamatsu_tray_xpos-0.02, hamamatsu_tray_ypos, false, kBlack, 0.034);
-  for (int i_tray = 1; i_tray <= gReader->GetTrayStrings()->size(); ++i_tray) {
-    if (i_tray % 2 == 0) {
-      drawText(Form("%s", gReader->GetTrayStrings()->at(i_tray-1).c_str()), hamamatsu_tray_xpos + 0.14, hamamatsu_tray_ypos - 0.03*std::floor((i_tray+1)/2), false, kBlack, 0.03);
-    } else {
-      drawText(Form("%s", gReader->GetTrayStrings()->at(i_tray-1).c_str()), hamamatsu_tray_xpos, hamamatsu_tray_ypos - 0.03*std::floor((i_tray+1)/2), false, kBlack, 0.03);
-    }
-  }
+  int num_trays_displayed = 0;
+  if (tray_display_mode == 0) {
+    
+  } else if (tray_display_mode == 1) {
+    // Display all tray numbers
+    
+    drawText("Data SiPM Tray IDs:", hamamatsu_tray_xpos-0.02, hamamatsu_tray_ypos, false, kBlack, 0.034);
+    for (int i_tray = 1; i_tray <= gReader->GetTrayStrings()->size(); ++i_tray) {
+      if (i_tray % 2 == 0) {
+        drawText(Form("%s", gReader->GetTrayStrings()->at(i_tray-1).c_str()), hamamatsu_tray_xpos + 0.14, hamamatsu_tray_ypos - text_size*std::floor((i_tray+1)/2), false, kBlack, text_size);
+      } else {
+        drawText(Form("%s", gReader->GetTrayStrings()->at(i_tray-1).c_str()), hamamatsu_tray_xpos, hamamatsu_tray_ypos - text_size*std::floor((i_tray+1)/2), false, kBlack, text_size);
+      }
+    }// End of tray drawing
+    
+    num_trays_displayed = gReader->GetTrayStrings()->size();
+  } else if (tray_display_mode == 2) {
+    // Find the tray ranges to report in a slightly more condensed fasion
+    std::vector<std::string> tray_batches;
+    std::vector<int> tray_batch_min;
+    std::vector<int> tray_batch_max;
+    std::vector<int> tray_modes;
+    for (int i_tray = 0; i_tray < gReader->GetTrayStrings()->size(); ++i_tray) {
+      
+      // Check if this tray batch exists already
+      std::string read_batch = gReader->GetTrayStrings()->at(i_tray).substr(0, 9);
+      for (int i_cand = 0; i_cand < tray_batches.size(); ++i_cand) {
+        if (read_batch.compare(tray_batches.at(i_cand)) == 0) {
+          // Match found!
+          int c_index = std::stoi(gReader->GetTrayStrings()->at(i_tray).substr(9, 11));
+          if (c_index < tray_batch_min[i_cand]) tray_batch_min[i_cand] = c_index;
+          if (c_index > tray_batch_max[i_cand]) tray_batch_max[i_cand] = c_index;
+          
+          // continue
+          goto nextloop;
+        }
+      }// End of check
+      
+      // Not found--Append to list
+      tray_batches.push_back(read_batch);
+      tray_batch_min.push_back(std::stoi(gReader->GetTrayStrings()->at(i_tray).substr(9, 11)));
+      tray_batch_max.push_back(std::stoi(gReader->GetTrayStrings()->at(i_tray).substr(9, 11)));
+      tray_modes.push_back(gReader->GetTrayModes()->at(i_tray));
+      
+    nextloop:
+      continue;
+    }// End of tray data sorting/condensing
+    
+    // Add a note for which SiPM trays are included in the data
+    
+    drawText("Data SiPM Tray IDs:", hamamatsu_tray_xpos-0.02, hamamatsu_tray_ypos, false, kBlack, 0.034);
+    for (int i_list = 1; i_list <= tray_batches.size(); ++i_list) {
+      if (i_list % 2 == 0) {
+        drawText(Form("%s{%02d-%02d}", tray_batches[i_list-1].c_str(), tray_batch_min[i_list-1],tray_batch_max[i_list-1]),
+                 hamamatsu_tray_xpos + 0.14, hamamatsu_tray_ypos - text_size*std::floor((i_list+1)/2), false, plot_colors[tray_modes[i_list-1]], text_size);
+      } else {
+        drawText(Form("%s{%02d-%02d}", tray_batches[i_list-1].c_str(), tray_batch_min[i_list-1],tray_batch_max[i_list-1]),
+                 hamamatsu_tray_xpos, hamamatsu_tray_ypos - text_size*std::floor((i_list+1)/2), false, plot_colors[tray_modes[i_list-1]], text_size);
+      }
+    }// End of tray drawing
+    
+    num_trays_displayed = tray_batches.size();
+  }// End of tray display
   
   // Mark note counts over spec maxiumum
-  float overint_ypos = hamamatsu_tray_ypos - 0.03*std::floor((gReader->GetTrayStrings()->size()+1)/2) - 0.08;
+  float overint_ypos = hamamatsu_tray_ypos - text_size*std::floor((num_trays_displayed+1)/2) - 0.08*(1 + tray_display_mode == 0);
   drawText("SiPMs over spec max", hamamatsu_tray_xpos-0.02, overint_ypos, false, kBlack, 0.035);
   drawText(Form("(%.1f nA at V_{br} + 4): ",Hamamatsu_spec_max_Idark), hamamatsu_tray_xpos-0.02, overint_ypos-0.04, false, kBlack, 0.035);
   int count_overmax = countDarkCurrentOverLimitAllTrays(Hamamatsu_spec_max_Idark);
@@ -1145,7 +1245,7 @@ void makeIndexedOutliers(bool flag_run_at_25_celcius) {
   cpads[0][1]->cd();
   double first_x_margin = gPad->GetLeftMargin() + plot_window_size_x * 5.0/n_trays;
   double base_legend_margin_ticks = gPad->GetLeftMargin() + plot_window_size_x * 0.5/n_trays;
-  TLegend* vbd_legend = new TLegend(base_legend_margin_ticks, 0.685, first_x_margin - 0.06, 0.95);
+  TLegend* vbd_legend = new TLegend(base_legend_margin_ticks, 0.685, first_x_margin - 0.06/TMath::Log(n_trays), 0.95);
   vbd_legend->SetLineWidth(0);
   vbd_legend->AddEntry(hist_outliers_Vpeak, "IV V_{bd} Uncorrected", "p");
   vbd_legend->AddEntry(hist_outliers_Vbreakdown, "SPS V_{bd} Uncorrected", "p");
@@ -1155,7 +1255,7 @@ void makeIndexedOutliers(bool flag_run_at_25_celcius) {
   
   
   // Legend for the lines marking tray average, test sets
-  TLegend* line_legend = new TLegend(first_x_margin + 0.02, 0.56, first_x_margin + plot_window_size_x * 5.0/n_trays - 0.02, 0.95);
+  TLegend* line_legend = new TLegend(first_x_margin + 0.02/TMath::Log(n_trays), 0.56, first_x_margin + plot_window_size_x * 5.0/n_trays - 0.02/TMath::Log(n_trays), 0.95);
   line_legend->SetLineWidth(0);
   double avg_IV_all = (static_cast<double>(countOutliersVpeakBatch("-", flag_run_at_25_celcius, 0))
                        / countSiPMsAllTrays() )*100;

@@ -1,0 +1,22 @@
+# Enter SiPM tray numbers to process in batch
+# Comments can be made using the '#' character
+
+$START
+250821-1301
+250821-1301-rc_2
+#250821-1301-rc_3
+250821-1302
+250821-1302-rc_2
+250821-1302-rc_3
+250821-1302-rc_4
+250821-1302-rc_5
+250821-1303
+250821-1303-rc_2
+250821-1303-rc_3
+250821-1303-rc_4
+250821-1303-rc_5
+# Haven't analyzed rerun data yet
+#250821-1304
+#250717-1303
+#250717-1304
+#250717-1305

@@ -140,6 +140,7 @@ private:
     // Check that SiPMs were found in the file
     if (this->tray_strings->empty()) {
       std::cout << t_red << "Failed!" << t_def << " Check file " << *batch_data_file << "." << std::endl;
+      std::cout << t_red << "Failed!" << t_def << " Check file " << *batch_data_file << "." << std::endl;
       std::cerr << "Failed to read file for SiPM tray numbers. Exiting..." << std::endl;
       return;
     }
@@ -457,22 +458,22 @@ public:
     for (std::vector<std::string>::iterator it = tray_strings->begin(); it != tray_strings->end(); ++it) {
       
       // Form input file for this tray
-      char IV_file[75];
+      char IV_file[150];
       if (this->batch_data_dir->size() == 0) {    // No subdirectory
         if (this->tray_modes->at(i) == 0) {      // Not robot data
-          if (this->has_subscript_results) snprintf(IV_file, 75, "../data/%s-results/IV_result.txt", it->c_str());
-          else                             snprintf(IV_file, 75, "../data/%s/IV_result.txt", it->c_str());
+          if (this->has_subscript_results) snprintf(IV_file, 150, "../data/%s-results/IV_result.txt", it->c_str());
+          else                             snprintf(IV_file, 150, "../data/%s/IV_result.txt", it->c_str());
         } else if (this->tray_modes->at(i) == 1) {// Is robot data
-          if (this->has_subscript_results) snprintf(IV_file, 75, "../data/%s-robot-results/IV_result.txt", it->c_str());
-          else                             snprintf(IV_file, 75, "../data/%s-robot/IV_result.txt", it->c_str());
+          if (this->has_subscript_results) snprintf(IV_file, 150, "../data/%s-robot-results/IV_result.txt", it->c_str());
+          else                             snprintf(IV_file, 150, "../data/%s-robot/IV_result.txt", it->c_str());
         }
       } else {                                    // Has subdirectory
         if (this->tray_modes->at(i) == 0) {       // Not robot data
-          if (this->has_subscript_results) snprintf(IV_file, 75, "../data/%s/%s-results/IV_result.txt", batch_data_dir->c_str(), it->c_str());
-          else                             snprintf(IV_file, 75, "../data/%s/%s/IV_result.txt", batch_data_dir->c_str(),it->c_str());
+          if (this->has_subscript_results) snprintf(IV_file, 150, "../data/%s/%s-results/IV_result.txt", batch_data_dir->c_str(), it->c_str());
+          else                             snprintf(IV_file, 150, "../data/%s/%s/IV_result.txt", batch_data_dir->c_str(),it->c_str());
         } else if (this->tray_modes->at(i) == 1) {// Is robot data
-          if (this->has_subscript_results) snprintf(IV_file, 75, "../data/%s/%s-robot-results/IV_result.txt", batch_data_dir->c_str(), it->c_str());
-          else                             snprintf(IV_file, 75, "../data/%s/%s-robot/IV_result.txt", batch_data_dir->c_str(), it->c_str());
+          if (this->has_subscript_results) snprintf(IV_file, 150, "../data/%s/%s-robot-results/IV_result.txt", batch_data_dir->c_str(), it->c_str());
+          else                             snprintf(IV_file, 150, "../data/%s/%s-robot/IV_result.txt", batch_data_dir->c_str(), it->c_str());
         }
       }// End of possible directory tree
       
@@ -620,22 +621,22 @@ public:
     for (std::vector<std::string>::iterator it = tray_strings->begin(); it != tray_strings->end(); ++it) {
       
       // Form input file for this tray
-      char SPS_file[75];
+      char SPS_file[150];
       if (this->batch_data_dir->size() == 0) {    // No subdirectory
         if (this->tray_modes->at(i) == 0) {      // Not robot data
-          if (this->has_subscript_results) snprintf(SPS_file, 75, "../data/%s-results/SPS_result_onlynumbers.txt", it->c_str());
-          else                             snprintf(SPS_file, 75, "../data/%s/SPS_result_onlynumbers.txt", it->c_str());
+          if (this->has_subscript_results) snprintf(SPS_file, 150, "../data/%s-results/SPS_result_onlynumbers.txt", it->c_str());
+          else                             snprintf(SPS_file, 150, "../data/%s/SPS_result_onlynumbers.txt", it->c_str());
         } else if (this->tray_modes->at(i) == 1) {// Is robot data
-          if (this->has_subscript_results) snprintf(SPS_file, 75, "../data/%s-robot-results/SPS_result_onlynumbers.txt", it->c_str());
-          else                             snprintf(SPS_file, 75, "../data/%s-robot/SPS_result_onlynumbers.txt", it->c_str());
+          if (this->has_subscript_results) snprintf(SPS_file, 150, "../data/%s-robot-results/SPS_result_onlynumbers.txt", it->c_str());
+          else                             snprintf(SPS_file, 150, "../data/%s-robot/SPS_result_onlynumbers.txt", it->c_str());
         }
       } else {                                    // Has subdirectory
         if (this->tray_modes->at(i) == 0) {       // Not robot data
-          if (this->has_subscript_results) snprintf(SPS_file, 75, "../data/%s/%s-results/SPS_result_onlynumbers.txt", batch_data_dir->c_str(), it->c_str());
-          else                             snprintf(SPS_file, 75, "../data/%s/%s/SPS_result_onlynumbers.txt", batch_data_dir->c_str(),it->c_str());
+          if (this->has_subscript_results) snprintf(SPS_file, 150, "../data/%s/%s-results/SPS_result_onlynumbers.txt", batch_data_dir->c_str(), it->c_str());
+          else                             snprintf(SPS_file, 150, "../data/%s/%s/SPS_result_onlynumbers.txt", batch_data_dir->c_str(),it->c_str());
         } else if (this->tray_modes->at(i) == 1) {// Is robot data
-          if (this->has_subscript_results) snprintf(SPS_file, 75, "../data/%s/%s-robot-results/SPS_result_onlynumbers.txt", batch_data_dir->c_str(), it->c_str());
-          else                             snprintf(SPS_file, 75, "../data/%s/%s-robot/SPS_result_onlynumbers.txt", batch_data_dir->c_str(), it->c_str());
+          if (this->has_subscript_results) snprintf(SPS_file, 150, "../data/%s/%s-robot-results/SPS_result_onlynumbers.txt", batch_data_dir->c_str(), it->c_str());
+          else                             snprintf(SPS_file, 150, "../data/%s/%s-robot/SPS_result_onlynumbers.txt", batch_data_dir->c_str(), it->c_str());
         }
       }// End of possible directory tree
       
