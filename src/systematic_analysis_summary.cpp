@@ -69,8 +69,8 @@ double darkcurr_limits[2] = {0, 35};
 
 //Reproducability
 void initializeGlobalReproducabilityHists();
-void makeReproducabilityHist(std::string base_tray_id);
-void drawGlobalReproducabilityHists();
+void makeReproducabilityHist(std::string base_tray_id, bool drawplot = true);
+void drawGlobalReproducabilityHists(std::string modifier = "batch");
 
 // Temperature
 void makeTemperatureScan();
@@ -231,7 +231,7 @@ void initializeGlobalReproducabilityHists() {
 // Draw and save the global histograms for residuals/stdev of reproducibility tests
 // Note that these histograms are filled by running makeReproducabilityHist(), and the
 // global hist will only contain data that has been run in that method (i.e. not all from gReader).
-void drawGlobalReproducabilityHists() {
+void drawGlobalReproducabilityHists(std::string modifier) {
   
   // Helpful numbers to add to canvas
   int ntotal_sipms = static_cast<int>(gHist_rep_stdev[0]->GetEntries());
@@ -265,8 +265,9 @@ void drawGlobalReproducabilityHists() {
   vbd_legend->Draw();
   
   // Save residual curve
-  gCanvas_solo->SaveAs(Form("../plots/systematic_plots/reproducibility%s/batch_reproducibility_residual.pdf",
-                            string_tempcorr_short[global_flag_run_at_25_celcius]));
+  gCanvas_solo->SaveAs(Form("../plots/systematic_plots/reproducibility%s/%s_reproducibility_residual.pdf",
+                            string_tempcorr_short[global_flag_run_at_25_celcius],
+                            modifier.c_str()));
   
   
   // Draw stdev hists
@@ -327,7 +328,7 @@ void drawGlobalReproducabilityHists() {
 // This method will gather the data, filling the global histograms defined above
 // and produce an output composite plot with 32 histograms (one for each cassette
 // slot) for any test sets which are repeated in the available data from gReader.
-void makeReproducabilityHist(std::string base_tray_id) {
+void makeReproducabilityHist(std::string base_tray_id, bool drawplot) {
   
   // Find which test sets have repeated measurements
   std::vector<std::string>* tray_strings = gReader->GetTrayStrings();
@@ -356,7 +357,7 @@ void makeReproducabilityHist(std::string base_tray_id) {
       if (tray_indices.size() == 1) {++count_index; continue;} // first should have all tests
       
       // Find which sets are repeated
-      std::cout << "Repeated sets: { " << t_red;
+      std::cout << "Repeated sets: { " << t_mgn;
       if (repeated.size() == 0) { // set repetitions
         for (int i = 0; i < 15; ++i) {
           if (gReader->HasSet(count_index, i)) repeated.push_back(1); // data available
@@ -405,6 +406,8 @@ void makeReproducabilityHist(std::string base_tray_id) {
     float ylim = 0;
     int total_trays = 0;
     for (int s = 0; s < 32; ++s) {
+      // Note that the 14th set only has 12 SiPMs
+      if (r == 14 && s == 12) break;
       
       // find the average for these repeated measurements
       double avg_this_sipm_IV = 0;
@@ -514,135 +517,138 @@ void makeReproducabilityHist(std::string base_tray_id) {
       }// End of check for good SiPM tests
     }// End of cassette loop
     
-    // *------- Visual plot elements
-
-    
-    
-    TLine* avg_line = new TLine();
-    avg_line->SetLineColorAlpha(kBlack, 0.5);
-    
-    TLine* dev_line = new TLine();
-    dev_line->SetLineColorAlpha(kGray+1, 1);
-    dev_line->SetLineStyle(7);
-    
-    TBox* forbidden_range_box = new TBox();
-    forbidden_range_box->SetFillColorAlpha(kRed+2, 0.25);
-    
-    
-    // *------- IV Plots
-    
-    for (int s = 0; s < 32; ++s) {
-      cassette_pads[3-s%4][7-s/4]->cd();
-      gPad->SetTicks(1,1);
-//      std::cout << t_red << "debug!" << t_def << std::endl;
+    // Only draw plots if desired
+    if (drawplot) {
+      // *------- Visual plot elements
       
-      // Add extra padding to the canvases to split them from flush if desired
-      if (flag_padded) {
-        double extra_padding = 0.0185;
-        gPad->SetLeftMargin(gPad->GetLeftMargin() + extra_padding);
-        gPad->SetTopMargin(gPad->GetTopMargin() + extra_padding);
-        gPad->SetRightMargin(gPad->GetRightMargin() + extra_padding);
-        gPad->SetBottomMargin(gPad->GetBottomMargin() + extra_padding);
-        if (s == 31) flag_padded = false;
+      
+      
+      TLine* avg_line = new TLine();
+      avg_line->SetLineColorAlpha(kBlack, 0.5);
+      
+      TLine* dev_line = new TLine();
+      dev_line->SetLineColorAlpha(kGray+1, 1);
+      dev_line->SetLineStyle(7);
+      
+      TBox* forbidden_range_box = new TBox();
+      forbidden_range_box->SetFillColorAlpha(kRed+2, 0.25);
+      
+      
+      // *------- IV Plots
+      
+      for (int s = 0; s < 32; ++s) {
+        cassette_pads[3-s%4][7-s/4]->cd();
+        gPad->SetTicks(1,1);
+        //      std::cout << t_red << "debug!" << t_def << std::endl;
+        
+        // Add extra padding to the canvases to split them from flush if desired
+        if (flag_padded) {
+          double extra_padding = 0.0185;
+          gPad->SetLeftMargin(gPad->GetLeftMargin() + extra_padding);
+          gPad->SetTopMargin(gPad->GetTopMargin() + extra_padding);
+          gPad->SetRightMargin(gPad->GetRightMargin() + extra_padding);
+          gPad->SetBottomMargin(gPad->GetBottomMargin() + extra_padding);
+          if (s == 31) flag_padded = false;
+        }
+        
+        // Ensure all pads have the same tick/text sizes
+        double aspect_vert = (1 - gPad->GetTopMargin() - gPad->GetBottomMargin());
+        double aspect_horiz = (1 - gPad->GetLeftMargin() - gPad->GetRightMargin());
+        double aspect_ratio = aspect_vert / aspect_horiz;
+        repetition_hists_IV[s/4][s%4]->GetXaxis()->SetTickLength(0.06 * aspect_ratio);
+        repetition_hists_IV[s/4][s%4]->GetYaxis()->SetTickLength(0.06 / aspect_ratio);
+        repetition_hists_IV[s/4][s%4]->GetXaxis()->SetLabelSize(0.08 * aspect_horiz);
+        repetition_hists_IV[s/4][s%4]->GetXaxis()->SetLabelOffset(0.02 / aspect_horiz/aspect_horiz);
+        repetition_hists_IV[s/4][s%4]->GetXaxis()->SetTitleSize(0.09 * aspect_horiz);
+        repetition_hists_IV[s/4][s%4]->GetXaxis()->SetTitleOffset(1 / aspect_horiz);
+        repetition_hists_IV[s/4][s%4]->GetYaxis()->SetLabelSize(0.08 * aspect_vert);
+        repetition_hists_IV[s/4][s%4]->GetYaxis()->SetLabelOffset(0.02 / aspect_vert);
+        repetition_hists_IV[s/4][s%4]->GetYaxis()->SetLabelOffset(0.02 / aspect_vert);
+        repetition_hists_IV[s/4][s%4]->GetYaxis()->SetTitleSize(0.09 * aspect_vert);
+        
+        // Draw the hist and helpful visual features
+        repetition_hists_IV[s/4][s%4]->Draw("hist");
+        avg_line->DrawLine(avg_this_tray_IV, 0, avg_this_tray_IV, ylim);
+        
+        forbidden_range_box->DrawBox(avg_this_tray_IV + volthist_range[0], 0, avg_this_tray_IV - 0.05, ylim);
+        forbidden_range_box->DrawBox(avg_this_tray_IV + 0.05, 0, avg_this_tray_IV + volthist_range[1], ylim);
+        
+        dev_line->DrawLine(avg_this_tray_IV+0.05, 0, avg_this_tray_IV+0.05, ylim);
+        dev_line->DrawLine(avg_this_tray_IV-0.05, 0, avg_this_tray_IV-0.05,  ylim);
+        
+        // Label this SiPM
+        std::pair<int, int> sipm_tray_index = gReader->GetTrayIndexFromTestIndex(r, s);
+        drawText(Form("(%i,%i)",sipm_tray_index.first, sipm_tray_index.second),
+                 gPad->GetLeftMargin() + 0.2*aspect_horiz, gPad->GetBottomMargin() + 0.86*aspect_vert,
+                 false, kBlack, 0.1*std::sqrt(aspect_horiz*aspect_vert));
       }
       
-      // Ensure all pads have the same tick/text sizes
-      double aspect_vert = (1 - gPad->GetTopMargin() - gPad->GetBottomMargin());
-      double aspect_horiz = (1 - gPad->GetLeftMargin() - gPad->GetRightMargin());
-      double aspect_ratio = aspect_vert / aspect_horiz;
-      repetition_hists_IV[s/4][s%4]->GetXaxis()->SetTickLength(0.06 * aspect_ratio);
-      repetition_hists_IV[s/4][s%4]->GetYaxis()->SetTickLength(0.06 / aspect_ratio);
-      repetition_hists_IV[s/4][s%4]->GetXaxis()->SetLabelSize(0.08 * aspect_horiz);
-      repetition_hists_IV[s/4][s%4]->GetXaxis()->SetLabelOffset(0.02 / aspect_horiz/aspect_horiz);
-      repetition_hists_IV[s/4][s%4]->GetXaxis()->SetTitleSize(0.09 * aspect_horiz);
-      repetition_hists_IV[s/4][s%4]->GetXaxis()->SetTitleOffset(1 / aspect_horiz);
-      repetition_hists_IV[s/4][s%4]->GetYaxis()->SetLabelSize(0.08 * aspect_vert);
-      repetition_hists_IV[s/4][s%4]->GetYaxis()->SetLabelOffset(0.02 / aspect_vert);
-      repetition_hists_IV[s/4][s%4]->GetYaxis()->SetLabelOffset(0.02 / aspect_vert);
-      repetition_hists_IV[s/4][s%4]->GetYaxis()->SetTitleSize(0.09 * aspect_vert);
+      // Draw some text giving info on the setup
+      gCanvas_cassetteplot->cd();
+      TLatex* top_tex[6];
+      top_tex[0] = drawText("#bf{Debrecen} SiPM Test Setup @ #bf{Yale}",                 0.025, 0.91, false, kBlack, 0.04);
+      top_tex[1] = drawText("#bf{ePIC} Test Stand",                                      0.025, 0.955, false, kBlack, 0.045);
+      top_tex[2] = drawText(Form("Hamamatsu #bf{%s}", Hamamatsu_SiPM_Code),              0.995, 0.95, true, kBlack, 0.045);
+      top_tex[3] = drawText(Form("%s", string_tempcorr[global_flag_run_at_25_celcius]),  0.995, 0.905, true, kBlack, 0.035);
+      top_tex[4] = drawText("IV Reproducibility",                                        0.42, 0.95, false, kBlack, 0.045);
+      top_tex[5] = drawText(Form("Tray #bf{%s}: (Set %i)#times#color[2]{%i}",
+                                 base_tray_id.c_str(), r,total_trays),                   0.40, 0.905, false, kBlack, 0.035);
       
-      // Draw the hist and helpful visual features
-      repetition_hists_IV[s/4][s%4]->Draw("hist");
-      avg_line->DrawLine(avg_this_tray_IV, 0, avg_this_tray_IV, ylim);
       
-      forbidden_range_box->DrawBox(avg_this_tray_IV + volthist_range[0], 0, avg_this_tray_IV - 0.05, ylim);
-      forbidden_range_box->DrawBox(avg_this_tray_IV + 0.05, 0, avg_this_tray_IV + volthist_range[1], ylim);
+      gCanvas_cassetteplot->SaveAs(Form("../plots/systematic_plots/reproducibility%s/%s-set%i-rep%lu-IV.pdf",
+                                        string_tempcorr_short[global_flag_run_at_25_celcius],base_tray_id.c_str(), r, tray_indices.size()));
       
-      dev_line->DrawLine(avg_this_tray_IV+0.05, 0, avg_this_tray_IV+0.05, ylim);
-      dev_line->DrawLine(avg_this_tray_IV-0.05, 0, avg_this_tray_IV-0.05,  ylim);
+      // *------- SPS Plots
       
-      // Label this SiPM
-      std::pair<int, int> sipm_tray_index = gReader->GetTrayIndexFromTestIndex(r, s);
-      drawText(Form("(%i,%i)",sipm_tray_index.first, sipm_tray_index.second),
-               gPad->GetLeftMargin() + 0.2*aspect_horiz, gPad->GetBottomMargin() + 0.86*aspect_vert,
-               false, kBlack, 0.1*std::sqrt(aspect_horiz*aspect_vert));
-    }
-    
-    // Draw some text giving info on the setup
-    gCanvas_cassetteplot->cd();
-    TLatex* top_tex[6];
-    top_tex[0] = drawText("#bf{Debrecen} SiPM Test Setup @ #bf{Yale}",                 0.025, 0.91, false, kBlack, 0.04);
-    top_tex[1] = drawText("#bf{ePIC} Test Stand",                                      0.025, 0.955, false, kBlack, 0.045);
-    top_tex[2] = drawText(Form("Hamamatsu #bf{%s}", Hamamatsu_SiPM_Code),              0.995, 0.95, true, kBlack, 0.045);
-    top_tex[3] = drawText(Form("%s", string_tempcorr[global_flag_run_at_25_celcius]),  0.995, 0.905, true, kBlack, 0.035);
-    top_tex[4] = drawText("IV Reproducibility",                                        0.42, 0.95, false, kBlack, 0.045);
-    top_tex[5] = drawText(Form("Tray #bf{%s}: (Set %i)#times#color[2]{%i}",
-                               base_tray_id.c_str(), r,total_trays),                   0.40, 0.905, false, kBlack, 0.035);
-    
-    
-    gCanvas_cassetteplot->SaveAs(Form("../plots/systematic_plots/reproducibility%s/%s-set%i-rep%lu-IV.pdf",
-                                      string_tempcorr_short[global_flag_run_at_25_celcius],base_tray_id.c_str(), r, tray_indices.size()));
-    
-    // *------- SPS Plots
-    
-    for (int s = 0; s < 32; ++s) {
-      cassette_pads[3-s%4][7-s/4]->cd();
-      gPad->SetTicks(1,1);
-      // Ensure all pads have the same tick sizes
-      double aspect_vert = (1 - gPad->GetTopMargin() - gPad->GetBottomMargin());
-      double aspect_horiz = (1 - gPad->GetLeftMargin() - gPad->GetRightMargin());
-      double aspect_ratio = aspect_vert / aspect_horiz;
-      repetition_hists_SPS[s/4][s%4]->GetXaxis()->SetTickLength(0.06 * aspect_ratio);
-      repetition_hists_SPS[s/4][s%4]->GetYaxis()->SetTickLength(0.06 / aspect_ratio);
-      repetition_hists_SPS[s/4][s%4]->GetXaxis()->SetLabelSize(0.08 * aspect_horiz);
-      repetition_hists_SPS[s/4][s%4]->GetXaxis()->SetLabelOffset(0.02 / aspect_horiz/aspect_horiz);
-      repetition_hists_SPS[s/4][s%4]->GetXaxis()->SetTitleSize(0.09 * aspect_horiz);
-      repetition_hists_SPS[s/4][s%4]->GetXaxis()->SetTitleOffset(1 / aspect_horiz);
-      repetition_hists_SPS[s/4][s%4]->GetYaxis()->SetLabelSize(0.08 * aspect_vert);
-      repetition_hists_SPS[s/4][s%4]->GetYaxis()->SetLabelOffset(0.02 / aspect_vert);
-      repetition_hists_SPS[s/4][s%4]->GetYaxis()->SetLabelOffset(0.02 / aspect_vert);
-      repetition_hists_SPS[s/4][s%4]->GetYaxis()->SetTitleSize(0.09 * aspect_vert);
-      repetition_hists_SPS[s/4][s%4]->Draw("hist");
-      avg_line->DrawLine(avg_this_tray_SPS, 0, avg_this_tray_SPS, ylim);
+      for (int s = 0; s < 32; ++s) {
+        cassette_pads[3-s%4][7-s/4]->cd();
+        gPad->SetTicks(1,1);
+        // Ensure all pads have the same tick sizes
+        double aspect_vert = (1 - gPad->GetTopMargin() - gPad->GetBottomMargin());
+        double aspect_horiz = (1 - gPad->GetLeftMargin() - gPad->GetRightMargin());
+        double aspect_ratio = aspect_vert / aspect_horiz;
+        repetition_hists_SPS[s/4][s%4]->GetXaxis()->SetTickLength(0.06 * aspect_ratio);
+        repetition_hists_SPS[s/4][s%4]->GetYaxis()->SetTickLength(0.06 / aspect_ratio);
+        repetition_hists_SPS[s/4][s%4]->GetXaxis()->SetLabelSize(0.08 * aspect_horiz);
+        repetition_hists_SPS[s/4][s%4]->GetXaxis()->SetLabelOffset(0.02 / aspect_horiz/aspect_horiz);
+        repetition_hists_SPS[s/4][s%4]->GetXaxis()->SetTitleSize(0.09 * aspect_horiz);
+        repetition_hists_SPS[s/4][s%4]->GetXaxis()->SetTitleOffset(1 / aspect_horiz);
+        repetition_hists_SPS[s/4][s%4]->GetYaxis()->SetLabelSize(0.08 * aspect_vert);
+        repetition_hists_SPS[s/4][s%4]->GetYaxis()->SetLabelOffset(0.02 / aspect_vert);
+        repetition_hists_SPS[s/4][s%4]->GetYaxis()->SetLabelOffset(0.02 / aspect_vert);
+        repetition_hists_SPS[s/4][s%4]->GetYaxis()->SetTitleSize(0.09 * aspect_vert);
+        repetition_hists_SPS[s/4][s%4]->Draw("hist");
+        avg_line->DrawLine(avg_this_tray_SPS, 0, avg_this_tray_SPS, ylim);
+        
+        forbidden_range_box->DrawBox(avg_this_tray_SPS + volthist_range[0], 0, avg_this_tray_SPS - 0.05, ylim);
+        forbidden_range_box->DrawBox(avg_this_tray_SPS + 0.05, 0, avg_this_tray_SPS + volthist_range[1], ylim);
+        
+        dev_line->DrawLine(avg_this_tray_SPS+0.05, 0, avg_this_tray_SPS+0.05, ylim);
+        dev_line->DrawLine(avg_this_tray_SPS-0.05, 0, avg_this_tray_SPS-0.05,  ylim);
+        
+        std::pair<int, int> sipm_tray_index = gReader->GetTrayIndexFromTestIndex(r, s);
+        drawText(Form("(%i,%i)",sipm_tray_index.first, sipm_tray_index.second),
+                 gPad->GetLeftMargin() + 0.2*aspect_horiz, gPad->GetBottomMargin() + 0.86*aspect_vert,
+                 false, kBlack, 0.1*std::sqrt(aspect_horiz*aspect_vert));
+      }
       
-      forbidden_range_box->DrawBox(avg_this_tray_SPS + volthist_range[0], 0, avg_this_tray_SPS - 0.05, ylim);
-      forbidden_range_box->DrawBox(avg_this_tray_SPS + 0.05, 0, avg_this_tray_SPS + volthist_range[1], ylim);
+      // Correct the IV text to SPS
+      gCanvas_cassetteplot->cd();
+      top_tex[4]->Clear();
+      top_tex[4] = drawText("SPS Reproducibility", 0.415, 0.95, false, kBlack, 0.045);
       
-      dev_line->DrawLine(avg_this_tray_SPS+0.05, 0, avg_this_tray_SPS+0.05, ylim);
-      dev_line->DrawLine(avg_this_tray_SPS-0.05, 0, avg_this_tray_SPS-0.05,  ylim);
+      gCanvas_cassetteplot->SaveAs(Form("../plots/systematic_plots/reproducibility%s/%s-set%i-rep%lu-SPS.pdf",
+                                        string_tempcorr_short[global_flag_run_at_25_celcius],base_tray_id.c_str(), r, tray_indices.size()));
       
-      std::pair<int, int> sipm_tray_index = gReader->GetTrayIndexFromTestIndex(r, s);
-      drawText(Form("(%i,%i)",sipm_tray_index.first, sipm_tray_index.second),
-               gPad->GetLeftMargin() + 0.2*aspect_horiz, gPad->GetBottomMargin() + 0.86*aspect_vert,
-               false, kBlack, 0.1*std::sqrt(aspect_horiz*aspect_vert));
-    }
-    
-    // Correct the IV text to SPS
-    gCanvas_cassetteplot->cd();
-    top_tex[4]->Clear();
-    top_tex[4] = drawText("SPS Reproducibility", 0.415, 0.95, false, kBlack, 0.045);
-    
-    gCanvas_cassetteplot->SaveAs(Form("../plots/systematic_plots/reproducibility%s/%s-set%i-rep%lu-SPS.pdf",
-                                      string_tempcorr_short[global_flag_run_at_25_celcius],base_tray_id.c_str(), r, tray_indices.size()));
-    
-    // Clear latex for next run
-    for (int iTex = 0; iTex < 6; ++iTex) top_tex[iTex]->Clear();
-    
-    // Clear repetition hists
-    for (int s = 0; s < 32; ++s) {
-      delete repetition_hists_IV[s/4][s%4];
-      delete repetition_hists_SPS[s/4][s%4];
-    }
+      // Clear latex for next run
+      for (int iTex = 0; iTex < 6; ++iTex) top_tex[iTex]->Clear();
+      
+      // Clear repetition hists
+      for (int s = 0; s < 32; ++s) {
+        delete repetition_hists_IV[s/4][s%4];
+        delete repetition_hists_SPS[s/4][s%4];
+      }
+    } // End of plot drawing
   }// End of repetition/measurement set loop
   return;
 }// End of systematic_analysis_summary::makeReproducabilityHist
