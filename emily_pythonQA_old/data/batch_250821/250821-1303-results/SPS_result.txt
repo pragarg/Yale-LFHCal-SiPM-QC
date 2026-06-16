@@ -1,0 +1,5520 @@
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_0_0
+Vbd: 37.754V @ 23.16C
+Vbd: 37.817 +/- 0.021V @ 25C
+Steepness: 93.062 +/- 0.579
+Chi2/NDF: 0.151
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 471.135
+Average temperature: 23.156 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_0_10
+Vbd: 37.747V @ 23.49C
+Vbd: 37.798 +/- 0.029V @ 25C
+Steepness: 92.404 +/- 0.655
+Chi2/NDF: 0.121
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 466.747
+Average temperature: 23.492 +/- 0.007C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_0_11
+Vbd: 37.773V @ 23.91C
+Vbd: 37.810 +/- 0.020V @ 25C
+Steepness: 92.531 +/- 0.522
+Chi2/NDF: 0.094
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 466.065
+Average temperature: 23.914 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_0_12
+Vbd: 37.740V @ 23.94C
+Vbd: 37.776 +/- 0.022V @ 25C
+Steepness: 93.195 +/- 0.517
+Chi2/NDF: 0.175
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.333
+Average temperature: 23.939 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_0_1
+Vbd: 37.756V @ 23.61C
+Vbd: 37.803 +/- 0.023V @ 25C
+Steepness: 92.656 +/- 0.575
+Chi2/NDF: 0.168
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.652
+Average temperature: 23.609 +/- 0.007C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_0_13
+Vbd: 37.728V @ 23.39C
+Vbd: 37.783 +/- 0.025V @ 25C
+Steepness: 92.624 +/- 0.491
+Chi2/NDF: 0.096
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.18
+Average temperature: 23.389 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_0_14
+Vbd: 37.723V @ 23.42C
+Vbd: 37.777 +/- 0.026V @ 25C
+Steepness: 93.185 +/- 0.659
+Chi2/NDF: 0.160
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 470.926
+Average temperature: 23.416 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_0_15
+Vbd: 37.746V @ 23.83C
+Vbd: 37.786 +/- 0.020V @ 25C
+Steepness: 93.299 +/- 0.523
+Chi2/NDF: 0.325
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 470.188
+Average temperature: 23.834 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_0_16
+Vbd: 37.746V @ 23.78C
+Vbd: 37.787 +/- 0.013V @ 25C
+Steepness: 92.833 +/- 0.356
+Chi2/NDF: 1.273
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.01
+Average temperature: 23.780 +/- 0.007C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_0_17
+Vbd: 37.718V @ 23.40C
+Vbd: 37.772 +/- 0.032V @ 25C
+Steepness: 92.322 +/- 0.702
+Chi2/NDF: 0.036
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 466.604
+Average temperature: 23.405 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_0_18
+Vbd: 37.769V @ 23.80C
+Vbd: 37.810 +/- 0.018V @ 25C
+Steepness: 92.486 +/- 0.451
+Chi2/NDF: 0.143
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 466.178
+Average temperature: 23.805 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_0_19
+Vbd: 37.741V @ 23.92C
+Vbd: 37.778 +/- 0.022V @ 25C
+Steepness: 92.606 +/- 0.554
+Chi2/NDF: 0.048
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 466.404
+Average temperature: 23.924 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_0_2
+Vbd: 37.730V @ 23.71C
+Vbd: 37.773 +/- 0.026V @ 25C
+Steepness: 92.597 +/- 0.643
+Chi2/NDF: 0.086
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.037
+Average temperature: 23.709 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_0_3
+Vbd: 37.755V @ 23.66C
+Vbd: 37.800 +/- 0.026V @ 25C
+Steepness: 93.324 +/- 0.623
+Chi2/NDF: 0.097
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 470.856
+Average temperature: 23.655 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_0_4
+Vbd: 37.761V @ 23.99C
+Vbd: 37.795 +/- 0.021V @ 25C
+Steepness: 92.867 +/- 0.483
+Chi2/NDF: 0.276
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.505
+Average temperature: 23.994 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_0_5
+Vbd: 37.737V @ 23.80C
+Vbd: 37.778 +/- 0.028V @ 25C
+Steepness: 92.737 +/- 0.706
+Chi2/NDF: 0.073
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.446
+Average temperature: 23.801 +/- 0.007C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_0_6
+Vbd: 37.709V @ 23.57C
+Vbd: 37.758 +/- 0.032V @ 25C
+Steepness: 92.716 +/- 0.619
+Chi2/NDF: 0.031
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.078
+Average temperature: 23.566 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_0_7
+Vbd: 37.744V @ 23.19C
+Vbd: 37.805 +/- 0.018V @ 25C
+Steepness: 92.562 +/- 0.472
+Chi2/NDF: 0.175
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.491
+Average temperature: 23.194 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_0_8
+Vbd: 37.716V @ 23.67C
+Vbd: 37.761 +/- 0.018V @ 25C
+Steepness: 93.012 +/- 0.504
+Chi2/NDF: 0.109
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.274
+Average temperature: 23.666 +/- 0.007C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_0_9
+Vbd: 37.712V @ 23.55C
+Vbd: 37.761 +/- 0.023V @ 25C
+Steepness: 92.778 +/- 0.589
+Chi2/NDF: 0.213
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.454
+Average temperature: 23.552 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_10_0
+Vbd: 37.721V @ 23.34C
+Vbd: 37.778 +/- 0.014V @ 25C
+Steepness: 93.112 +/- 0.395
+Chi2/NDF: 0.680
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 470.807
+Average temperature: 23.340 +/- 0.000C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_10_10
+Vbd: 37.733V @ 23.75C
+Vbd: 37.775 +/- 0.014V @ 25C
+Steepness: 92.243 +/- 0.180
+Chi2/NDF: 0.921
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 465.123
+Average temperature: 23.753 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_10_11
+Vbd: 37.745V @ 23.65C
+Vbd: 37.791 +/- 0.018V @ 25C
+Steepness: 93.215 +/- 0.489
+Chi2/NDF: 0.157
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 470.348
+Average temperature: 23.651 +/- 0.003C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_10_12
+Vbd: 37.746V @ 23.97C
+Vbd: 37.781 +/- 0.019V @ 25C
+Steepness: 92.952 +/- 0.501
+Chi2/NDF: 0.218
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.013
+Average temperature: 23.969 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_10_1
+Vbd: 37.749V @ 23.56C
+Vbd: 37.798 +/- 0.024V @ 25C
+Steepness: 93.053 +/- 0.573
+Chi2/NDF: 0.101
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.801
+Average temperature: 23.560 +/- 0.000C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_10_13
+Vbd: 37.684V @ 23.66C
+Vbd: 37.729 +/- 0.034V @ 25C
+Steepness: 92.728 +/- 0.784
+Chi2/NDF: 0.074
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.84
+Average temperature: 23.662 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_10_14
+Vbd: 37.660V @ 23.59C
+Vbd: 37.708 +/- 0.025V @ 25C
+Steepness: 92.606 +/- 0.618
+Chi2/NDF: 0.090
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.449
+Average temperature: 23.592 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_10_15
+Vbd: 37.749V @ 23.48C
+Vbd: 37.800 +/- 0.028V @ 25C
+Steepness: 92.879 +/- 0.680
+Chi2/NDF: 0.038
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.196
+Average temperature: 23.480 +/- 0.000C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_10_16
+Vbd: 37.765V @ 23.87C
+Vbd: 37.804 +/- 0.019V @ 25C
+Steepness: 93.344 +/- 0.477
+Chi2/NDF: 0.115
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 470.305
+Average temperature: 23.867 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_10_17
+Vbd: 37.726V @ 23.69C
+Vbd: 37.770 +/- 0.016V @ 25C
+Steepness: 93.838 +/- 0.355
+Chi2/NDF: 0.146
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 473.382
+Average temperature: 23.686 +/- 0.008C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_10_18
+Vbd: 37.737V @ 23.69C
+Vbd: 37.781 +/- 0.020V @ 25C
+Steepness: 93.189 +/- 0.462
+Chi2/NDF: 0.519
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 470.077
+Average temperature: 23.692 +/- 0.003C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_10_19
+Vbd: 37.764V @ 23.97C
+Vbd: 37.798 +/- 0.026V @ 25C
+Steepness: 92.650 +/- 0.636
+Chi2/NDF: 0.061
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 466.476
+Average temperature: 23.973 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_10_2
+Vbd: 37.788V @ 23.92C
+Vbd: 37.825 +/- 0.018V @ 25C
+Steepness: 93.799 +/- 0.513
+Chi2/NDF: 0.276
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 472.452
+Average temperature: 23.915 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_1_0
+Vbd: 37.765V @ 23.16C
+Vbd: 37.828 +/- 0.025V @ 25C
+Steepness: 92.649 +/- 0.586
+Chi2/NDF: 0.097
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.036
+Average temperature: 23.162 +/- 0.003C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_10_3
+Vbd: 37.748V @ 23.76C
+Vbd: 37.790 +/- 0.019V @ 25C
+Steepness: 92.941 +/- 0.467
+Chi2/NDF: 0.193
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.627
+Average temperature: 23.757 +/- 0.003C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_10_4
+Vbd: 37.746V @ 23.62C
+Vbd: 37.793 +/- 0.021V @ 25C
+Steepness: 93.055 +/- 0.476
+Chi2/NDF: 0.136
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.614
+Average temperature: 23.624 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_10_5
+Vbd: 37.776V @ 23.98C
+Vbd: 37.811 +/- 0.019V @ 25C
+Steepness: 92.888 +/- 0.494
+Chi2/NDF: 0.214
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.642
+Average temperature: 23.983 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_10_6
+Vbd: 37.778V @ 23.80C
+Vbd: 37.819 +/- 0.025V @ 25C
+Steepness: 92.580 +/- 0.586
+Chi2/NDF: 0.169
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 466.659
+Average temperature: 23.801 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_10_7
+Vbd: 37.727V @ 23.37C
+Vbd: 37.782 +/- 0.022V @ 25C
+Steepness: 92.559 +/- 0.522
+Chi2/NDF: 0.103
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.905
+Average temperature: 23.374 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_10_8
+Vbd: 37.685V @ 23.38C
+Vbd: 37.740 +/- 0.023V @ 25C
+Steepness: 92.468 +/- 0.565
+Chi2/NDF: 0.107
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.444
+Average temperature: 23.376 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_10_9
+Vbd: 37.759V @ 23.80C
+Vbd: 37.800 +/- 0.020V @ 25C
+Steepness: 92.739 +/- 0.528
+Chi2/NDF: 0.317
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.479
+Average temperature: 23.799 +/- 0.007C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_1_10
+Vbd: 37.772V @ 23.51C
+Vbd: 37.822 +/- 0.023V @ 25C
+Steepness: 92.367 +/- 0.562
+Chi2/NDF: 0.161
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 466.513
+Average temperature: 23.513 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_11_0
+Vbd: 37.729V @ 23.35C
+Vbd: 37.785 +/- 0.018V @ 25C
+Steepness: 92.725 +/- 0.480
+Chi2/NDF: 0.212
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.818
+Average temperature: 23.352 +/- 0.008C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_11_10
+Vbd: 37.768V @ 23.77C
+Vbd: 37.810 +/- 0.017V @ 25C
+Steepness: 92.905 +/- 0.386
+Chi2/NDF: 0.883
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.422
+Average temperature: 23.766 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_11_11
+Vbd: 37.720V @ 23.70C
+Vbd: 37.765 +/- 0.008V @ 25C
+Steepness: 92.540 +/- 0.176
+Chi2/NDF: 0.314
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 466.79
+Average temperature: 23.699 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_11_12
+Vbd: 37.722V @ 23.98C
+Vbd: 37.756 +/- 0.022V @ 25C
+Steepness: 92.866 +/- 0.533
+Chi2/NDF: 0.189
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.557
+Average temperature: 23.980 +/- 0.000C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_1_11
+Vbd: 37.763V @ 23.88C
+Vbd: 37.801 +/- 0.020V @ 25C
+Steepness: 92.699 +/- 0.518
+Chi2/NDF: 0.222
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.039
+Average temperature: 23.875 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_11_1
+Vbd: 37.751V @ 23.58C
+Vbd: 37.800 +/- 0.033V @ 25C
+Steepness: 93.038 +/- 0.769
+Chi2/NDF: 0.070
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.648
+Average temperature: 23.581 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_11_13
+Vbd: 37.656V @ 23.60C
+Vbd: 37.704 +/- 0.027V @ 25C
+Steepness: 92.453 +/- 0.598
+Chi2/NDF: 0.092
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 466.644
+Average temperature: 23.602 +/- 0.008C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_11_14
+Vbd: 37.704V @ 23.61C
+Vbd: 37.751 +/- 0.023V @ 25C
+Steepness: 93.047 +/- 0.580
+Chi2/NDF: 0.195
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.613
+Average temperature: 23.612 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_11_15
+Vbd: 37.695V @ 23.46C
+Vbd: 37.747 +/- 0.014V @ 25C
+Steepness: 92.898 +/- 0.332
+Chi2/NDF: 0.771
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.335
+Average temperature: 23.465 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_11_16
+Vbd: 37.704V @ 23.88C
+Vbd: 37.742 +/- 0.021V @ 25C
+Steepness: 93.146 +/- 0.462
+Chi2/NDF: 0.077
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.275
+Average temperature: 23.879 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_11_17
+Vbd: 37.685V @ 23.60C
+Vbd: 37.733 +/- 0.029V @ 25C
+Steepness: 92.964 +/- 0.679
+Chi2/NDF: 0.192
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.248
+Average temperature: 23.596 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_11_18
+Vbd: 37.722V @ 23.70C
+Vbd: 37.766 +/- 0.013V @ 25C
+Steepness: 92.827 +/- 0.268
+Chi2/NDF: 0.745
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.236
+Average temperature: 23.699 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_11_19
+Vbd: 37.710V @ 23.34C
+Vbd: 37.767 +/- 0.029V @ 25C
+Steepness: 93.288 +/- 0.718
+Chi2/NDF: 0.265
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 471.7
+Average temperature: 23.340 +/- 0.000C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_1_12
+Vbd: 37.751V @ 23.95C
+Vbd: 37.787 +/- 0.025V @ 25C
+Steepness: 93.175 +/- 0.609
+Chi2/NDF: 0.174
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.202
+Average temperature: 23.946 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_11_2
+Vbd: 37.769V @ 23.93C
+Vbd: 37.805 +/- 0.020V @ 25C
+Steepness: 93.490 +/- 0.537
+Chi2/NDF: 0.097
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 470.82
+Average temperature: 23.934 +/- 0.009C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_1_1
+Vbd: 37.756V @ 23.68C
+Vbd: 37.801 +/- 0.017V @ 25C
+Steepness: 93.110 +/- 0.449
+Chi2/NDF: 0.395
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.74
+Average temperature: 23.675 +/- 0.011C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_1_13
+Vbd: 37.763V @ 23.44C
+Vbd: 37.816 +/- 0.017V @ 25C
+Steepness: 93.027 +/- 0.482
+Chi2/NDF: 0.442
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 470.071
+Average temperature: 23.438 +/- 0.010C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_11_3
+Vbd: 37.730V @ 23.91C
+Vbd: 37.767 +/- 0.010V @ 25C
+Steepness: 93.142 +/- 0.200
+Chi2/NDF: 0.319
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.158
+Average temperature: 23.910 +/- 0.000C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_1_14
+Vbd: 37.711V @ 23.43C
+Vbd: 37.764 +/- 0.026V @ 25C
+Steepness: 92.932 +/- 0.620
+Chi2/NDF: 0.147
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.603
+Average temperature: 23.432 +/- 0.008C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_11_4
+Vbd: 37.748V @ 23.63C
+Vbd: 37.794 +/- 0.024V @ 25C
+Steepness: 93.388 +/- 0.585
+Chi2/NDF: 0.168
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 471.279
+Average temperature: 23.631 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_1_15
+Vbd: 37.785V @ 23.82C
+Vbd: 37.825 +/- 0.015V @ 25C
+Steepness: 93.526 +/- 0.429
+Chi2/NDF: 0.373
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 471.397
+Average temperature: 23.817 +/- 0.007C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_11_5
+Vbd: 37.791V @ 23.93C
+Vbd: 37.827 +/- 0.017V @ 25C
+Steepness: 93.258 +/- 0.469
+Chi2/NDF: 0.209
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.653
+Average temperature: 23.934 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_1_16
+Vbd: 37.751V @ 23.80C
+Vbd: 37.791 +/- 0.014V @ 25C
+Steepness: 92.577 +/- 0.183
+Chi2/NDF: 1.408
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 466.665
+Average temperature: 23.796 +/- 0.007C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_11_6
+Vbd: 37.772V @ 23.81C
+Vbd: 37.813 +/- 0.034V @ 25C
+Steepness: 92.647 +/- 0.801
+Chi2/NDF: 0.067
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 466.967
+Average temperature: 23.810 +/- 0.000C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_1_17
+Vbd: 37.746V @ 23.44C
+Vbd: 37.799 +/- 0.017V @ 25C
+Steepness: 92.677 +/- 0.422
+Chi2/NDF: 0.209
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.296
+Average temperature: 23.443 +/- 0.009C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_11_7
+Vbd: 37.706V @ 23.41C
+Vbd: 37.760 +/- 0.017V @ 25C
+Steepness: 92.642 +/- 0.453
+Chi2/NDF: 0.253
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.207
+Average temperature: 23.411 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_1_18
+Vbd: 37.789V @ 23.81C
+Vbd: 37.829 +/- 0.017V @ 25C
+Steepness: 92.909 +/- 0.468
+Chi2/NDF: 0.266
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.292
+Average temperature: 23.813 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_11_8
+Vbd: 37.662V @ 23.39C
+Vbd: 37.717 +/- 0.032V @ 25C
+Steepness: 92.663 +/- 0.743
+Chi2/NDF: 0.108
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.38
+Average temperature: 23.385 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_1_19
+Vbd: 37.669V @ 23.86C
+Vbd: 37.708 +/- 0.029V @ 25C
+Steepness: 92.196 +/- 0.645
+Chi2/NDF: 0.084
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 464.544
+Average temperature: 23.855 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_11_9
+Vbd: 37.772V @ 23.77C
+Vbd: 37.814 +/- 0.023V @ 25C
+Steepness: 92.799 +/- 0.556
+Chi2/NDF: 0.150
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.861
+Average temperature: 23.771 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_12_0
+Vbd: 37.752V @ 23.40C
+Vbd: 37.806 +/- 0.024V @ 25C
+Steepness: 92.314 +/- 0.599
+Chi2/NDF: 0.100
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 466.593
+Average temperature: 23.396 +/- 0.008C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_12_10
+Vbd: 37.741V @ 23.68C
+Vbd: 37.786 +/- 0.029V @ 25C
+Steepness: 92.817 +/- 0.698
+Chi2/NDF: 0.265
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.234
+Average temperature: 23.681 +/- 0.007C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_12_11
+Vbd: 37.742V @ 23.70C
+Vbd: 37.786 +/- 0.015V @ 25C
+Steepness: 92.640 +/- 0.402
+Chi2/NDF: 0.507
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.276
+Average temperature: 23.705 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_12_12
+Vbd: 37.714V @ 23.21C
+Vbd: 37.775 +/- 0.033V @ 25C
+Steepness: 92.777 +/- 0.783
+Chi2/NDF: 0.125
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.496
+Average temperature: 23.211 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_12_1
+Vbd: 37.741V @ 23.59C
+Vbd: 37.789 +/- 0.030V @ 25C
+Steepness: 93.081 +/- 0.716
+Chi2/NDF: 0.112
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.849
+Average temperature: 23.590 +/- 0.000C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_12_13
+Vbd: 37.705V @ 23.62C
+Vbd: 37.751 +/- 0.030V @ 25C
+Steepness: 92.655 +/- 0.676
+Chi2/NDF: 0.202
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.584
+Average temperature: 23.624 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_12_14
+Vbd: 37.775V @ 23.58C
+Vbd: 37.823 +/- 0.020V @ 25C
+Steepness: 92.917 +/- 0.491
+Chi2/NDF: 0.183
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.071
+Average temperature: 23.580 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_12_15
+Vbd: 37.711V @ 23.48C
+Vbd: 37.762 +/- 0.031V @ 25C
+Steepness: 92.865 +/- 0.713
+Chi2/NDF: 0.267
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.124
+Average temperature: 23.476 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_12_16
+Vbd: 37.778V @ 23.93C
+Vbd: 37.815 +/- 0.014V @ 25C
+Steepness: 93.162 +/- 0.335
+Chi2/NDF: 0.421
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.21
+Average temperature: 23.926 +/- 0.010C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_12_17
+Vbd: 37.760V @ 23.62C
+Vbd: 37.807 +/- 0.028V @ 25C
+Steepness: 92.870 +/- 0.714
+Chi2/NDF: 0.081
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.704
+Average temperature: 23.618 +/- 0.008C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_12_18
+Vbd: 37.698V @ 23.70C
+Vbd: 37.742 +/- 0.024V @ 25C
+Steepness: 92.162 +/- 0.191
+Chi2/NDF: 0.346
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 464.892
+Average temperature: 23.695 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_12_19
+Vbd: 37.723V @ 23.34C
+Vbd: 37.780 +/- 0.029V @ 25C
+Steepness: 92.895 +/- 0.701
+Chi2/NDF: 0.049
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.712
+Average temperature: 23.341 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_12_2
+Vbd: 37.778V @ 23.92C
+Vbd: 37.815 +/- 0.011V @ 25C
+Steepness: 93.749 +/- 0.355
+Chi2/NDF: 0.275
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 472.18
+Average temperature: 23.922 +/- 0.003C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_1_2
+Vbd: 37.725V @ 23.71C
+Vbd: 37.769 +/- 0.019V @ 25C
+Steepness: 92.680 +/- 0.428
+Chi2/NDF: 0.074
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.448
+Average temperature: 23.715 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_12_3
+Vbd: 37.741V @ 23.92C
+Vbd: 37.778 +/- 0.020V @ 25C
+Steepness: 93.343 +/- 0.458
+Chi2/NDF: 1.501
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 470.141
+Average temperature: 23.916 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_12_4
+Vbd: 37.731V @ 23.69C
+Vbd: 37.775 +/- 0.014V @ 25C
+Steepness: 93.164 +/- 0.360
+Chi2/NDF: 0.615
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.988
+Average temperature: 23.685 +/- 0.003C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_12_5
+Vbd: 37.791V @ 23.94C
+Vbd: 37.827 +/- 0.024V @ 25C
+Steepness: 93.148 +/- 0.600
+Chi2/NDF: 0.146
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.086
+Average temperature: 23.944 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_12_6
+Vbd: 37.777V @ 23.74C
+Vbd: 37.820 +/- 0.028V @ 25C
+Steepness: 92.433 +/- 0.645
+Chi2/NDF: 0.117
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 466.125
+Average temperature: 23.736 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_12_7
+Vbd: 37.703V @ 23.43C
+Vbd: 37.756 +/- 0.022V @ 25C
+Steepness: 92.430 +/- 0.562
+Chi2/NDF: 0.271
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.069
+Average temperature: 23.433 +/- 0.008C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_12_8
+Vbd: 37.726V @ 23.38C
+Vbd: 37.781 +/- 0.014V @ 25C
+Steepness: 92.239 +/- 0.339
+Chi2/NDF: 0.916
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 466.283
+Average temperature: 23.376 +/- 0.003C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_12_9
+Vbd: 37.735V @ 23.78C
+Vbd: 37.777 +/- 0.021V @ 25C
+Steepness: 92.813 +/- 0.533
+Chi2/NDF: 0.157
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.893
+Average temperature: 23.783 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_13_0
+Vbd: 37.738V @ 23.42C
+Vbd: 37.792 +/- 0.022V @ 25C
+Steepness: 92.568 +/- 0.540
+Chi2/NDF: 0.274
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.816
+Average temperature: 23.416 +/- 0.007C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_13_10
+Vbd: 37.734V @ 23.70C
+Vbd: 37.778 +/- 0.034V @ 25C
+Steepness: 92.457 +/- 0.811
+Chi2/NDF: 0.093
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 466.338
+Average temperature: 23.697 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_13_11
+Vbd: 37.728V @ 23.70C
+Vbd: 37.772 +/- 0.016V @ 25C
+Steepness: 92.259 +/- 0.450
+Chi2/NDF: 0.292
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 465.366
+Average temperature: 23.701 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_13_12
+Vbd: 37.702V @ 23.22C
+Vbd: 37.762 +/- 0.027V @ 25C
+Steepness: 92.354 +/- 0.678
+Chi2/NDF: 0.533
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.347
+Average temperature: 23.221 +/- 0.003C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_13_1
+Vbd: 37.723V @ 23.57C
+Vbd: 37.771 +/- 0.013V @ 25C
+Steepness: 92.785 +/- 0.144
+Chi2/NDF: 1.299
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.426
+Average temperature: 23.571 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_13_13
+Vbd: 37.734V @ 23.68C
+Vbd: 37.779 +/- 0.020V @ 25C
+Steepness: 93.092 +/- 0.522
+Chi2/NDF: 0.174
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.628
+Average temperature: 23.683 +/- 0.010C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_13_14
+Vbd: 37.715V @ 23.59C
+Vbd: 37.763 +/- 0.013V @ 25C
+Steepness: 93.701 +/- 0.415
+Chi2/NDF: 0.401
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 472.989
+Average temperature: 23.590 +/- 0.000C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_13_15
+Vbd: 37.739V @ 23.52C
+Vbd: 37.789 +/- 0.026V @ 25C
+Steepness: 92.691 +/- 0.593
+Chi2/NDF: 0.075
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.111
+Average temperature: 23.521 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_13_16
+Vbd: 37.733V @ 23.95C
+Vbd: 37.769 +/- 0.019V @ 25C
+Steepness: 92.381 +/- 0.518
+Chi2/NDF: 0.129
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 465.211
+Average temperature: 23.946 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_13_17
+Vbd: 37.731V @ 23.73C
+Vbd: 37.775 +/- 0.015V @ 25C
+Steepness: 92.891 +/- 0.425
+Chi2/NDF: 0.114
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.461
+Average temperature: 23.729 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_13_18
+Vbd: 37.729V @ 23.70C
+Vbd: 37.773 +/- 0.021V @ 25C
+Steepness: 92.440 +/- 0.450
+Chi2/NDF: 0.200
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 466.284
+Average temperature: 23.700 +/- 0.000C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_13_19
+Vbd: 37.670V @ 23.37C
+Vbd: 37.725 +/- 0.028V @ 25C
+Steepness: 92.559 +/- 0.636
+Chi2/NDF: 0.125
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.907
+Average temperature: 23.368 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_13_2
+Vbd: 37.783V @ 23.93C
+Vbd: 37.819 +/- 0.017V @ 25C
+Steepness: 93.862 +/- 0.457
+Chi2/NDF: 0.361
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 472.717
+Average temperature: 23.932 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_1_3
+Vbd: 37.742V @ 23.70C
+Vbd: 37.786 +/- 0.032V @ 25C
+Steepness: 92.986 +/- 0.744
+Chi2/NDF: 0.097
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.027
+Average temperature: 23.696 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_13_3
+Vbd: 37.749V @ 23.83C
+Vbd: 37.789 +/- 0.024V @ 25C
+Steepness: 93.160 +/- 0.595
+Chi2/NDF: 0.105
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.494
+Average temperature: 23.829 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_13_4
+Vbd: 37.748V @ 23.70C
+Vbd: 37.792 +/- 0.017V @ 25C
+Steepness: 93.664 +/- 0.402
+Chi2/NDF: 0.788
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 472.471
+Average temperature: 23.696 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_13_5
+Vbd: 37.702V @ 23.43C
+Vbd: 37.756 +/- 0.025V @ 25C
+Steepness: 93.485 +/- 0.570
+Chi2/NDF: 1.130
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 472.401
+Average temperature: 23.431 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_13_6
+Vbd: 37.786V @ 23.75C
+Vbd: 37.829 +/- 0.027V @ 25C
+Steepness: 92.742 +/- 0.667
+Chi2/NDF: 0.114
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.625
+Average temperature: 23.754 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_13_7
+Vbd: 37.707V @ 23.40C
+Vbd: 37.761 +/- 0.019V @ 25C
+Steepness: 93.271 +/- 0.506
+Chi2/NDF: 0.476
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 471.403
+Average temperature: 23.405 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_13_8
+Vbd: 37.738V @ 23.38C
+Vbd: 37.793 +/- 0.021V @ 25C
+Steepness: 92.276 +/- 0.524
+Chi2/NDF: 0.063
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 466.458
+Average temperature: 23.381 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_13_9
+Vbd: 37.712V @ 23.85C
+Vbd: 37.751 +/- 0.017V @ 25C
+Steepness: 92.857 +/- 0.428
+Chi2/NDF: 0.303
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.9
+Average temperature: 23.854 +/- 0.010C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_14_0
+Vbd: 37.767V @ 23.39C
+Vbd: 37.821 +/- 0.015V @ 25C
+Steepness: 92.956 +/- 0.238
+Chi2/NDF: 0.437
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.859
+Average temperature: 23.390 +/- 0.007C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_14_10
+Vbd: 37.735V @ 23.80C
+Vbd: 37.776 +/- 0.029V @ 25C
+Steepness: 92.267 +/- 0.661
+Chi2/NDF: 0.072
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 465.084
+Average temperature: 23.800 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_14_11
+Vbd: 37.734V @ 23.71C
+Vbd: 37.778 +/- 0.023V @ 25C
+Steepness: 92.829 +/- 0.561
+Chi2/NDF: 0.055
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.223
+Average temperature: 23.707 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_14_12
+Vbd: 37.697V @ 23.25C
+Vbd: 37.756 +/- 0.030V @ 25C
+Steepness: 92.365 +/- 0.680
+Chi2/NDF: 0.112
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.32
+Average temperature: 23.246 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_14_1
+Vbd: 37.737V @ 23.58C
+Vbd: 37.786 +/- 0.030V @ 25C
+Steepness: 92.710 +/- 0.664
+Chi2/NDF: 0.113
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.998
+Average temperature: 23.582 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_14_13
+Vbd: 37.743V @ 23.70C
+Vbd: 37.787 +/- 0.025V @ 25C
+Steepness: 92.687 +/- 0.607
+Chi2/NDF: 0.110
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.507
+Average temperature: 23.703 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_14_14
+Vbd: 37.712V @ 23.74C
+Vbd: 37.755 +/- 0.009V @ 25C
+Steepness: 93.471 +/- 0.254
+Chi2/NDF: 1.365
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 471.345
+Average temperature: 23.743 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_14_15
+Vbd: 37.670V @ 23.54C
+Vbd: 37.719 +/- 0.024V @ 25C
+Steepness: 92.669 +/- 0.540
+Chi2/NDF: 0.269
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.938
+Average temperature: 23.539 +/- 0.007C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_14_16
+Vbd: 37.773V @ 23.91C
+Vbd: 37.811 +/- 0.015V @ 25C
+Steepness: 92.762 +/- 0.323
+Chi2/NDF: 0.499
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.26
+Average temperature: 23.905 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_14_17
+Vbd: 37.684V @ 23.74C
+Vbd: 37.727 +/- 0.032V @ 25C
+Steepness: 92.946 +/- 0.761
+Chi2/NDF: 0.102
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.718
+Average temperature: 23.735 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_14_18
+Vbd: 37.703V @ 23.73C
+Vbd: 37.746 +/- 0.016V @ 25C
+Steepness: 92.981 +/- 0.437
+Chi2/NDF: 0.381
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.898
+Average temperature: 23.733 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_14_19
+Vbd: 37.684V @ 23.38C
+Vbd: 37.739 +/- 0.016V @ 25C
+Steepness: 92.972 +/- 0.479
+Chi2/NDF: 0.190
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.972
+Average temperature: 23.381 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_14_2
+Vbd: 37.790V @ 23.98C
+Vbd: 37.825 +/- 0.016V @ 25C
+Steepness: 93.780 +/- 0.412
+Chi2/NDF: 0.532
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 472.145
+Average temperature: 23.983 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_1_4
+Vbd: 37.764V @ 24.01C
+Vbd: 37.798 +/- 0.022V @ 25C
+Steepness: 93.125 +/- 0.562
+Chi2/NDF: 0.090
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.747
+Average temperature: 24.014 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_14_3
+Vbd: 37.766V @ 23.84C
+Vbd: 37.805 +/- 0.023V @ 25C
+Steepness: 93.344 +/- 0.615
+Chi2/NDF: 0.088
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 470.401
+Average temperature: 23.839 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_14_4
+Vbd: 37.752V @ 23.69C
+Vbd: 37.796 +/- 0.022V @ 25C
+Steepness: 92.645 +/- 0.525
+Chi2/NDF: 0.381
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.35
+Average temperature: 23.686 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_14_5
+Vbd: 37.669V @ 23.44C
+Vbd: 37.722 +/- 0.028V @ 25C
+Steepness: 92.715 +/- 0.680
+Chi2/NDF: 0.103
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.506
+Average temperature: 23.436 +/- 0.003C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_14_6
+Vbd: 37.775V @ 23.81C
+Vbd: 37.816 +/- 0.018V @ 25C
+Steepness: 93.028 +/- 0.485
+Chi2/NDF: 0.293
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.9
+Average temperature: 23.811 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_14_7
+Vbd: 37.693V @ 23.41C
+Vbd: 37.747 +/- 0.018V @ 25C
+Steepness: 93.134 +/- 0.253
+Chi2/NDF: 0.130
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 470.706
+Average temperature: 23.411 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_14_8
+Vbd: 37.734V @ 23.44C
+Vbd: 37.787 +/- 0.023V @ 25C
+Steepness: 92.426 +/- 0.515
+Chi2/NDF: 0.167
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.038
+Average temperature: 23.436 +/- 0.009C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_14_9
+Vbd: 37.687V @ 23.88C
+Vbd: 37.726 +/- 0.035V @ 25C
+Steepness: 92.717 +/- 0.807
+Chi2/NDF: 0.061
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.118
+Average temperature: 23.877 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_15_0
+Vbd: 37.746V @ 23.41C
+Vbd: 37.800 +/- 0.021V @ 25C
+Steepness: 92.527 +/- 0.537
+Chi2/NDF: 0.299
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.643
+Average temperature: 23.406 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_15_10
+Vbd: 37.758V @ 23.81C
+Vbd: 37.799 +/- 0.034V @ 25C
+Steepness: 92.241 +/- 0.808
+Chi2/NDF: 0.078
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 464.9
+Average temperature: 23.810 +/- 0.000C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_15_11
+Vbd: 37.751V @ 23.75C
+Vbd: 37.793 +/- 0.027V @ 25C
+Steepness: 92.387 +/- 0.649
+Chi2/NDF: 0.165
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 465.833
+Average temperature: 23.750 +/- 0.008C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_15_12
+Vbd: 37.709V @ 23.27C
+Vbd: 37.767 +/- 0.024V @ 25C
+Steepness: 92.606 +/- 0.573
+Chi2/NDF: 0.192
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.483
+Average temperature: 23.266 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_15_1
+Vbd: 37.733V @ 23.63C
+Vbd: 37.780 +/- 0.016V @ 25C
+Steepness: 92.941 +/- 0.419
+Chi2/NDF: 0.230
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.031
+Average temperature: 23.629 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_15_13
+Vbd: 37.691V @ 23.70C
+Vbd: 37.735 +/- 0.012V @ 25C
+Steepness: 92.878 +/- 0.256
+Chi2/NDF: 0.144
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.489
+Average temperature: 23.701 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_15_14
+Vbd: 37.731V @ 23.76C
+Vbd: 37.773 +/- 0.022V @ 25C
+Steepness: 93.337 +/- 0.576
+Chi2/NDF: 0.097
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 470.616
+Average temperature: 23.757 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_15_15
+Vbd: 37.727V @ 23.57C
+Vbd: 37.775 +/- 0.020V @ 25C
+Steepness: 92.621 +/- 0.474
+Chi2/NDF: 0.257
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.581
+Average temperature: 23.575 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_15_16
+Vbd: 37.751V @ 23.91C
+Vbd: 37.788 +/- 0.013V @ 25C
+Steepness: 92.432 +/- 0.383
+Chi2/NDF: 0.330
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 465.583
+Average temperature: 23.911 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_15_17
+Vbd: 37.697V @ 23.67C
+Vbd: 37.742 +/- 0.026V @ 25C
+Steepness: 92.839 +/- 0.586
+Chi2/NDF: 0.077
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.38
+Average temperature: 23.670 +/- 0.008C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_15_18
+Vbd: 37.767V @ 23.75C
+Vbd: 37.809 +/- 0.018V @ 25C
+Steepness: 92.721 +/- 0.472
+Chi2/NDF: 0.141
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.53
+Average temperature: 23.751 +/- 0.007C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_15_19
+Vbd: 37.662V @ 23.37C
+Vbd: 37.718 +/- 0.013V @ 25C
+Steepness: 93.000 +/- 0.224
+Chi2/NDF: 1.342
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 470.162
+Average temperature: 23.366 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_15_2
+Vbd: 37.757V @ 24.00C
+Vbd: 37.791 +/- 0.027V @ 25C
+Steepness: 93.149 +/- 0.635
+Chi2/NDF: 0.077
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.912
+Average temperature: 23.998 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_1_5
+Vbd: 37.767V @ 23.90C
+Vbd: 37.804 +/- 0.031V @ 25C
+Steepness: 92.886 +/- 0.737
+Chi2/NDF: 0.080
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.901
+Average temperature: 23.895 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_15_3
+Vbd: 37.744V @ 23.94C
+Vbd: 37.780 +/- 0.028V @ 25C
+Steepness: 92.912 +/- 0.636
+Chi2/NDF: 0.084
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.889
+Average temperature: 23.941 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_15_4
+Vbd: 37.762V @ 23.69C
+Vbd: 37.806 +/- 0.015V @ 25C
+Steepness: 93.028 +/- 0.425
+Chi2/NDF: 0.086
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.28
+Average temperature: 23.692 +/- 0.003C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_15_5
+Vbd: 37.708V @ 23.46C
+Vbd: 37.760 +/- 0.029V @ 25C
+Steepness: 92.998 +/- 0.691
+Chi2/NDF: 0.132
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.862
+Average temperature: 23.456 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_15_6
+Vbd: 37.768V @ 23.83C
+Vbd: 37.808 +/- 0.026V @ 25C
+Steepness: 92.678 +/- 0.621
+Chi2/NDF: 0.126
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.056
+Average temperature: 23.828 +/- 0.008C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_15_7
+Vbd: 37.728V @ 23.57C
+Vbd: 37.777 +/- 0.013V @ 25C
+Steepness: 93.233 +/- 0.184
+Chi2/NDF: 1.560
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 470.687
+Average temperature: 23.573 +/- 0.007C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_15_8
+Vbd: 37.761V @ 23.45C
+Vbd: 37.814 +/- 0.020V @ 25C
+Steepness: 92.682 +/- 0.506
+Chi2/NDF: 0.121
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.287
+Average temperature: 23.451 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_15_9
+Vbd: 37.687V @ 23.81C
+Vbd: 37.727 +/- 0.021V @ 25C
+Steepness: 92.298 +/- 0.445
+Chi2/NDF: 0.084
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 465.209
+Average temperature: 23.813 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_16_0
+Vbd: 37.742V @ 23.56C
+Vbd: 37.791 +/- 0.011V @ 25C
+Steepness: 92.842 +/- 0.296
+Chi2/NDF: 0.410
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.747
+Average temperature: 23.563 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_16_10
+Vbd: 37.751V @ 23.74C
+Vbd: 37.794 +/- 0.026V @ 25C
+Steepness: 92.385 +/- 0.570
+Chi2/NDF: 0.243
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 465.869
+Average temperature: 23.745 +/- 0.007C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_16_11
+Vbd: 37.778V @ 23.77C
+Vbd: 37.820 +/- 0.018V @ 25C
+Steepness: 92.996 +/- 0.468
+Chi2/NDF: 0.183
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.889
+Average temperature: 23.766 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_16_12
+Vbd: 37.721V @ 23.25C
+Vbd: 37.781 +/- 0.008V @ 25C
+Steepness: 92.590 +/- 0.157
+Chi2/NDF: 1.724
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.464
+Average temperature: 23.248 +/- 0.007C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_16_1
+Vbd: 37.743V @ 23.64C
+Vbd: 37.790 +/- 0.029V @ 25C
+Steepness: 92.556 +/- 0.636
+Chi2/NDF: 0.096
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.056
+Average temperature: 23.637 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_16_13
+Vbd: 37.716V @ 23.72C
+Vbd: 37.760 +/- 0.021V @ 25C
+Steepness: 92.947 +/- 0.450
+Chi2/NDF: 0.179
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.795
+Average temperature: 23.716 +/- 0.007C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_16_14
+Vbd: 37.752V @ 23.67C
+Vbd: 37.797 +/- 0.028V @ 25C
+Steepness: 92.205 +/- 0.658
+Chi2/NDF: 0.101
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 465.194
+Average temperature: 23.669 +/- 0.007C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_16_15
+Vbd: 37.747V @ 23.59C
+Vbd: 37.795 +/- 0.020V @ 25C
+Steepness: 92.802 +/- 0.478
+Chi2/NDF: 0.312
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.458
+Average temperature: 23.587 +/- 0.003C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_16_16
+Vbd: 37.730V @ 23.29C
+Vbd: 37.788 +/- 0.029V @ 25C
+Steepness: 92.563 +/- 0.689
+Chi2/NDF: 0.075
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.198
+Average temperature: 23.289 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_16_17
+Vbd: 37.728V @ 23.69C
+Vbd: 37.772 +/- 0.033V @ 25C
+Steepness: 92.268 +/- 0.748
+Chi2/NDF: 0.084
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 465.411
+Average temperature: 23.692 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_16_18
+Vbd: 37.719V @ 23.72C
+Vbd: 37.762 +/- 0.023V @ 25C
+Steepness: 93.262 +/- 0.573
+Chi2/NDF: 0.218
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 470.386
+Average temperature: 23.717 +/- 0.003C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_16_19
+Vbd: 37.729V @ 23.37C
+Vbd: 37.784 +/- 0.027V @ 25C
+Steepness: 93.355 +/- 0.670
+Chi2/NDF: 0.142
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 471.926
+Average temperature: 23.373 +/- 0.003C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_16_2
+Vbd: 37.771V @ 23.95C
+Vbd: 37.806 +/- 0.020V @ 25C
+Steepness: 93.562 +/- 0.433
+Chi2/NDF: 0.127
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 471.139
+Average temperature: 23.951 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_1_6
+Vbd: 37.701V @ 23.57C
+Vbd: 37.749 +/- 0.021V @ 25C
+Steepness: 93.153 +/- 0.568
+Chi2/NDF: 0.401
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 470.27
+Average temperature: 23.574 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_16_3
+Vbd: 37.755V @ 23.95C
+Vbd: 37.791 +/- 0.030V @ 25C
+Steepness: 93.051 +/- 0.707
+Chi2/NDF: 0.086
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.564
+Average temperature: 23.948 +/- 0.003C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_16_4
+Vbd: 37.759V @ 23.73C
+Vbd: 37.802 +/- 0.020V @ 25C
+Steepness: 93.290 +/- 0.531
+Chi2/NDF: 0.284
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 470.479
+Average temperature: 23.728 +/- 0.003C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_16_5
+Vbd: 37.711V @ 23.47C
+Vbd: 37.763 +/- 0.029V @ 25C
+Steepness: 92.878 +/- 0.685
+Chi2/NDF: 0.219
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.21
+Average temperature: 23.469 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_16_6
+Vbd: 37.788V @ 23.81C
+Vbd: 37.828 +/- 0.012V @ 25C
+Steepness: 93.334 +/- 0.372
+Chi2/NDF: 0.281
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 470.443
+Average temperature: 23.810 +/- 0.000C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_16_7
+Vbd: 37.736V @ 23.59C
+Vbd: 37.784 +/- 0.006V @ 25C
+Steepness: 93.501 +/- 0.223
+Chi2/NDF: 1.751
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 471.99
+Average temperature: 23.589 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_16_8
+Vbd: 37.684V @ 23.49C
+Vbd: 37.735 +/- 0.015V @ 25C
+Steepness: 93.360 +/- 0.331
+Chi2/NDF: 0.535
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 471.592
+Average temperature: 23.488 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_16_9
+Vbd: 37.743V @ 23.83C
+Vbd: 37.783 +/- 0.020V @ 25C
+Steepness: 92.550 +/- 0.501
+Chi2/NDF: 0.101
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 466.435
+Average temperature: 23.826 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_17_0
+Vbd: 37.752V @ 23.58C
+Vbd: 37.800 +/- 0.011V @ 25C
+Steepness: 92.557 +/- 0.336
+Chi2/NDF: 0.799
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.24
+Average temperature: 23.583 +/- 0.008C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_17_10
+Vbd: 37.770V @ 23.76C
+Vbd: 37.812 +/- 0.034V @ 25C
+Steepness: 92.395 +/- 0.778
+Chi2/NDF: 0.112
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 465.835
+Average temperature: 23.761 +/- 0.007C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_17_11
+Vbd: 37.739V @ 23.73C
+Vbd: 37.782 +/- 0.019V @ 25C
+Steepness: 93.180 +/- 0.449
+Chi2/NDF: 0.255
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.912
+Average temperature: 23.730 +/- 0.000C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_17_12
+Vbd: 37.709V @ 23.26C
+Vbd: 37.769 +/- 0.023V @ 25C
+Steepness: 92.690 +/- 0.590
+Chi2/NDF: 0.096
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.913
+Average temperature: 23.263 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_17_1
+Vbd: 37.744V @ 23.68C
+Vbd: 37.788 +/- 0.013V @ 25C
+Steepness: 92.509 +/- 0.240
+Chi2/NDF: 0.829
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 466.693
+Average temperature: 23.681 +/- 0.003C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_17_13
+Vbd: 37.711V @ 23.77C
+Vbd: 37.753 +/- 0.019V @ 25C
+Steepness: 92.857 +/- 0.420
+Chi2/NDF: 0.253
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.173
+Average temperature: 23.769 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_17_14
+Vbd: 37.782V @ 23.69C
+Vbd: 37.826 +/- 0.022V @ 25C
+Steepness: 92.777 +/- 0.577
+Chi2/NDF: 0.147
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.004
+Average temperature: 23.691 +/- 0.007C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_17_15
+Vbd: 37.702V @ 23.59C
+Vbd: 37.750 +/- 0.020V @ 25C
+Steepness: 91.389 +/- 0.472
+Chi2/NDF: 0.407
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 461.323
+Average temperature: 23.589 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_17_16
+Vbd: 37.708V @ 23.30C
+Vbd: 37.766 +/- 0.027V @ 25C
+Steepness: 92.461 +/- 0.671
+Chi2/NDF: 0.178
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.644
+Average temperature: 23.299 +/- 0.003C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_17_17
+Vbd: 37.744V @ 23.75C
+Vbd: 37.787 +/- 0.025V @ 25C
+Steepness: 92.388 +/- 0.595
+Chi2/NDF: 0.143
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 465.847
+Average temperature: 23.755 +/- 0.007C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_17_18
+Vbd: 37.745V @ 23.72C
+Vbd: 37.788 +/- 0.021V @ 25C
+Steepness: 93.240 +/- 0.548
+Chi2/NDF: 0.212
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 470.247
+Average temperature: 23.723 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_17_19
+Vbd: 37.713V @ 23.42C
+Vbd: 37.767 +/- 0.025V @ 25C
+Steepness: 93.044 +/- 0.573
+Chi2/NDF: 0.165
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 470.22
+Average temperature: 23.419 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_17_2
+Vbd: 37.776V @ 23.96C
+Vbd: 37.812 +/- 0.012V @ 25C
+Steepness: 94.001 +/- 0.401
+Chi2/NDF: 0.289
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 473.335
+Average temperature: 23.956 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_1_7
+Vbd: 37.707V @ 23.22C
+Vbd: 37.768 +/- 0.026V @ 25C
+Steepness: 92.752 +/- 0.616
+Chi2/NDF: 0.081
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.363
+Average temperature: 23.221 +/- 0.008C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_17_3
+Vbd: 37.728V @ 23.87C
+Vbd: 37.766 +/- 0.026V @ 25C
+Steepness: 92.819 +/- 0.600
+Chi2/NDF: 0.129
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.632
+Average temperature: 23.874 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_17_4
+Vbd: 37.756V @ 23.74C
+Vbd: 37.799 +/- 0.015V @ 25C
+Steepness: 93.279 +/- 0.449
+Chi2/NDF: 0.453
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 470.389
+Average temperature: 23.736 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_17_5
+Vbd: 37.688V @ 23.45C
+Vbd: 37.741 +/- 0.011V @ 25C
+Steepness: 92.553 +/- 0.175
+Chi2/NDF: 0.698
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.628
+Average temperature: 23.454 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_17_6
+Vbd: 37.749V @ 23.82C
+Vbd: 37.790 +/- 0.017V @ 25C
+Steepness: 93.005 +/- 0.458
+Chi2/NDF: 0.077
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.766
+Average temperature: 23.816 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_17_7
+Vbd: 37.727V @ 23.51C
+Vbd: 37.777 +/- 0.022V @ 25C
+Steepness: 92.976 +/- 0.571
+Chi2/NDF: 0.099
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.572
+Average temperature: 23.510 +/- 0.008C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_17_8
+Vbd: 37.664V @ 23.51C
+Vbd: 37.715 +/- 0.019V @ 25C
+Steepness: 92.875 +/- 0.488
+Chi2/NDF: 0.352
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.085
+Average temperature: 23.506 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_17_9
+Vbd: 37.769V @ 23.41C
+Vbd: 37.823 +/- 0.025V @ 25C
+Steepness: 92.660 +/- 0.630
+Chi2/NDF: 0.153
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.302
+Average temperature: 23.409 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_18_0
+Vbd: 37.732V @ 23.51C
+Vbd: 37.783 +/- 0.039V @ 25C
+Steepness: 92.589 +/- 0.892
+Chi2/NDF: 0.080
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.619
+Average temperature: 23.506 +/- 0.011C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_18_10
+Vbd: 37.768V @ 23.82C
+Vbd: 37.808 +/- 0.018V @ 25C
+Steepness: 92.726 +/- 0.491
+Chi2/NDF: 0.123
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.35
+Average temperature: 23.818 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_18_11
+Vbd: 37.733V @ 23.73C
+Vbd: 37.777 +/- 0.019V @ 25C
+Steepness: 92.559 +/- 0.521
+Chi2/NDF: 0.233
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 466.794
+Average temperature: 23.730 +/- 0.000C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_18_12
+Vbd: 37.707V @ 23.31C
+Vbd: 37.765 +/- 0.027V @ 25C
+Steepness: 92.455 +/- 0.616
+Chi2/NDF: 0.124
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.56
+Average temperature: 23.314 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_18_1
+Vbd: 37.738V @ 23.69C
+Vbd: 37.783 +/- 0.013V @ 25C
+Steepness: 92.449 +/- 0.331
+Chi2/NDF: 0.832
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 466.352
+Average temperature: 23.692 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_18_13
+Vbd: 37.688V @ 23.79C
+Vbd: 37.729 +/- 0.021V @ 25C
+Steepness: 93.110 +/- 0.566
+Chi2/NDF: 0.188
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.367
+Average temperature: 23.791 +/- 0.009C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_18_14
+Vbd: 37.756V @ 23.79C
+Vbd: 37.797 +/- 0.024V @ 25C
+Steepness: 92.306 +/- 0.553
+Chi2/NDF: 0.076
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 465.293
+Average temperature: 23.795 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_18_15
+Vbd: 37.731V @ 23.59C
+Vbd: 37.779 +/- 0.018V @ 25C
+Steepness: 92.201 +/- 0.481
+Chi2/NDF: 0.126
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 465.413
+Average temperature: 23.591 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_18_16
+Vbd: 37.699V @ 23.32C
+Vbd: 37.756 +/- 0.031V @ 25C
+Steepness: 92.287 +/- 0.732
+Chi2/NDF: 0.179
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 466.689
+Average temperature: 23.320 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_18_17
+Vbd: 37.777V @ 23.77C
+Vbd: 37.819 +/- 0.027V @ 25C
+Steepness: 92.406 +/- 0.660
+Chi2/NDF: 0.146
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 465.872
+Average temperature: 23.774 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_18_18
+Vbd: 37.728V @ 23.88C
+Vbd: 37.766 +/- 0.011V @ 25C
+Steepness: 93.256 +/- 0.301
+Chi2/NDF: 0.528
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.83
+Average temperature: 23.880 +/- 0.000C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_18_19
+Vbd: 37.693V @ 23.44C
+Vbd: 37.746 +/- 0.023V @ 25C
+Steepness: 93.192 +/- 0.576
+Chi2/NDF: 0.226
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 470.91
+Average temperature: 23.436 +/- 0.008C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_18_2
+Vbd: 37.769V @ 23.65C
+Vbd: 37.815 +/- 0.015V @ 25C
+Steepness: 94.079 +/- 0.345
+Chi2/NDF: 0.168
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 474.713
+Average temperature: 23.648 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_1_8
+Vbd: 37.729V @ 23.69C
+Vbd: 37.774 +/- 0.018V @ 25C
+Steepness: 93.331 +/- 0.360
+Chi2/NDF: 0.350
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 470.819
+Average temperature: 23.688 +/- 0.008C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_18_3
+Vbd: 37.752V @ 23.88C
+Vbd: 37.790 +/- 0.029V @ 25C
+Steepness: 93.176 +/- 0.704
+Chi2/NDF: 0.106
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.402
+Average temperature: 23.881 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_18_4
+Vbd: 37.733V @ 23.70C
+Vbd: 37.777 +/- 0.018V @ 25C
+Steepness: 92.757 +/- 0.464
+Chi2/NDF: 0.176
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.884
+Average temperature: 23.701 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_18_5
+Vbd: 37.689V @ 23.46C
+Vbd: 37.741 +/- 0.023V @ 25C
+Steepness: 92.741 +/- 0.585
+Chi2/NDF: 0.127
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.546
+Average temperature: 23.459 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_18_6
+Vbd: 37.750V @ 23.88C
+Vbd: 37.788 +/- 0.016V @ 25C
+Steepness: 92.971 +/- 0.403
+Chi2/NDF: 0.162
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.379
+Average temperature: 23.883 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_18_7
+Vbd: 37.706V @ 23.53C
+Vbd: 37.756 +/- 0.027V @ 25C
+Steepness: 92.938 +/- 0.654
+Chi2/NDF: 0.065
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.323
+Average temperature: 23.527 +/- 0.008C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_18_8
+Vbd: 37.623V @ 23.51C
+Vbd: 37.674 +/- 0.036V @ 25C
+Steepness: 91.922 +/- 0.840
+Chi2/NDF: 0.092
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 464.246
+Average temperature: 23.506 +/- 0.007C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_18_9
+Vbd: 37.694V @ 23.41C
+Vbd: 37.749 +/- 0.027V @ 25C
+Steepness: 92.245 +/- 0.642
+Chi2/NDF: 0.133
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 466.203
+Average temperature: 23.411 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_19_0
+Vbd: 37.760V @ 23.52C
+Vbd: 37.811 +/- 0.025V @ 25C
+Steepness: 92.851 +/- 0.643
+Chi2/NDF: 0.087
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.9
+Average temperature: 23.525 +/- 0.008C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_19_10
+Vbd: 37.765V @ 23.84C
+Vbd: 37.804 +/- 0.020V @ 25C
+Steepness: 92.547 +/- 0.491
+Chi2/NDF: 0.185
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 466.393
+Average temperature: 23.837 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_19_11
+Vbd: 37.755V @ 23.90C
+Vbd: 37.792 +/- 0.017V @ 25C
+Steepness: 92.897 +/- 0.389
+Chi2/NDF: 0.679
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.966
+Average temperature: 23.898 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_19_12
+Vbd: 37.724V @ 23.33C
+Vbd: 37.781 +/- 0.027V @ 25C
+Steepness: 92.810 +/- 0.595
+Chi2/NDF: 0.105
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.305
+Average temperature: 23.331 +/- 0.007C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_19_1
+Vbd: 37.752V @ 23.69C
+Vbd: 37.797 +/- 0.022V @ 25C
+Steepness: 92.402 +/- 0.524
+Chi2/NDF: 0.197
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 466.117
+Average temperature: 23.690 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_19_13
+Vbd: 37.759V @ 23.75C
+Vbd: 37.802 +/- 0.015V @ 25C
+Steepness: 92.992 +/- 0.428
+Chi2/NDF: 0.321
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.903
+Average temperature: 23.751 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_19_14
+Vbd: 37.751V @ 23.81C
+Vbd: 37.792 +/- 0.024V @ 25C
+Steepness: 92.175 +/- 0.571
+Chi2/NDF: 0.095
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 464.593
+Average temperature: 23.809 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_19_15
+Vbd: 37.730V @ 23.63C
+Vbd: 37.777 +/- 0.018V @ 25C
+Steepness: 92.732 +/- 0.505
+Chi2/NDF: 0.134
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.962
+Average temperature: 23.633 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_19_16
+Vbd: 37.715V @ 23.34C
+Vbd: 37.771 +/- 0.025V @ 25C
+Steepness: 92.285 +/- 0.546
+Chi2/NDF: 0.068
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 466.641
+Average temperature: 23.338 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_19_17
+Vbd: 37.781V @ 23.76C
+Vbd: 37.824 +/- 0.018V @ 25C
+Steepness: 92.914 +/- 0.382
+Chi2/NDF: 0.157
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.495
+Average temperature: 23.756 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_19_18
+Vbd: 37.734V @ 23.89C
+Vbd: 37.772 +/- 0.011V @ 25C
+Steepness: 93.995 +/- 0.304
+Chi2/NDF: 1.410
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 473.522
+Average temperature: 23.889 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_19_19
+Vbd: 37.725V @ 23.48C
+Vbd: 37.776 +/- 0.017V @ 25C
+Steepness: 93.266 +/- 0.318
+Chi2/NDF: 0.495
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 471.148
+Average temperature: 23.479 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_19_2
+Vbd: 37.753V @ 23.65C
+Vbd: 37.799 +/- 0.023V @ 25C
+Steepness: 93.373 +/- 0.566
+Chi2/NDF: 0.207
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 471.158
+Average temperature: 23.649 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_1_9
+Vbd: 37.660V @ 23.70C
+Vbd: 37.704 +/- 0.012V @ 25C
+Steepness: 92.531 +/- 0.316
+Chi2/NDF: 0.587
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 466.727
+Average temperature: 23.704 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_19_3
+Vbd: 37.757V @ 23.94C
+Vbd: 37.793 +/- 0.025V @ 25C
+Steepness: 93.382 +/- 0.614
+Chi2/NDF: 0.135
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 470.268
+Average temperature: 23.938 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_19_4
+Vbd: 37.739V @ 23.71C
+Vbd: 37.783 +/- 0.022V @ 25C
+Steepness: 92.714 +/- 0.554
+Chi2/NDF: 0.059
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.641
+Average temperature: 23.706 +/- 0.003C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_19_5
+Vbd: 37.718V @ 23.51C
+Vbd: 37.769 +/- 0.024V @ 25C
+Steepness: 93.053 +/- 0.558
+Chi2/NDF: 0.120
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.976
+Average temperature: 23.509 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_19_6
+Vbd: 37.763V @ 23.90C
+Vbd: 37.800 +/- 0.014V @ 25C
+Steepness: 93.151 +/- 0.429
+Chi2/NDF: 0.232
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.218
+Average temperature: 23.902 +/- 0.007C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_19_7
+Vbd: 37.724V @ 23.63C
+Vbd: 37.770 +/- 0.029V @ 25C
+Steepness: 92.761 +/- 0.655
+Chi2/NDF: 0.074
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.088
+Average temperature: 23.632 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_19_8
+Vbd: 37.713V @ 23.52C
+Vbd: 37.764 +/- 0.016V @ 25C
+Steepness: 93.032 +/- 0.467
+Chi2/NDF: 0.570
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.844
+Average temperature: 23.517 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_19_9
+Vbd: 37.725V @ 23.44C
+Vbd: 37.778 +/- 0.023V @ 25C
+Steepness: 92.454 +/- 0.570
+Chi2/NDF: 0.145
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.167
+Average temperature: 23.441 +/- 0.007C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_20_0
+Vbd: 37.771V @ 23.63C
+Vbd: 37.817 +/- 0.022V @ 25C
+Steepness: 92.707 +/- 0.450
+Chi2/NDF: 0.176
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.846
+Average temperature: 23.631 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_20_10
+Vbd: 37.756V @ 23.84C
+Vbd: 37.795 +/- 0.018V @ 25C
+Steepness: 92.958 +/- 0.494
+Chi2/NDF: 0.148
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.465
+Average temperature: 23.836 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_20_11
+Vbd: 37.796V @ 23.91C
+Vbd: 37.833 +/- 0.020V @ 25C
+Steepness: 93.181 +/- 0.525
+Chi2/NDF: 0.335
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.364
+Average temperature: 23.909 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_20_12
+Vbd: 37.709V @ 23.36C
+Vbd: 37.765 +/- 0.013V @ 25C
+Steepness: 93.258 +/- 0.307
+Chi2/NDF: 0.329
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 471.478
+Average temperature: 23.364 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_20_1
+Vbd: 37.751V @ 23.70C
+Vbd: 37.796 +/- 0.016V @ 25C
+Steepness: 92.742 +/- 0.423
+Chi2/NDF: 0.248
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.812
+Average temperature: 23.698 +/- 0.003C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_20_13
+Vbd: 37.736V @ 23.77C
+Vbd: 37.778 +/- 0.019V @ 25C
+Steepness: 93.023 +/- 0.508
+Chi2/NDF: 0.112
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.01
+Average temperature: 23.766 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_20_14
+Vbd: 37.735V @ 23.74C
+Vbd: 37.778 +/- 0.017V @ 25C
+Steepness: 92.362 +/- 0.413
+Chi2/NDF: 0.223
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 465.77
+Average temperature: 23.737 +/- 0.007C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_20_15
+Vbd: 37.743V @ 23.65C
+Vbd: 37.789 +/- 0.021V @ 25C
+Steepness: 92.650 +/- 0.526
+Chi2/NDF: 0.118
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.49
+Average temperature: 23.652 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_20_16
+Vbd: 37.724V @ 23.33C
+Vbd: 37.781 +/- 0.008V @ 25C
+Steepness: 92.923 +/- 0.227
+Chi2/NDF: 3.090
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.899
+Average temperature: 23.327 +/- 0.008C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_20_17
+Vbd: 37.751V @ 23.77C
+Vbd: 37.793 +/- 0.028V @ 25C
+Steepness: 92.493 +/- 0.662
+Chi2/NDF: 0.116
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 466.335
+Average temperature: 23.769 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_20_18
+Vbd: 37.763V @ 23.80C
+Vbd: 37.804 +/- 0.026V @ 25C
+Steepness: 92.954 +/- 0.569
+Chi2/NDF: 0.130
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.536
+Average temperature: 23.801 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_20_19
+Vbd: 37.749V @ 23.49C
+Vbd: 37.800 +/- 0.008V @ 25C
+Steepness: 93.278 +/- 0.248
+Chi2/NDF: 1.104
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 471.185
+Average temperature: 23.488 +/- 0.007C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_20_2
+Vbd: 37.771V @ 23.66C
+Vbd: 37.817 +/- 0.022V @ 25C
+Steepness: 93.171 +/- 0.542
+Chi2/NDF: 0.244
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 470.102
+Average temperature: 23.660 +/- 0.000C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_2_0
+Vbd: 37.726V @ 23.19C
+Vbd: 37.787 +/- 0.026V @ 25C
+Steepness: 92.211 +/- 0.619
+Chi2/NDF: 0.081
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 466.697
+Average temperature: 23.194 +/- 0.007C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_20_3
+Vbd: 37.752V @ 23.95C
+Vbd: 37.788 +/- 0.016V @ 25C
+Steepness: 93.334 +/- 0.453
+Chi2/NDF: 0.201
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 470
+Average temperature: 23.951 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_20_4
+Vbd: 37.725V @ 23.87C
+Vbd: 37.763 +/- 0.016V @ 25C
+Steepness: 92.855 +/- 0.379
+Chi2/NDF: 1.633
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.852
+Average temperature: 23.865 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_20_5
+Vbd: 37.757V @ 23.52C
+Vbd: 37.807 +/- 0.017V @ 25C
+Steepness: 93.538 +/- 0.464
+Chi2/NDF: 0.320
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 472.381
+Average temperature: 23.520 +/- 0.000C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_20_6
+Vbd: 37.751V @ 23.84C
+Vbd: 37.790 +/- 0.020V @ 25C
+Steepness: 93.012 +/- 0.507
+Chi2/NDF: 0.177
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.714
+Average temperature: 23.840 +/- 0.000C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_20_7
+Vbd: 37.759V @ 23.65C
+Vbd: 37.805 +/- 0.030V @ 25C
+Steepness: 93.531 +/- 0.713
+Chi2/NDF: 0.111
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 471.938
+Average temperature: 23.648 +/- 0.007C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_20_8
+Vbd: 37.719V @ 23.56C
+Vbd: 37.768 +/- 0.031V @ 25C
+Steepness: 92.171 +/- 0.687
+Chi2/NDF: 0.082
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 465.356
+Average temperature: 23.557 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_20_9
+Vbd: 37.723V @ 23.45C
+Vbd: 37.776 +/- 0.030V @ 25C
+Steepness: 92.546 +/- 0.688
+Chi2/NDF: 0.206
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.586
+Average temperature: 23.451 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_2_10
+Vbd: 37.785V @ 23.55C
+Vbd: 37.834 +/- 0.011V @ 25C
+Steepness: 92.892 +/- 0.294
+Chi2/NDF: 0.778
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.041
+Average temperature: 23.549 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_21_0
+Vbd: 37.767V @ 23.65C
+Vbd: 37.813 +/- 0.028V @ 25C
+Steepness: 92.678 +/- 0.679
+Chi2/NDF: 0.079
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.644
+Average temperature: 23.645 +/- 0.007C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_21_10
+Vbd: 37.734V @ 23.84C
+Vbd: 37.773 +/- 0.016V @ 25C
+Steepness: 93.055 +/- 0.425
+Chi2/NDF: 0.148
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.936
+Average temperature: 23.841 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_21_11
+Vbd: 37.770V @ 23.82C
+Vbd: 37.810 +/- 0.028V @ 25C
+Steepness: 92.913 +/- 0.691
+Chi2/NDF: 0.101
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.3
+Average temperature: 23.817 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_21_12
+Vbd: 37.709V @ 23.38C
+Vbd: 37.764 +/- 0.009V @ 25C
+Steepness: 93.299 +/- 0.260
+Chi2/NDF: 0.542
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 471.624
+Average temperature: 23.382 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_2_11
+Vbd: 37.772V @ 23.88C
+Vbd: 37.810 +/- 0.021V @ 25C
+Steepness: 92.779 +/- 0.473
+Chi2/NDF: 0.144
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.424
+Average temperature: 23.881 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_21_1
+Vbd: 37.741V @ 23.73C
+Vbd: 37.784 +/- 0.020V @ 25C
+Steepness: 92.142 +/- 0.520
+Chi2/NDF: 0.270
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 464.687
+Average temperature: 23.729 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_21_13
+Vbd: 37.717V @ 23.38C
+Vbd: 37.772 +/- 0.018V @ 25C
+Steepness: 93.099 +/- 0.486
+Chi2/NDF: 0.197
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 470.606
+Average temperature: 23.382 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_21_14
+Vbd: 37.732V @ 23.76C
+Vbd: 37.774 +/- 0.030V @ 25C
+Steepness: 92.825 +/- 0.701
+Chi2/NDF: 0.146
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.04
+Average temperature: 23.756 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_21_15
+Vbd: 37.770V @ 23.62C
+Vbd: 37.817 +/- 0.018V @ 25C
+Steepness: 93.153 +/- 0.472
+Chi2/NDF: 0.286
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 470.125
+Average temperature: 23.621 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_21_16
+Vbd: 37.709V @ 23.34C
+Vbd: 37.765 +/- 0.033V @ 25C
+Steepness: 92.645 +/- 0.763
+Chi2/NDF: 0.170
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.452
+Average temperature: 23.339 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_21_17
+Vbd: 37.774V @ 23.84C
+Vbd: 37.813 +/- 0.015V @ 25C
+Steepness: 92.521 +/- 0.376
+Chi2/NDF: 0.372
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 466.25
+Average temperature: 23.840 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_21_18
+Vbd: 37.701V @ 23.81C
+Vbd: 37.741 +/- 0.024V @ 25C
+Steepness: 92.888 +/- 0.602
+Chi2/NDF: 0.194
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.188
+Average temperature: 23.812 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_21_19
+Vbd: 37.732V @ 23.48C
+Vbd: 37.783 +/- 0.014V @ 25C
+Steepness: 92.816 +/- 0.373
+Chi2/NDF: 0.156
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.862
+Average temperature: 23.484 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_2_12
+Vbd: 37.758V @ 23.88C
+Vbd: 37.796 +/- 0.030V @ 25C
+Steepness: 93.067 +/- 0.713
+Chi2/NDF: 0.091
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.864
+Average temperature: 23.876 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_21_2
+Vbd: 37.767V @ 23.67C
+Vbd: 37.812 +/- 0.025V @ 25C
+Steepness: 93.222 +/- 0.617
+Chi2/NDF: 0.067
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 470.322
+Average temperature: 23.668 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_2_1
+Vbd: 37.773V @ 23.70C
+Vbd: 37.817 +/- 0.021V @ 25C
+Steepness: 93.015 +/- 0.549
+Chi2/NDF: 0.164
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.188
+Average temperature: 23.698 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_2_13
+Vbd: 37.724V @ 23.46C
+Vbd: 37.777 +/- 0.010V @ 25C
+Steepness: 92.532 +/- 0.319
+Chi2/NDF: 0.101
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.515
+Average temperature: 23.456 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_21_3
+Vbd: 37.745V @ 23.92C
+Vbd: 37.782 +/- 0.022V @ 25C
+Steepness: 93.213 +/- 0.564
+Chi2/NDF: 0.055
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.481
+Average temperature: 23.919 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_2_14
+Vbd: 37.696V @ 23.41C
+Vbd: 37.750 +/- 0.007V @ 25C
+Steepness: 92.602 +/- 0.119
+Chi2/NDF: 1.852
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.003
+Average temperature: 23.414 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_21_4
+Vbd: 37.744V @ 23.88C
+Vbd: 37.783 +/- 0.012V @ 25C
+Steepness: 93.187 +/- 0.188
+Chi2/NDF: 0.792
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.483
+Average temperature: 23.879 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_2_15
+Vbd: 37.751V @ 23.84C
+Vbd: 37.791 +/- 0.014V @ 25C
+Steepness: 93.476 +/- 0.407
+Chi2/NDF: 0.413
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 471.087
+Average temperature: 23.835 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_21_5
+Vbd: 37.738V @ 23.56C
+Vbd: 37.786 +/- 0.022V @ 25C
+Steepness: 93.419 +/- 0.500
+Chi2/NDF: 0.304
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 471.655
+Average temperature: 23.560 +/- 0.000C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_2_16
+Vbd: 37.753V @ 23.71C
+Vbd: 37.797 +/- 0.027V @ 25C
+Steepness: 92.690 +/- 0.664
+Chi2/NDF: 0.072
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.511
+Average temperature: 23.709 +/- 0.007C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_21_6
+Vbd: 37.715V @ 23.85C
+Vbd: 37.754 +/- 0.021V @ 25C
+Steepness: 93.034 +/- 0.470
+Chi2/NDF: 0.293
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.79
+Average temperature: 23.851 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_2_17
+Vbd: 37.758V @ 23.46C
+Vbd: 37.810 +/- 0.014V @ 25C
+Steepness: 92.629 +/- 0.344
+Chi2/NDF: 0.503
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.001
+Average temperature: 23.456 +/- 0.009C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_21_7
+Vbd: 37.740V @ 23.59C
+Vbd: 37.788 +/- 0.031V @ 25C
+Steepness: 93.283 +/- 0.717
+Chi2/NDF: 0.101
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 470.879
+Average temperature: 23.586 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_2_18
+Vbd: 37.747V @ 23.56C
+Vbd: 37.796 +/- 0.028V @ 25C
+Steepness: 92.580 +/- 0.697
+Chi2/NDF: 0.106
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.413
+Average temperature: 23.561 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_21_8
+Vbd: 37.747V @ 23.57C
+Vbd: 37.796 +/- 0.020V @ 25C
+Steepness: 92.319 +/- 0.522
+Chi2/NDF: 0.103
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 466.079
+Average temperature: 23.569 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_2_19
+Vbd: 37.768V @ 23.87C
+Vbd: 37.807 +/- 0.024V @ 25C
+Steepness: 92.843 +/- 0.585
+Chi2/NDF: 0.171
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.76
+Average temperature: 23.868 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_21_9
+Vbd: 37.678V @ 23.43C
+Vbd: 37.732 +/- 0.011V @ 25C
+Steepness: 92.084 +/- 0.282
+Chi2/NDF: 2.553
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 465.322
+Average temperature: 23.433 +/- 0.003C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_22_0
+Vbd: 37.776V @ 23.59C
+Vbd: 37.824 +/- 0.020V @ 25C
+Steepness: 92.933 +/- 0.528
+Chi2/NDF: 0.148
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.12
+Average temperature: 23.589 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_22_10
+Vbd: 37.760V @ 23.90C
+Vbd: 37.798 +/- 0.021V @ 25C
+Steepness: 92.712 +/- 0.470
+Chi2/NDF: 0.358
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.026
+Average temperature: 23.897 +/- 0.009C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_22_11
+Vbd: 37.751V @ 23.83C
+Vbd: 37.791 +/- 0.024V @ 25C
+Steepness: 92.921 +/- 0.571
+Chi2/NDF: 0.122
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.282
+Average temperature: 23.833 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_22_12
+Vbd: 37.742V @ 23.38C
+Vbd: 37.797 +/- 0.010V @ 25C
+Steepness: 92.430 +/- 0.184
+Chi2/NDF: 1.030
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.23
+Average temperature: 23.381 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_22_1
+Vbd: 37.736V @ 23.74C
+Vbd: 37.779 +/- 0.017V @ 25C
+Steepness: 92.530 +/- 0.293
+Chi2/NDF: 0.496
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 466.617
+Average temperature: 23.740 +/- 0.007C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_22_13
+Vbd: 37.707V @ 23.39C
+Vbd: 37.762 +/- 0.026V @ 25C
+Steepness: 92.879 +/- 0.636
+Chi2/NDF: 0.072
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.461
+Average temperature: 23.391 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_22_14
+Vbd: 37.729V @ 23.81C
+Vbd: 37.769 +/- 0.028V @ 25C
+Steepness: 93.028 +/- 0.730
+Chi2/NDF: 0.058
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.875
+Average temperature: 23.814 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_22_15
+Vbd: 37.736V @ 23.63C
+Vbd: 37.783 +/- 0.018V @ 25C
+Steepness: 92.970 +/- 0.461
+Chi2/NDF: 0.226
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.183
+Average temperature: 23.629 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_22_16
+Vbd: 37.704V @ 23.38C
+Vbd: 37.759 +/- 0.024V @ 25C
+Steepness: 92.644 +/- 0.557
+Chi2/NDF: 0.144
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.302
+Average temperature: 23.385 +/- 0.008C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_22_17
+Vbd: 37.760V @ 23.86C
+Vbd: 37.798 +/- 0.032V @ 25C
+Steepness: 92.529 +/- 0.782
+Chi2/NDF: 0.032
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 466.197
+Average temperature: 23.861 +/- 0.007C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_22_18
+Vbd: 37.764V @ 23.92C
+Vbd: 37.801 +/- 0.019V @ 25C
+Steepness: 92.961 +/- 0.481
+Chi2/NDF: 0.316
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.224
+Average temperature: 23.915 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_22_19
+Vbd: 37.729V @ 23.49C
+Vbd: 37.781 +/- 0.020V @ 25C
+Steepness: 92.758 +/- 0.514
+Chi2/NDF: 0.149
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.53
+Average temperature: 23.493 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_22_2
+Vbd: 37.759V @ 23.65C
+Vbd: 37.804 +/- 0.008V @ 25C
+Steepness: 93.440 +/- 0.208
+Chi2/NDF: 1.605
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 471.478
+Average temperature: 23.652 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_2_2
+Vbd: 37.735V @ 23.88C
+Vbd: 37.773 +/- 0.018V @ 25C
+Steepness: 93.911 +/- 0.258
+Chi2/NDF: 0.566
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 473.142
+Average temperature: 23.876 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_22_3
+Vbd: 37.748V @ 23.92C
+Vbd: 37.785 +/- 0.027V @ 25C
+Steepness: 93.273 +/- 0.649
+Chi2/NDF: 0.112
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.767
+Average temperature: 23.923 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_22_4
+Vbd: 37.774V @ 23.78C
+Vbd: 37.815 +/- 0.015V @ 25C
+Steepness: 93.517 +/- 0.484
+Chi2/NDF: 0.188
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 471.439
+Average temperature: 23.783 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_22_5
+Vbd: 37.760V @ 23.57C
+Vbd: 37.809 +/- 0.006V @ 25C
+Steepness: 93.701 +/- 0.190
+Chi2/NDF: 1.118
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 473.056
+Average temperature: 23.571 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_22_6
+Vbd: 37.757V @ 23.18C
+Vbd: 37.818 +/- 0.025V @ 25C
+Steepness: 92.806 +/- 0.652
+Chi2/NDF: 0.162
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.753
+Average temperature: 23.182 +/- 0.003C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_22_7
+Vbd: 37.732V @ 23.60C
+Vbd: 37.779 +/- 0.024V @ 25C
+Steepness: 93.011 +/- 0.602
+Chi2/NDF: 0.129
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.475
+Average temperature: 23.601 +/- 0.007C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_22_8
+Vbd: 37.750V @ 23.54C
+Vbd: 37.799 +/- 0.021V @ 25C
+Steepness: 92.467 +/- 0.545
+Chi2/NDF: 0.181
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 466.922
+Average temperature: 23.539 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_22_9
+Vbd: 37.724V @ 23.45C
+Vbd: 37.776 +/- 0.022V @ 25C
+Steepness: 92.557 +/- 0.550
+Chi2/NDF: 0.323
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.664
+Average temperature: 23.448 +/- 0.003C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_2_3
+Vbd: 37.762V @ 23.70C
+Vbd: 37.806 +/- 0.022V @ 25C
+Steepness: 93.175 +/- 0.556
+Chi2/NDF: 0.094
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.989
+Average temperature: 23.700 +/- 0.000C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_2_4
+Vbd: 37.756V @ 23.95C
+Vbd: 37.792 +/- 0.014V @ 25C
+Steepness: 93.267 +/- 0.407
+Chi2/NDF: 0.218
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.675
+Average temperature: 23.946 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_2_5
+Vbd: 37.763V @ 23.90C
+Vbd: 37.800 +/- 0.032V @ 25C
+Steepness: 92.834 +/- 0.754
+Chi2/NDF: 0.117
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.604
+Average temperature: 23.905 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_2_6
+Vbd: 37.713V @ 23.62C
+Vbd: 37.760 +/- 0.025V @ 25C
+Steepness: 92.900 +/- 0.605
+Chi2/NDF: 0.126
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.868
+Average temperature: 23.616 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_2_7
+Vbd: 37.718V @ 23.23C
+Vbd: 37.778 +/- 0.028V @ 25C
+Steepness: 92.812 +/- 0.655
+Chi2/NDF: 0.111
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.623
+Average temperature: 23.234 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_2_8
+Vbd: 37.766V @ 23.68C
+Vbd: 37.811 +/- 0.024V @ 25C
+Steepness: 92.955 +/- 0.613
+Chi2/NDF: 0.242
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.922
+Average temperature: 23.684 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_2_9
+Vbd: 37.684V @ 23.72C
+Vbd: 37.727 +/- 0.028V @ 25C
+Steepness: 93.110 +/- 0.661
+Chi2/NDF: 0.063
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.583
+Average temperature: 23.720 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_3_0
+Vbd: 37.705V @ 23.21C
+Vbd: 37.766 +/- 0.016V @ 25C
+Steepness: 92.354 +/- 0.466
+Chi2/NDF: 0.120
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.372
+Average temperature: 23.207 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_3_10
+Vbd: 37.743V @ 23.56C
+Vbd: 37.792 +/- 0.013V @ 25C
+Steepness: 93.208 +/- 0.320
+Chi2/NDF: 0.639
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 470.601
+Average temperature: 23.559 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_3_11
+Vbd: 37.768V @ 23.56C
+Vbd: 37.817 +/- 0.030V @ 25C
+Steepness: 92.818 +/- 0.752
+Chi2/NDF: 0.059
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.62
+Average temperature: 23.560 +/- 0.000C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_3_12
+Vbd: 37.764V @ 23.88C
+Vbd: 37.801 +/- 0.028V @ 25C
+Steepness: 92.964 +/- 0.649
+Chi2/NDF: 0.117
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.334
+Average temperature: 23.884 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_3_1
+Vbd: 37.761V @ 23.68C
+Vbd: 37.806 +/- 0.020V @ 25C
+Steepness: 93.345 +/- 0.494
+Chi2/NDF: 0.129
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 470.908
+Average temperature: 23.678 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_3_13
+Vbd: 37.751V @ 23.42C
+Vbd: 37.804 +/- 0.024V @ 25C
+Steepness: 92.665 +/- 0.600
+Chi2/NDF: 0.049
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.283
+Average temperature: 23.422 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_3_14
+Vbd: 37.731V @ 23.43C
+Vbd: 37.785 +/- 0.029V @ 25C
+Steepness: 92.661 +/- 0.674
+Chi2/NDF: 0.135
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.245
+Average temperature: 23.426 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_3_15
+Vbd: 37.725V @ 23.89C
+Vbd: 37.762 +/- 0.019V @ 25C
+Steepness: 92.722 +/- 0.453
+Chi2/NDF: 0.617
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.092
+Average temperature: 23.894 +/- 0.008C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_3_16
+Vbd: 37.754V @ 23.73C
+Vbd: 37.797 +/- 0.036V @ 25C
+Steepness: 92.442 +/- 0.811
+Chi2/NDF: 0.084
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 466.197
+Average temperature: 23.727 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_3_17
+Vbd: 37.687V @ 23.46C
+Vbd: 37.740 +/- 0.023V @ 25C
+Steepness: 92.006 +/- 0.544
+Chi2/NDF: 0.441
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 464.86
+Average temperature: 23.455 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_3_18
+Vbd: 37.724V @ 23.56C
+Vbd: 37.773 +/- 0.017V @ 25C
+Steepness: 92.384 +/- 0.477
+Chi2/NDF: 0.058
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 466.426
+Average temperature: 23.565 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_3_19
+Vbd: 37.743V @ 23.93C
+Vbd: 37.780 +/- 0.021V @ 25C
+Steepness: 92.795 +/- 0.540
+Chi2/NDF: 0.259
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.35
+Average temperature: 23.926 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_3_2
+Vbd: 37.746V @ 23.88C
+Vbd: 37.784 +/- 0.014V @ 25C
+Steepness: 93.379 +/- 0.331
+Chi2/NDF: 1.708
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 470.438
+Average temperature: 23.882 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_3_3
+Vbd: 37.774V @ 23.74C
+Vbd: 37.817 +/- 0.022V @ 25C
+Steepness: 93.287 +/- 0.534
+Chi2/NDF: 0.342
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 470.416
+Average temperature: 23.739 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_3_4
+Vbd: 37.732V @ 23.95C
+Vbd: 37.768 +/- 0.023V @ 25C
+Steepness: 93.067 +/- 0.551
+Chi2/NDF: 0.152
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.646
+Average temperature: 23.950 +/- 0.000C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_3_5
+Vbd: 37.766V @ 23.84C
+Vbd: 37.805 +/- 0.024V @ 25C
+Steepness: 92.612 +/- 0.586
+Chi2/NDF: 0.083
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 466.724
+Average temperature: 23.838 +/- 0.003C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_3_6
+Vbd: 37.719V @ 23.63C
+Vbd: 37.766 +/- 0.020V @ 25C
+Steepness: 92.942 +/- 0.525
+Chi2/NDF: 0.090
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.028
+Average temperature: 23.628 +/- 0.003C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_3_7
+Vbd: 37.668V @ 23.22C
+Vbd: 37.729 +/- 0.013V @ 25C
+Steepness: 92.703 +/- 0.302
+Chi2/NDF: 1.468
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.111
+Average temperature: 23.223 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_3_8
+Vbd: 37.754V @ 23.70C
+Vbd: 37.799 +/- 0.018V @ 25C
+Steepness: 93.116 +/- 0.498
+Chi2/NDF: 0.115
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.695
+Average temperature: 23.697 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_3_9
+Vbd: 37.754V @ 23.63C
+Vbd: 37.801 +/- 0.037V @ 25C
+Steepness: 92.449 +/- 0.856
+Chi2/NDF: 0.080
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 466.5
+Average temperature: 23.631 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_4_0
+Vbd: 37.708V @ 23.20C
+Vbd: 37.769 +/- 0.012V @ 25C
+Steepness: 92.908 +/- 0.335
+Chi2/NDF: 0.800
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 470.231
+Average temperature: 23.199 +/- 0.003C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_4_10
+Vbd: 37.693V @ 23.56C
+Vbd: 37.742 +/- 0.019V @ 25C
+Steepness: 92.591 +/- 0.490
+Chi2/NDF: 0.610
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.476
+Average temperature: 23.560 +/- 0.000C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_4_11
+Vbd: 37.747V @ 23.56C
+Vbd: 37.796 +/- 0.025V @ 25C
+Steepness: 92.586 +/- 0.627
+Chi2/NDF: 0.107
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.443
+Average temperature: 23.563 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_4_12
+Vbd: 37.771V @ 23.95C
+Vbd: 37.807 +/- 0.022V @ 25C
+Steepness: 93.195 +/- 0.543
+Chi2/NDF: 0.157
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.302
+Average temperature: 23.949 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_4_1
+Vbd: 37.757V @ 23.70C
+Vbd: 37.802 +/- 0.023V @ 25C
+Steepness: 92.875 +/- 0.566
+Chi2/NDF: 0.180
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.49
+Average temperature: 23.697 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_4_13
+Vbd: 37.720V @ 23.44C
+Vbd: 37.773 +/- 0.013V @ 25C
+Steepness: 93.367 +/- 0.396
+Chi2/NDF: 0.579
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 471.795
+Average temperature: 23.437 +/- 0.008C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_4_14
+Vbd: 37.745V @ 23.48C
+Vbd: 37.797 +/- 0.022V @ 25C
+Steepness: 92.388 +/- 0.509
+Chi2/NDF: 0.093
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 466.714
+Average temperature: 23.479 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_4_15
+Vbd: 37.739V @ 23.91C
+Vbd: 37.776 +/- 0.026V @ 25C
+Steepness: 92.549 +/- 0.621
+Chi2/NDF: 0.183
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 466.167
+Average temperature: 23.912 +/- 0.003C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_4_16
+Vbd: 37.664V @ 23.83C
+Vbd: 37.704 +/- 0.027V @ 25C
+Steepness: 93.052 +/- 0.643
+Chi2/NDF: 0.331
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.947
+Average temperature: 23.831 +/- 0.008C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_4_17
+Vbd: 37.771V @ 23.47C
+Vbd: 37.823 +/- 0.021V @ 25C
+Steepness: 92.714 +/- 0.463
+Chi2/NDF: 0.128
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.389
+Average temperature: 23.470 +/- 0.007C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_4_18
+Vbd: 37.743V @ 23.59C
+Vbd: 37.791 +/- 0.019V @ 25C
+Steepness: 92.716 +/- 0.480
+Chi2/NDF: 0.328
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.023
+Average temperature: 23.589 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_4_19
+Vbd: 37.765V @ 23.94C
+Vbd: 37.801 +/- 0.011V @ 25C
+Steepness: 92.847 +/- 0.356
+Chi2/NDF: 0.266
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.562
+Average temperature: 23.945 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_4_2
+Vbd: 37.721V @ 23.79C
+Vbd: 37.763 +/- 0.025V @ 25C
+Steepness: 93.088 +/- 0.631
+Chi2/NDF: 0.149
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.251
+Average temperature: 23.793 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_4_3
+Vbd: 37.781V @ 23.75C
+Vbd: 37.823 +/- 0.005V @ 25C
+Steepness: 93.232 +/- 0.181
+Chi2/NDF: 0.731
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 470.125
+Average temperature: 23.750 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_4_4
+Vbd: 37.732V @ 23.55C
+Vbd: 37.781 +/- 0.021V @ 25C
+Steepness: 93.237 +/- 0.462
+Chi2/NDF: 0.129
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 470.759
+Average temperature: 23.554 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_4_5
+Vbd: 37.775V @ 23.84C
+Vbd: 37.814 +/- 0.022V @ 25C
+Steepness: 92.808 +/- 0.564
+Chi2/NDF: 0.072
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.676
+Average temperature: 23.845 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_4_6
+Vbd: 37.708V @ 23.59C
+Vbd: 37.756 +/- 0.024V @ 25C
+Steepness: 92.885 +/- 0.594
+Chi2/NDF: 0.117
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.861
+Average temperature: 23.591 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_4_7
+Vbd: 37.673V @ 23.23C
+Vbd: 37.733 +/- 0.025V @ 25C
+Steepness: 92.935 +/- 0.606
+Chi2/NDF: 0.125
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 470.247
+Average temperature: 23.231 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_4_8
+Vbd: 37.739V @ 23.75C
+Vbd: 37.781 +/- 0.014V @ 25C
+Steepness: 92.784 +/- 0.353
+Chi2/NDF: 0.278
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.842
+Average temperature: 23.754 +/- 0.009C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_4_9
+Vbd: 37.701V @ 23.65C
+Vbd: 37.747 +/- 0.033V @ 25C
+Steepness: 92.617 +/- 0.763
+Chi2/NDF: 0.093
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.313
+Average temperature: 23.653 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_5_0
+Vbd: 37.730V @ 23.21C
+Vbd: 37.791 +/- 0.034V @ 25C
+Steepness: 93.202 +/- 0.779
+Chi2/NDF: 0.053
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 471.643
+Average temperature: 23.213 +/- 0.009C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_5_10
+Vbd: 37.703V @ 23.56C
+Vbd: 37.752 +/- 0.021V @ 25C
+Steepness: 93.218 +/- 0.543
+Chi2/NDF: 0.174
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 470.632
+Average temperature: 23.565 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_5_11
+Vbd: 37.739V @ 23.59C
+Vbd: 37.787 +/- 0.019V @ 25C
+Steepness: 92.595 +/- 0.485
+Chi2/NDF: 0.098
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.4
+Average temperature: 23.591 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_5_12
+Vbd: 37.740V @ 23.96C
+Vbd: 37.775 +/- 0.025V @ 25C
+Steepness: 93.221 +/- 0.617
+Chi2/NDF: 0.101
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.345
+Average temperature: 23.963 +/- 0.009C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_5_1
+Vbd: 37.733V @ 23.77C
+Vbd: 37.775 +/- 0.027V @ 25C
+Steepness: 92.728 +/- 0.652
+Chi2/NDF: 0.059
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.51
+Average temperature: 23.769 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_5_13
+Vbd: 37.691V @ 23.59C
+Vbd: 37.739 +/- 0.013V @ 25C
+Steepness: 93.066 +/- 0.320
+Chi2/NDF: 0.884
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.783
+Average temperature: 23.591 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_5_14
+Vbd: 37.716V @ 23.49C
+Vbd: 37.768 +/- 0.028V @ 25C
+Steepness: 92.670 +/- 0.619
+Chi2/NDF: 0.088
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.09
+Average temperature: 23.491 +/- 0.007C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_5_15
+Vbd: 37.752V @ 23.86C
+Vbd: 37.790 +/- 0.028V @ 25C
+Steepness: 92.405 +/- 0.579
+Chi2/NDF: 0.104
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 465.586
+Average temperature: 23.862 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_5_16
+Vbd: 37.701V @ 23.84C
+Vbd: 37.740 +/- 0.031V @ 25C
+Steepness: 93.094 +/- 0.745
+Chi2/NDF: 0.140
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.117
+Average temperature: 23.840 +/- 0.000C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_5_17
+Vbd: 37.774V @ 23.51C
+Vbd: 37.825 +/- 0.013V @ 25C
+Steepness: 92.805 +/- 0.405
+Chi2/NDF: 0.347
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.708
+Average temperature: 23.514 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_5_18
+Vbd: 37.724V @ 23.59C
+Vbd: 37.772 +/- 0.024V @ 25C
+Steepness: 92.537 +/- 0.590
+Chi2/NDF: 0.080
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.098
+Average temperature: 23.595 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_5_19
+Vbd: 37.764V @ 23.93C
+Vbd: 37.801 +/- 0.026V @ 25C
+Steepness: 92.815 +/- 0.620
+Chi2/NDF: 0.184
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.43
+Average temperature: 23.932 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_5_2
+Vbd: 37.715V @ 23.81C
+Vbd: 37.755 +/- 0.034V @ 25C
+Steepness: 92.581 +/- 0.809
+Chi2/NDF: 0.061
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 466.636
+Average temperature: 23.809 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_5_3
+Vbd: 37.691V @ 23.74C
+Vbd: 37.734 +/- 0.017V @ 25C
+Steepness: 92.560 +/- 0.195
+Chi2/NDF: 0.967
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 466.761
+Average temperature: 23.740 +/- 0.003C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_5_4
+Vbd: 37.715V @ 23.56C
+Vbd: 37.764 +/- 0.026V @ 25C
+Steepness: 93.258 +/- 0.634
+Chi2/NDF: 0.110
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 470.847
+Average temperature: 23.558 +/- 0.003C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_5_5
+Vbd: 37.781V @ 23.91C
+Vbd: 37.818 +/- 0.019V @ 25C
+Steepness: 93.185 +/- 0.516
+Chi2/NDF: 0.202
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.384
+Average temperature: 23.907 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_5_6
+Vbd: 37.715V @ 23.60C
+Vbd: 37.763 +/- 0.028V @ 25C
+Steepness: 92.581 +/- 0.693
+Chi2/NDF: 0.075
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.307
+Average temperature: 23.599 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_5_7
+Vbd: 37.679V @ 23.29C
+Vbd: 37.737 +/- 0.029V @ 25C
+Steepness: 92.794 +/- 0.672
+Chi2/NDF: 0.078
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.37
+Average temperature: 23.289 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_5_8
+Vbd: 37.786V @ 23.77C
+Vbd: 37.827 +/- 0.011V @ 25C
+Steepness: 93.747 +/- 0.377
+Chi2/NDF: 0.491
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 472.649
+Average temperature: 23.771 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_5_9
+Vbd: 37.711V @ 23.75C
+Vbd: 37.753 +/- 0.024V @ 25C
+Steepness: 92.353 +/- 0.564
+Chi2/NDF: 0.138
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 465.666
+Average temperature: 23.755 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_6_0
+Vbd: 37.730V @ 23.27C
+Vbd: 37.789 +/- 0.025V @ 25C
+Steepness: 93.336 +/- 0.598
+Chi2/NDF: 0.186
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 472.17
+Average temperature: 23.266 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_6_10
+Vbd: 37.718V @ 23.61C
+Vbd: 37.766 +/- 0.020V @ 25C
+Steepness: 92.586 +/- 0.507
+Chi2/NDF: 0.188
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.321
+Average temperature: 23.606 +/- 0.007C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_6_11
+Vbd: 37.747V @ 23.60C
+Vbd: 37.794 +/- 0.031V @ 25C
+Steepness: 92.280 +/- 0.722
+Chi2/NDF: 0.075
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 465.766
+Average temperature: 23.596 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_6_12
+Vbd: 37.768V @ 23.94C
+Vbd: 37.803 +/- 0.012V @ 25C
+Steepness: 93.391 +/- 0.365
+Chi2/NDF: 0.279
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 470.307
+Average temperature: 23.943 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_6_1
+Vbd: 37.795V @ 23.79C
+Vbd: 37.836 +/- 0.020V @ 25C
+Steepness: 92.792 +/- 0.507
+Chi2/NDF: 0.369
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.758
+Average temperature: 23.793 +/- 0.011C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_6_13
+Vbd: 37.706V @ 23.61C
+Vbd: 37.754 +/- 0.016V @ 25C
+Steepness: 93.453 +/- 0.375
+Chi2/NDF: 0.988
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 471.692
+Average temperature: 23.607 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_6_14
+Vbd: 37.708V @ 23.53C
+Vbd: 37.758 +/- 0.015V @ 25C
+Steepness: 92.992 +/- 0.267
+Chi2/NDF: 0.481
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.603
+Average temperature: 23.531 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_6_15
+Vbd: 37.692V @ 23.88C
+Vbd: 37.730 +/- 0.019V @ 25C
+Steepness: 92.978 +/- 0.478
+Chi2/NDF: 0.106
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.441
+Average temperature: 23.875 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_6_16
+Vbd: 37.750V @ 23.78C
+Vbd: 37.792 +/- 0.035V @ 25C
+Steepness: 92.755 +/- 0.784
+Chi2/NDF: 0.112
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.61
+Average temperature: 23.776 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_6_17
+Vbd: 37.780V @ 23.53C
+Vbd: 37.830 +/- 0.020V @ 25C
+Steepness: 92.463 +/- 0.513
+Chi2/NDF: 0.116
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 466.928
+Average temperature: 23.529 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_6_18
+Vbd: 37.703V @ 23.59C
+Vbd: 37.751 +/- 0.010V @ 25C
+Steepness: 92.542 +/- 0.271
+Chi2/NDF: 1.648
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.162
+Average temperature: 23.585 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_6_19
+Vbd: 37.747V @ 23.94C
+Vbd: 37.783 +/- 0.020V @ 25C
+Steepness: 92.726 +/- 0.504
+Chi2/NDF: 0.294
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 466.957
+Average temperature: 23.943 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_6_2
+Vbd: 37.738V @ 23.91C
+Vbd: 37.776 +/- 0.027V @ 25C
+Steepness: 92.506 +/- 0.649
+Chi2/NDF: 0.105
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 465.948
+Average temperature: 23.910 +/- 0.000C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_6_3
+Vbd: 37.722V @ 23.74C
+Vbd: 37.765 +/- 0.022V @ 25C
+Steepness: 93.347 +/- 0.563
+Chi2/NDF: 0.091
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 470.736
+Average temperature: 23.741 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_6_4
+Vbd: 37.697V @ 23.57C
+Vbd: 37.745 +/- 0.031V @ 25C
+Steepness: 93.133 +/- 0.736
+Chi2/NDF: 0.058
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 470.156
+Average temperature: 23.574 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_6_5
+Vbd: 37.773V @ 23.91C
+Vbd: 37.810 +/- 0.023V @ 25C
+Steepness: 92.957 +/- 0.507
+Chi2/NDF: 0.169
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.21
+Average temperature: 23.914 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_6_6
+Vbd: 37.739V @ 23.76C
+Vbd: 37.781 +/- 0.005V @ 25C
+Steepness: 93.207 +/- 0.182
+Chi2/NDF: 0.756
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.972
+Average temperature: 23.758 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_6_7
+Vbd: 37.695V @ 23.31C
+Vbd: 37.753 +/- 0.020V @ 25C
+Steepness: 92.718 +/- 0.525
+Chi2/NDF: 0.065
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.917
+Average temperature: 23.309 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_6_8
+Vbd: 37.777V @ 23.73C
+Vbd: 37.820 +/- 0.028V @ 25C
+Steepness: 92.998 +/- 0.599
+Chi2/NDF: 0.037
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.994
+Average temperature: 23.730 +/- 0.000C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_6_9
+Vbd: 37.734V @ 23.77C
+Vbd: 37.776 +/- 0.026V @ 25C
+Steepness: 92.706 +/- 0.622
+Chi2/NDF: 0.101
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.401
+Average temperature: 23.769 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_7_0
+Vbd: 37.733V @ 23.28C
+Vbd: 37.791 +/- 0.024V @ 25C
+Steepness: 92.900 +/- 0.571
+Chi2/NDF: 0.192
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.903
+Average temperature: 23.283 +/- 0.008C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_7_10
+Vbd: 37.763V @ 23.62C
+Vbd: 37.810 +/- 0.019V @ 25C
+Steepness: 92.499 +/- 0.504
+Chi2/NDF: 0.169
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 466.837
+Average temperature: 23.624 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_7_11
+Vbd: 37.747V @ 23.59C
+Vbd: 37.795 +/- 0.012V @ 25C
+Steepness: 92.521 +/- 0.170
+Chi2/NDF: 0.663
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.05
+Average temperature: 23.586 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_7_12
+Vbd: 37.719V @ 23.95C
+Vbd: 37.755 +/- 0.021V @ 25C
+Steepness: 92.823 +/- 0.510
+Chi2/NDF: 0.082
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.429
+Average temperature: 23.949 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_7_1
+Vbd: 37.768V @ 23.73C
+Vbd: 37.811 +/- 0.023V @ 25C
+Steepness: 92.736 +/- 0.569
+Chi2/NDF: 0.293
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.677
+Average temperature: 23.734 +/- 0.003C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_7_13
+Vbd: 37.692V @ 23.53C
+Vbd: 37.742 +/- 0.030V @ 25C
+Steepness: 93.184 +/- 0.762
+Chi2/NDF: 0.202
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 470.578
+Average temperature: 23.526 +/- 0.008C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_7_14
+Vbd: 37.677V @ 23.55C
+Vbd: 37.727 +/- 0.016V @ 25C
+Steepness: 93.045 +/- 0.299
+Chi2/NDF: 1.205
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.82
+Average temperature: 23.547 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_7_15
+Vbd: 37.754V @ 23.44C
+Vbd: 37.807 +/- 0.023V @ 25C
+Steepness: 92.931 +/- 0.559
+Chi2/NDF: 0.198
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.594
+Average temperature: 23.439 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_7_16
+Vbd: 37.691V @ 23.79C
+Vbd: 37.732 +/- 0.030V @ 25C
+Steepness: 92.829 +/- 0.721
+Chi2/NDF: 0.113
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.965
+Average temperature: 23.789 +/- 0.008C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_7_17
+Vbd: 37.775V @ 23.50C
+Vbd: 37.826 +/- 0.016V @ 25C
+Steepness: 92.708 +/- 0.417
+Chi2/NDF: 0.358
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.274
+Average temperature: 23.499 +/- 0.007C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_7_18
+Vbd: 37.730V @ 23.59C
+Vbd: 37.778 +/- 0.026V @ 25C
+Steepness: 92.863 +/- 0.623
+Chi2/NDF: 0.033
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.759
+Average temperature: 23.590 +/- 0.000C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_7_19
+Vbd: 37.751V @ 23.99C
+Vbd: 37.786 +/- 0.014V @ 25C
+Steepness: 92.947 +/- 0.344
+Chi2/NDF: 0.492
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.915
+Average temperature: 23.992 +/- 0.007C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_7_2
+Vbd: 37.742V @ 23.91C
+Vbd: 37.779 +/- 0.027V @ 25C
+Steepness: 92.461 +/- 0.627
+Chi2/NDF: 0.125
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 465.718
+Average temperature: 23.914 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_7_3
+Vbd: 37.729V @ 23.78C
+Vbd: 37.770 +/- 0.016V @ 25C
+Steepness: 92.871 +/- 0.290
+Chi2/NDF: 0.290
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.209
+Average temperature: 23.778 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_7_4
+Vbd: 37.704V @ 23.59C
+Vbd: 37.752 +/- 0.027V @ 25C
+Steepness: 92.882 +/- 0.590
+Chi2/NDF: 0.136
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.867
+Average temperature: 23.586 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_7_5
+Vbd: 37.768V @ 23.91C
+Vbd: 37.805 +/- 0.019V @ 25C
+Steepness: 93.124 +/- 0.492
+Chi2/NDF: 0.144
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.072
+Average temperature: 23.907 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_7_6
+Vbd: 37.784V @ 23.77C
+Vbd: 37.826 +/- 0.017V @ 25C
+Steepness: 93.494 +/- 0.376
+Chi2/NDF: 0.993
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 471.369
+Average temperature: 23.770 +/- 0.000C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_7_7
+Vbd: 37.723V @ 23.34C
+Vbd: 37.779 +/- 0.016V @ 25C
+Steepness: 92.970 +/- 0.403
+Chi2/NDF: 0.612
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 470.093
+Average temperature: 23.339 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_7_8
+Vbd: 37.772V @ 23.74C
+Vbd: 37.815 +/- 0.023V @ 25C
+Steepness: 92.889 +/- 0.576
+Chi2/NDF: 0.175
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.421
+Average temperature: 23.743 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_7_9
+Vbd: 37.732V @ 23.70C
+Vbd: 37.776 +/- 0.024V @ 25C
+Steepness: 92.765 +/- 0.584
+Chi2/NDF: 0.068
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.915
+Average temperature: 23.701 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_8_0
+Vbd: 37.750V @ 23.32C
+Vbd: 37.807 +/- 0.016V @ 25C
+Steepness: 92.397 +/- 0.401
+Chi2/NDF: 0.173
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.267
+Average temperature: 23.316 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_8_10
+Vbd: 37.755V @ 23.59C
+Vbd: 37.803 +/- 0.019V @ 25C
+Steepness: 92.555 +/- 0.492
+Chi2/NDF: 0.333
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.208
+Average temperature: 23.590 +/- 0.000C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_8_11
+Vbd: 37.736V @ 23.59C
+Vbd: 37.784 +/- 0.026V @ 25C
+Steepness: 92.708 +/- 0.625
+Chi2/NDF: 0.051
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.974
+Average temperature: 23.591 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_8_12
+Vbd: 37.790V @ 24.02C
+Vbd: 37.823 +/- 0.011V @ 25C
+Steepness: 92.824 +/- 0.308
+Chi2/NDF: 0.238
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.223
+Average temperature: 24.016 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_8_1
+Vbd: 37.780V @ 23.75C
+Vbd: 37.822 +/- 0.023V @ 25C
+Steepness: 92.771 +/- 0.587
+Chi2/NDF: 0.299
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.789
+Average temperature: 23.750 +/- 0.008C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_8_13
+Vbd: 37.674V @ 23.55C
+Vbd: 37.723 +/- 0.026V @ 25C
+Steepness: 93.114 +/- 0.643
+Chi2/NDF: 0.110
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 470.137
+Average temperature: 23.550 +/- 0.009C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_8_14
+Vbd: 37.642V @ 23.54C
+Vbd: 37.692 +/- 0.023V @ 25C
+Steepness: 92.402 +/- 0.560
+Chi2/NDF: 0.091
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 466.589
+Average temperature: 23.544 +/- 0.003C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_8_15
+Vbd: 37.643V @ 23.44C
+Vbd: 37.696 +/- 0.021V @ 25C
+Steepness: 92.621 +/- 0.465
+Chi2/NDF: 0.199
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.994
+Average temperature: 23.445 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_8_16
+Vbd: 37.699V @ 23.85C
+Vbd: 37.738 +/- 0.030V @ 25C
+Steepness: 92.986 +/- 0.711
+Chi2/NDF: 0.098
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.556
+Average temperature: 23.847 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_8_17
+Vbd: 37.736V @ 23.51C
+Vbd: 37.787 +/- 0.022V @ 25C
+Steepness: 92.947 +/- 0.561
+Chi2/NDF: 0.132
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.428
+Average temperature: 23.511 +/- 0.007C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_8_18
+Vbd: 37.746V @ 23.63C
+Vbd: 37.793 +/- 0.021V @ 25C
+Steepness: 92.841 +/- 0.493
+Chi2/NDF: 0.208
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.51
+Average temperature: 23.632 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_8_19
+Vbd: 37.762V @ 24.01C
+Vbd: 37.796 +/- 0.022V @ 25C
+Steepness: 92.690 +/- 0.489
+Chi2/NDF: 0.248
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 466.567
+Average temperature: 24.012 +/- 0.008C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_8_2
+Vbd: 37.749V @ 23.84C
+Vbd: 37.788 +/- 0.027V @ 25C
+Steepness: 93.045 +/- 0.632
+Chi2/NDF: 0.101
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.87
+Average temperature: 23.844 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_8_3
+Vbd: 37.750V @ 23.79C
+Vbd: 37.791 +/- 0.029V @ 25C
+Steepness: 92.958 +/- 0.685
+Chi2/NDF: 0.064
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.597
+Average temperature: 23.791 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_8_4
+Vbd: 37.717V @ 23.57C
+Vbd: 37.766 +/- 0.009V @ 25C
+Steepness: 93.112 +/- 0.133
+Chi2/NDF: 1.517
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 470.096
+Average temperature: 23.566 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_8_5
+Vbd: 37.755V @ 23.91C
+Vbd: 37.792 +/- 0.021V @ 25C
+Steepness: 93.211 +/- 0.542
+Chi2/NDF: 0.121
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.504
+Average temperature: 23.911 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_8_6
+Vbd: 37.751V @ 23.68C
+Vbd: 37.796 +/- 0.031V @ 25C
+Steepness: 92.692 +/- 0.761
+Chi2/NDF: 0.070
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.615
+Average temperature: 23.679 +/- 0.007C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_8_7
+Vbd: 37.720V @ 23.35C
+Vbd: 37.776 +/- 0.024V @ 25C
+Steepness: 92.634 +/- 0.533
+Chi2/NDF: 0.252
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.348
+Average temperature: 23.354 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_8_8
+Vbd: 37.750V @ 23.34C
+Vbd: 37.806 +/- 0.022V @ 25C
+Steepness: 92.758 +/- 0.552
+Chi2/NDF: 0.074
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.03
+Average temperature: 23.339 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_8_9
+Vbd: 37.729V @ 23.72C
+Vbd: 37.772 +/- 0.031V @ 25C
+Steepness: 92.377 +/- 0.713
+Chi2/NDF: 0.165
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 465.885
+Average temperature: 23.718 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_9_0
+Vbd: 37.739V @ 23.34C
+Vbd: 37.796 +/- 0.014V @ 25C
+Steepness: 92.929 +/- 0.220
+Chi2/NDF: 0.307
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.904
+Average temperature: 23.336 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_9_10
+Vbd: 37.745V @ 23.60C
+Vbd: 37.793 +/- 0.024V @ 25C
+Steepness: 92.314 +/- 0.596
+Chi2/NDF: 0.153
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 465.967
+Average temperature: 23.596 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_9_11
+Vbd: 37.722V @ 23.64C
+Vbd: 37.768 +/- 0.029V @ 25C
+Steepness: 92.601 +/- 0.669
+Chi2/NDF: 0.129
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.276
+Average temperature: 23.639 +/- 0.007C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_9_12
+Vbd: 37.731V @ 24.03C
+Vbd: 37.764 +/- 0.020V @ 25C
+Steepness: 93.117 +/- 0.527
+Chi2/NDF: 0.271
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.653
+Average temperature: 24.027 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_9_1
+Vbd: 37.738V @ 23.56C
+Vbd: 37.787 +/- 0.033V @ 25C
+Steepness: 93.179 +/- 0.764
+Chi2/NDF: 0.072
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 470.434
+Average temperature: 23.559 +/- 0.002C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_9_13
+Vbd: 37.669V @ 23.65C
+Vbd: 37.715 +/- 0.018V @ 25C
+Steepness: 92.822 +/- 0.479
+Chi2/NDF: 0.161
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.357
+Average temperature: 23.653 +/- 0.007C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_9_14
+Vbd: 37.675V @ 23.56C
+Vbd: 37.724 +/- 0.023V @ 25C
+Steepness: 93.066 +/- 0.528
+Chi2/NDF: 0.095
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.875
+Average temperature: 23.557 +/- 0.003C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_9_15
+Vbd: 37.698V @ 23.47C
+Vbd: 37.750 +/- 0.026V @ 25C
+Steepness: 93.018 +/- 0.646
+Chi2/NDF: 0.157
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 469.939
+Average temperature: 23.469 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_9_16
+Vbd: 37.756V @ 23.87C
+Vbd: 37.794 +/- 0.016V @ 25C
+Steepness: 93.481 +/- 0.286
+Chi2/NDF: 0.210
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 470.99
+Average temperature: 23.871 +/- 0.008C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_9_17
+Vbd: 37.747V @ 23.67C
+Vbd: 37.792 +/- 0.009V @ 25C
+Steepness: 93.599 +/- 0.248
+Chi2/NDF: 0.971
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 472.239
+Average temperature: 23.666 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_9_18
+Vbd: 37.737V @ 23.65C
+Vbd: 37.783 +/- 0.024V @ 25C
+Steepness: 92.824 +/- 0.546
+Chi2/NDF: 0.128
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.385
+Average temperature: 23.646 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_9_19
+Vbd: 37.738V @ 23.96C
+Vbd: 37.773 +/- 0.015V @ 25C
+Steepness: 92.857 +/- 0.410
+Chi2/NDF: 0.184
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.568
+Average temperature: 23.962 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_9_2
+Vbd: 37.746V @ 23.86C
+Vbd: 37.785 +/- 0.031V @ 25C
+Steepness: 92.964 +/- 0.690
+Chi2/NDF: 0.060
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.407
+Average temperature: 23.859 +/- 0.007C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_9_3
+Vbd: 37.762V @ 23.75C
+Vbd: 37.804 +/- 0.023V @ 25C
+Steepness: 92.901 +/- 0.461
+Chi2/NDF: 0.384
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.447
+Average temperature: 23.751 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_9_4
+Vbd: 37.769V @ 23.57C
+Vbd: 37.818 +/- 0.023V @ 25C
+Steepness: 93.440 +/- 0.568
+Chi2/NDF: 0.077
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 471.736
+Average temperature: 23.573 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_9_5
+Vbd: 37.749V @ 23.97C
+Vbd: 37.784 +/- 0.017V @ 25C
+Steepness: 92.672 +/- 0.292
+Chi2/NDF: 0.429
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 466.607
+Average temperature: 23.968 +/- 0.007C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_9_6
+Vbd: 37.777V @ 23.70C
+Vbd: 37.822 +/- 0.024V @ 25C
+Steepness: 92.912 +/- 0.623
+Chi2/NDF: 0.086
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 468.661
+Average temperature: 23.696 +/- 0.004C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_9_7
+Vbd: 37.708V @ 23.36C
+Vbd: 37.764 +/- 0.020V @ 25C
+Steepness: 92.183 +/- 0.464
+Chi2/NDF: 0.414
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 466.049
+Average temperature: 23.360 +/- 0.006C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_9_8
+Vbd: 37.718V @ 23.34C
+Vbd: 37.774 +/- 0.023V @ 25C
+Steepness: 92.526 +/- 0.597
+Chi2/NDF: 0.218
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 467.829
+Average temperature: 23.345 +/- 0.005C
+
+
+TRAY ID: 250821-1303
+SiPM ID: 250821-1303_9_9
+Vbd: 37.727V @ 23.77C
+Vbd: 37.769 +/- 0.022V @ 25C
+Steepness: 92.394 +/- 0.561
+Chi2/NDF: 0.054
+used peaks 4
+fit width 400
+Gain @ Vbd(25C) + 5V: 465.813
+Average temperature: 23.775 +/- 0.006C
+
+
