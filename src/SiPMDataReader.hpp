@@ -792,6 +792,8 @@ public:
   
   
   void WriteCompressedFile(int tray_index) {
+     
+    
     int n_tray = this->tray_strings->size();
     if (tray_index > n_tray) return;
     if (tray_index == -1) std::cout << "Writing condensed files for all tray data...";
@@ -800,13 +802,31 @@ public:
     // Negative input: produce a file for all available data
     for (int i_tray = 0; i_tray < n_tray; ++i_tray) {
       if (tray_index >= 0 && tray_index != i_tray) continue;
+      std::string tray = this->tray_strings->at(i_tray);
       
+      char dir[150];
+      bool is_robot = this->tray_modes->at(i_tray) == 1;
+      if (this->batch_data_dir->size() == 0) {    // No subdirectory
+        if (!is_robot) {                          // Not checking for robot data
+          if (this->has_subscript_results) snprintf(dir, 75, "../data/%s-results/results-condensed.txt", tray.c_str());
+          else                             snprintf(dir, 75, "../data/%s/results-condensed.txt", tray.c_str());
+        } else {                                  // Checking for robot data
+          if (this->has_subscript_results) snprintf(dir, 75, "../data/%s-robot-results/results-condensed.txt", tray.c_str());
+          else                             snprintf(dir, 75, "../data/%s-robot/results-condensed.txt", tray.c_str());
+        }
+      } else {                                    // Has subdirectory
+        if (!is_robot) {                          // Not checking for robot data
+          if (this->has_subscript_results) snprintf(dir, 75, "../data/%s/%s-results/results-condensed.txt", batch_data_dir->c_str(), tray.c_str());
+          else                             snprintf(dir, 75, "../data/%s/%s/results-condensed.txt", batch_data_dir->c_str(), tray.c_str());
+        } else {                                  // Checking for robot data
+          if (this->has_subscript_results) snprintf(dir, 75, "../data/%s/%s-robot-results/results-condensed.txt", batch_data_dir->c_str(), tray.c_str());
+          else                             snprintf(dir, 75, "../data/%s/%s-robot/results-condensed.txt", batch_data_dir->c_str(), tray.c_str());
+        }
+      }// End of possible directory tree
       
-      char outfile_dir[100];
-      snprintf(outfile_dir, 100, "../data/%s-results/results-condensed.txt",tray_strings->at(i_tray).c_str());
-      if (tray_index != -1) std::cout << "Writing condensed file " << outfile_dir;
+      if (tray_index != -1) std::cout << "Writing condensed file " << dir;
       
-      std::ofstream outfile(outfile_dir);
+      std::ofstream outfile(dir);
       
       IV_data* tray_IV_data = IV_internal->at(i_tray);
       SPS_data* tray_SPS_data = SPS_internal->at(i_tray);

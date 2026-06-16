@@ -123,10 +123,10 @@ void sipm_batch_summary_sheet(const char* traylist_identifier = "production") {
 //  makeTestMapVpeak(false);
 //  makeTestMapVbreakdown(false);
 //  
-//  // Write data in a format easily transferrable to a spreadsheet
-//  // Negative input: Write for all trays
-//  gReader->WriteCompressedFile(-1);
-//  
+  // Write data in a format easily transferrable to a spreadsheet
+  // Negative input: Write for all trays
+  gReader->WriteCompressedFile(-1);
+  
 //  // Plots with a summary of all trays to date
 //  makeIndexedTray(true);
 //  makeIndexedOutliers(true);
