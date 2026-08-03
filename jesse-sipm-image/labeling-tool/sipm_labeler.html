@@ -1,0 +1,793 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>SiPM Inspector</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root{
+    --bg:#070A10; --bg2:#0A0E16; --panel:#10161F; --panel2:#0C121B; --line:#1F2A38;
+    --line2:#2A3A4D; --ink:#EAF1F9; --muted:#8395A9; --faint:#52647A;
+    --teal:#37D9C4; --teal-dim:#1d5d55; --amber:#F4B81F; --green:#3FDD92; --red:#FF4D6D;
+    --blue:#4D9CFF; --violet:#9b8cff;
+    --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+    --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    --shadow:0 8px 30px rgba(0,0,0,.45);
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%;margin:0}
+  body{background:radial-gradient(140% 120% at 50% -10%, #0d1420 0%, var(--bg) 60%);
+    color:var(--ink);font-family:var(--sans);display:flex;flex-direction:column;
+    overflow:hidden;font-size:14px;-webkit-font-smoothing:antialiased}
+  button{font-family:inherit;color:inherit;cursor:pointer;border:none;background:none}
+  .row{display:flex;align-items:center}
+
+  /* ---- top bar ---- */
+  .topbar{display:flex;align-items:center;gap:14px;padding:11px 18px;
+    background:linear-gradient(180deg,#121925,#0d131d);border-bottom:1px solid var(--line);
+    flex:0 0 auto;box-shadow:0 1px 0 rgba(255,255,255,.02)}
+  .brand{display:flex;align-items:center;gap:11px}
+  .logo{width:30px;height:30px;border-radius:8px;display:grid;place-items:center;
+    background:linear-gradient(150deg,var(--teal),#1c8c7e);box-shadow:0 4px 14px rgba(55,217,196,.3)}
+  .logo svg{width:18px;height:18px;color:#04201c}
+  .brand b{font-size:15px;letter-spacing:.2px;font-weight:650}
+  .brand .ver{font-family:var(--mono);font-size:10px;color:var(--teal);
+    border:1px solid var(--teal-dim);padding:2px 6px;border-radius:5px;margin-left:2px}
+  .spacer{flex:1}
+  .btn{background:var(--panel2);border:1px solid var(--line);border-radius:8px;
+    padding:8px 13px;font-size:13px;color:var(--ink);transition:.13s;
+    display:inline-flex;align-items:center;gap:7px;white-space:nowrap}
+  .btn:hover{border-color:var(--line2);background:#131c28}
+  .btn:active{transform:translateY(1px)}
+  .btn.primary{background:linear-gradient(180deg,#1f6b62,#16504a);border-color:#2c8579;color:#eafffb}
+  .btn.primary:hover{background:linear-gradient(180deg,#247a6f,#185a53);border-color:var(--teal)}
+  .btn .ic{width:15px;height:15px}
+  .saved{font-family:var(--mono);font-size:11px;color:var(--faint);display:flex;align-items:center;gap:6px}
+  .saved .dot{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 8px var(--green)}
+  .saved.dirty .dot{background:var(--amber);box-shadow:0 0 8px var(--amber)}
+
+  .main{flex:1;display:flex;min-height:0}
+
+  /* ---- left rail ---- */
+  .rail{width:196px;flex:0 0 auto;background:var(--panel2);border-right:1px solid var(--line);
+    display:flex;flex-direction:column;min-height:0}
+  .filters{display:grid;grid-template-columns:repeat(5,1fr);gap:4px;padding:9px;border-bottom:1px solid var(--line)}
+  .filters button{font-size:10px;padding:7px 0;border-radius:6px;border:1px solid transparent;
+    background:transparent;color:var(--muted);font-family:var(--mono);transition:.12s;text-align:center;line-height:1.3}
+  .filters button .fn{display:block;font-size:12px;font-weight:700;color:var(--ink)}
+  .filters button.on{background:var(--panel);border-color:var(--line2)}
+  .filters button:hover{background:var(--panel)}
+  .thumbs{overflow-y:auto;padding:9px;display:flex;flex-direction:column;gap:8px;flex:1}
+  .thumb{position:relative;border:1px solid var(--line);border-radius:8px;overflow:hidden;
+    cursor:pointer;background:#000;aspect-ratio:1/1;transition:.12s}
+  .thumb:hover{border-color:var(--line2)}
+  .thumb.sel{border-color:var(--teal);box-shadow:0 0 0 1px var(--teal),0 6px 18px rgba(0,0,0,.5)}
+  .thumb img{width:100%;height:100%;object-fit:cover;display:block;opacity:.9}
+  .thumb .tag{position:absolute;inset:auto 0 0 0;font-family:var(--mono);font-size:9px;
+    padding:3px 6px;background:linear-gradient(180deg,transparent,rgba(0,0,0,.8));
+    display:flex;justify-content:space-between;align-items:center;gap:4px}
+  .thumb .nm{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#cfe}
+  .thumb .gr{font-weight:700}
+  .thumb .dot{position:absolute;top:6px;right:6px;width:10px;height:10px;border-radius:50%;
+    border:1.5px solid rgba(0,0,0,.55)}
+  .dot.un{background:var(--faint)} .dot.pr{background:var(--green)} .dot.dm{background:var(--amber)}
+  .thumb .flag{position:absolute;top:6px;left:6px;width:17px;height:17px;border-radius:50%;
+    background:var(--amber);color:#1a1206;font-size:12px;font-weight:800;display:grid;place-items:center;
+    font-family:var(--mono);box-shadow:0 0 9px rgba(244,184,31,.55);border:1px solid rgba(0,0,0,.35);z-index:2}
+  .filters button[data-f="flagged"].has .fn{color:var(--amber)}
+  .railfoot{padding:9px 11px;border-top:1px solid var(--line);font-family:var(--mono);
+    font-size:10px;color:var(--faint)}
+  .pbar{height:5px;border-radius:3px;background:var(--panel);overflow:hidden;margin-top:6px}
+  .pbar i{display:block;height:100%;background:linear-gradient(90deg,var(--teal),var(--green));
+    width:0;transition:width .25s}
+
+  /* ---- stage ---- */
+  .stage{flex:1;display:flex;flex-direction:column;min-width:0}
+  .tools{display:flex;align-items:center;gap:7px;padding:9px 13px;background:var(--panel);
+    border-bottom:1px solid var(--line);flex:0 0 auto;flex-wrap:wrap}
+  .tool{width:37px;height:35px;display:grid;place-items:center;border-radius:8px;
+    border:1px solid var(--line);background:var(--panel2);color:var(--muted);transition:.12s}
+  .tool:hover{border-color:var(--line2);color:var(--ink)}
+  .tool.on{border-color:var(--teal);color:var(--teal);background:#0e2622;box-shadow:0 0 0 1px var(--teal-dim) inset}
+  .tool svg{width:18px;height:18px}
+  .sep{width:1px;height:24px;background:var(--line);margin:0 3px}
+  .classpick{display:flex;gap:5px}
+  .cls{padding:8px 12px;border-radius:8px;border:1px solid var(--line);
+    background:var(--panel2);font-size:12px;font-family:var(--mono);color:var(--muted);
+    display:flex;align-items:center;gap:7px;transition:.12s}
+  .cls:hover{border-color:var(--line2)}
+  .cls .sw{width:12px;height:12px;border-radius:4px;box-shadow:0 0 0 1px rgba(0,0,0,.3) inset}
+  .cls.on.dmg{border-color:var(--red);color:#fff;background:#2a0f17;box-shadow:0 0 10px rgba(255,77,109,.18)}
+  .cls.on.fls{border-color:var(--blue);color:#fff;background:#0d1c33;box-shadow:0 0 10px rgba(77,156,255,.18)}
+  .sizer{display:flex;align-items:center;gap:9px;font-family:var(--mono);font-size:11px;color:var(--muted)}
+  .sizer input{width:96px;accent-color:var(--teal)}
+  .sizer .bn{min-width:22px;text-align:right;color:var(--ink)}
+  .cur{font-family:var(--mono);font-size:11px;color:var(--muted);display:flex;gap:10px;align-items:center}
+  .cur .ix{color:var(--ink)}
+
+  .canvaswrap{flex:1;position:relative;min-height:0;overflow:hidden;
+    background:repeating-conic-gradient(#0b1119 0% 25%, #090d14 0% 50%) 50%/24px 24px}
+  canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+  #ring{position:absolute;border:1.5px solid rgba(255,255,255,.75);border-radius:50%;
+    pointer-events:none;transform:translate(-50%,-50%);display:none;mix-blend-mode:difference;z-index:3}
+  .empty{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:40px;z-index:4}
+  .drop{border:1.6px dashed var(--line2);border-radius:18px;padding:50px 64px;transition:.16s;max-width:520px;
+    background:rgba(12,18,27,.5);backdrop-filter:blur(2px)}
+  .drop.hot{border-color:var(--teal);background:#0e2622;transform:scale(1.01)}
+  .drop .bigic{width:54px;height:54px;margin:0 auto 16px;color:var(--teal);opacity:.9}
+  .drop h2{margin:0 0 8px;font-weight:650;font-size:18px}
+  .drop p{color:var(--muted);margin:0 0 18px;line-height:1.55;font-size:13px}
+  .drop .or{font-family:var(--mono);font-size:11px;color:var(--faint);margin:14px 0 0}
+
+  /* ---- right panel ---- */
+  .panel{width:274px;flex:0 0 auto;background:var(--panel);border-left:1px solid var(--line);
+    display:flex;flex-direction:column;min-height:0;overflow-y:auto}
+  .sec{padding:15px 17px;border-bottom:1px solid var(--line)}
+  .sec h3{margin:0 0 12px;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;
+    color:var(--faint);font-family:var(--mono);display:flex;align-items:center;gap:7px}
+  .verdict{display:flex;gap:9px}
+  .verdict button{flex:1;padding:12px 0;border-radius:9px;border:1px solid var(--line);
+    background:var(--panel2);font-size:13px;font-weight:650;color:var(--muted);transition:.13s}
+  .verdict button:hover{border-color:var(--line2)}
+  .verdict button.pr.on{border-color:var(--green);color:#04150c;background:var(--green)}
+  .verdict button.dm.on{border-color:var(--amber);color:#1a1206;background:var(--amber)}
+  .grades{display:grid;grid-template-columns:repeat(6,1fr);gap:7px}
+  .grades button{padding:11px 0;border-radius:8px;border:1px solid var(--line);background:var(--panel2);
+    font-family:var(--mono);font-size:15px;color:var(--muted);transition:.12s}
+  .grades button:hover{border-color:var(--line2);color:var(--ink)}
+  .grades button.on{border-color:var(--amber);color:#1a1206;background:var(--amber);font-weight:700;
+    box-shadow:0 0 12px rgba(244,184,31,.25)}
+  .grades button:disabled{opacity:.3;cursor:not-allowed}
+  .types{display:flex;flex-direction:column;gap:8px}
+  .typ{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--ink);cursor:pointer;
+    padding:8px 11px;border:1px solid var(--line);border-radius:8px;background:var(--panel2);transition:.12s;user-select:none}
+  .typ:hover{border-color:var(--line2)}
+  .typ .box{width:16px;height:16px;border-radius:5px;border:1.5px solid var(--line2);display:grid;place-items:center;flex:0 0 auto}
+  .typ.on .box{background:var(--teal);border-color:var(--teal)}
+  .typ.on .box svg{width:11px;height:11px;color:#042}
+  .typ.dis{opacity:.35;pointer-events:none}
+  .readout{font-family:var(--mono);font-size:12px;color:var(--muted);line-height:1.85}
+  .readout .r{display:flex;justify-content:space-between;align-items:baseline}
+  .readout b{color:var(--teal);font-size:15px}
+  .readout .dmgc{color:var(--red)} .readout .flsc{color:var(--blue)}
+  .note{font-size:11px;color:var(--faint);line-height:1.55;margin-top:10px}
+  .warn{margin-top:10px;font-size:11.5px;color:var(--amber);background:#221a06;border:1px solid #4a3a0f;
+    border-radius:7px;padding:7px 9px;line-height:1.5;display:none}
+  .nav{display:flex;gap:9px;padding:14px 17px;margin-top:auto;position:sticky;bottom:0;
+    background:linear-gradient(180deg,rgba(16,22,31,.4),var(--panel))}
+  .nav .btn{flex:1;justify-content:center}
+
+  kbd{font-family:var(--mono);font-size:10px;background:var(--panel2);border:1px solid var(--line);
+    border-bottom-width:2px;border-radius:4px;padding:1px 5px;color:var(--muted)}
+  .statusbar{flex:0 0 auto;display:flex;align-items:center;gap:14px;padding:7px 17px;
+    background:var(--panel2);border-top:1px solid var(--line);font-family:var(--mono);
+    font-size:11px;color:var(--faint);flex-wrap:wrap}
+  .statusbar .k{display:flex;align-items:center;gap:4px}
+
+  /* ---- toast + help overlay ---- */
+  #toast{position:fixed;bottom:54px;left:50%;transform:translateX(-50%) translateY(20px);
+    background:#15202e;border:1px solid var(--line2);border-radius:10px;padding:11px 16px;
+    font-size:13px;color:var(--ink);box-shadow:var(--shadow);opacity:0;transition:.25s;z-index:50;pointer-events:none;max-width:80%}
+  #toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+  #help{position:fixed;inset:0;background:rgba(4,7,12,.72);backdrop-filter:blur(4px);
+    display:none;place-items:center;z-index:60}
+  #help.show{display:grid}
+  .helpcard{background:var(--panel);border:1px solid var(--line2);border-radius:16px;
+    padding:26px 30px;max-width:560px;width:90%;box-shadow:var(--shadow)}
+  .helpcard h2{margin:0 0 4px;font-size:17px}
+  .helpcard .sub{color:var(--muted);font-size:13px;margin:0 0 18px}
+  .helpgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px 26px}
+  .helprow{display:flex;justify-content:space-between;gap:12px;font-size:13px;color:var(--ink);
+    padding:5px 0;border-bottom:1px solid var(--line)}
+  .helprow span:last-child{color:var(--muted);font-family:var(--mono);font-size:11px}
+  .helpcard .close{margin-top:20px;width:100%;justify-content:center}
+  .hidden{display:none!important}
+  ::-webkit-scrollbar{width:10px;height:10px}
+  ::-webkit-scrollbar-thumb{background:var(--line);border-radius:5px;border:2px solid var(--panel2)}
+  ::-webkit-scrollbar-thumb:hover{background:var(--line2)}
+  ::-webkit-scrollbar-track{background:transparent}
+</style>
+
+<div class="topbar">
+  <div class="brand">
+    <div class="logo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 8h.01M12 8h.01M16 8h.01M8 12h.01M12 12h.01M16 12h.01M8 16h.01M12 16h.01M16 16h.01"/></svg></div>
+    <b>SiPM Inspector</b><span class="ver">v3</span>
+  </div>
+  <button class="btn" id="loadFolderBtn" title="Load a whole folder of a tray's images"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/></svg>Load folder</button>
+  <button class="btn" id="loadBtn" title="Pick image files">Files</button>
+  <button class="btn" id="importBtn" title="Resume a previous session"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-7l-3 3"/><path d="M3 3v5h5"/></svg>Resume</button>
+  <div class="spacer"></div>
+  <div class="saved" id="savedInd"><span class="dot"></span><span id="savedTxt">all saved</span></div>
+  <button class="btn primary" id="exportBtn" title="Save your labels to a file (Ctrl+S)"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>Export</button>
+  <button class="tool" id="helpBtn" title="Keyboard shortcuts (?)" style="width:35px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 0 1 4.5 1.5c0 1.5-2 2-2 3M12 17h.01"/></svg></button>
+  <input type="file" id="fileIn" accept="image/*" multiple class="hidden">
+  <input type="file" id="folderIn" webkitdirectory directory multiple class="hidden">
+  <input type="file" id="jsonIn" accept="application/json,.json" class="hidden">
+</div>
+
+<div class="main">
+  <div class="rail">
+    <div class="filters" id="filters">
+      <button data-f="all" class="on"><span class="fn" id="fAll">0</span>all</button>
+      <button data-f="unlabeled"><span class="fn" id="fUn">0</span>new</button>
+      <button data-f="pristine"><span class="fn" id="fPr">0</span>ok</button>
+      <button data-f="damaged"><span class="fn" id="fDm">0</span>dmg</button>
+      <button data-f="flagged" title="Chips with a labeling inconsistency"><span class="fn" id="fFlag">0</span>⚠</button>
+    </div>
+    <div class="thumbs" id="thumbs"></div>
+    <div class="railfoot">
+      <div id="progTxt">no images loaded</div>
+      <div class="pbar"><i id="progBar"></i></div>
+    </div>
+  </div>
+
+  <div class="stage">
+    <div class="tools">
+      <button class="tool on" id="tBrush" title="Brush (B)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.06 11.9 16.5 4.5a2.12 2.12 0 0 1 3 3l-7.4 7.44"/><path d="M5 21c2 0 4-1 4-4 0-1.5-1-3-3-3-2.5 0-3 2-3 4 0 1.5.5 3 2 3Z"/></svg></button>
+      <button class="tool" id="tErase" title="Eraser (E)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7 21 12-12-5-5L3 14l4 4Z"/><path d="M21 21H8"/></svg></button>
+      <button class="tool" id="tPan" title="Pan (V / hold Space)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 9 2 12l3 3M9 5l3-3 3 3M15 19l-3 3-3-3M19 9l3 3-3 3M2 12h20M12 2v20"/></svg></button>
+      <div class="sep"></div>
+      <div class="classpick">
+        <button class="cls on dmg" id="clsDmg" title="Paint REAL damage (D)"><span class="sw" style="background:var(--red)"></span>damage</button>
+        <button class="cls fls" id="clsFls" title="Paint FALSE damage: hair/dust/glare (A)"><span class="sw" style="background:var(--blue)"></span>false</button>
+      </div>
+      <div class="sep"></div>
+      <div class="sizer">brush<input type="range" id="brush" min="1" max="80" value="14"><span class="bn" id="brushN">14</span></div>
+      <div class="sep"></div>
+      <button class="tool" id="tUndo" title="Undo (Ctrl+Z)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7v6h6"/><path d="M3 13a9 9 0 1 0 3-7L3 9"/></svg></button>
+      <button class="tool" id="tClear" title="Clear all masks on this image"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M8 6V4h8v2M6 6l1 14h10l1-14M10 11v6M14 11v6"/></svg></button>
+      <button class="tool" id="tFit" title="Fit view (F)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8V5a2 2 0 0 1 2-2h3M21 8V5a2 2 0 0 0-2-2h-3M3 16v3a2 2 0 0 0 2 2h3M21 16v3a2 2 0 0 1-2 2h-3"/></svg></button>
+      <div class="spacer"></div>
+      <div class="cur"><span id="curName">—</span><span class="ix" id="curIx"></span></div>
+    </div>
+
+    <div class="canvaswrap" id="wrap">
+      <canvas id="cv"></canvas>
+      <div id="ring"></div>
+      <div class="empty" id="empty">
+        <div class="drop" id="drop">
+          <svg class="bigic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/><path d="M12 11v5M9.5 13.5 12 11l2.5 2.5"/></svg>
+          <h2>Drop a tray's cropped images here</h2>
+          <p>Drag the whole <b>cropped/&lt;tray-id&gt;</b> folder straight in, or use the buttons above. Everything runs in your browser — nothing is uploaded.</p>
+          <div class="row" style="gap:9px;justify-content:center">
+            <button class="btn primary" id="emptyFolder">Load folder</button>
+            <button class="btn" id="emptyResume">Resume a session</button>
+          </div>
+          <div class="or">tip: most chips are clean — press <kbd>0</kbd> to mark pristine and jump to the next</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="statusbar">
+      <span class="k"><kbd>←</kbd><kbd>→</kbd>nav</span>
+      <span class="k"><kbd>N</kbd>next unlabeled</span>
+      <span class="k"><kbd>0</kbd>pristine</span>
+      <span class="k"><kbd>1</kbd>-<kbd>5</kbd>grade</span>
+      <span class="k"><kbd>B</kbd>brush <kbd>E</kbd>erase</span>
+      <span class="k"><kbd>D</kbd>damage <kbd>A</kbd>false</span>
+      <span class="k"><kbd>[</kbd><kbd>]</kbd>size</span>
+      <span class="k"><kbd>Space</kbd>pan</span>
+      <span class="k"><kbd>⌃S</kbd>export</span>
+      <span class="spacer" style="flex:1"></span>
+      <span id="zoomTxt"></span>
+    </div>
+  </div>
+
+  <div class="panel" id="panel">
+    <div class="sec">
+      <h3>Verdict</h3>
+      <div class="verdict">
+        <button class="pr" id="vPr">Pristine</button>
+        <button class="dm" id="vDm">Damaged</button>
+      </div>
+      <div class="note">Clean chip? Press <kbd>0</kbd> — marks pristine and advances.</div>
+    </div>
+    <div class="sec">
+      <h3>Severity grade</h3>
+      <div class="grades" id="grades"></div>
+      <div class="note">0 = pristine · 5 = worst (~500–800 affected microcells of 7,200). Match your mentor's reference chips.</div>
+      <div class="warn" id="gradeWarn"></div>
+    </div>
+    <div class="sec">
+      <h3>Damage type</h3>
+      <div class="types" id="types">
+        <div class="typ" data-t="scratch"><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Scratch</div>
+        <div class="typ" data-t="bubble"><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Epoxy bubble / void</div>
+        <div class="typ" data-t="false"><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>False (debris / hair / glare)</div>
+      </div>
+    </div>
+    <div class="sec">
+      <h3>Affected area</h3>
+      <div class="readout">
+        <div class="r"><span class="dmgc">● real damage</span><b id="roPx">0</b></div>
+        <div class="r"><span class="flsc">● false / artifact</span><span id="roFls">0</span></div>
+        <div class="r"><span>% of image</span><b id="roPct">—</b></div>
+      </div>
+      <div class="note">Paint <span style="color:var(--red)">red</span> over real damage (counts toward grade) and <span style="color:var(--blue)">blue</span> over hairs/dust/glare (so the model learns to ignore them).</div>
+    </div>
+    <div class="nav">
+      <button class="btn" id="prevBtn">← Prev</button>
+      <button class="btn primary" id="nextBtn">Next →</button>
+    </div>
+  </div>
+</div>
+
+<div id="toast"></div>
+<div id="help">
+  <div class="helpcard">
+    <h2>Keyboard shortcuts</h2>
+    <p class="sub">Built for speed — keep one hand on the keys, one on the mouse.</p>
+    <div class="helpgrid">
+      <div class="helprow"><span>Prev / Next image</span><span>← →</span></div>
+      <div class="helprow"><span>Next unlabeled</span><span>N</span></div>
+      <div class="helprow"><span>Mark pristine + advance</span><span>0</span></div>
+      <div class="helprow"><span>Set grade 1–5</span><span>1 … 5</span></div>
+      <div class="helprow"><span>Brush / Eraser</span><span>B / E</span></div>
+      <div class="helprow"><span>Damage / False class</span><span>D / A</span></div>
+      <div class="helprow"><span>Brush size − / +</span><span>[ ]</span></div>
+      <div class="helprow"><span>Pan view</span><span>V or hold Space</span></div>
+      <div class="helprow"><span>Zoom</span><span>scroll wheel</span></div>
+      <div class="helprow"><span>Fit to view</span><span>F</span></div>
+      <div class="helprow"><span>Undo stroke</span><span>Ctrl / ⌘ + Z</span></div>
+      <div class="helprow"><span>Export labels</span><span>Ctrl / ⌘ + S</span></div>
+    </div>
+    <button class="btn primary close" id="helpClose">Got it</button>
+  </div>
+</div>
+
+<script>
+"use strict";
+const $ = s => document.querySelector(s);
+const COLORS = { damage:[255,77,109], false:[77,156,255] };
+
+let items = [];        // {name,key,url,thumb,w,h,status,grade,types:Set,masks:{damage,false},maskPx,falsePx,area}
+let idx = -1, filter = "all", tool = "brush", brushSize = 14, maskClass = "damage";
+let scale = 1, ox = 0, oy = 0;
+let baseImg = null, undoStack = [], loadToken = 0;
+let dirty = 0;         // labels changed since last export
+
+const cv = $("#cv"), ctx = cv.getContext("2d");
+
+/* ---------------- toast ---------------- */
+let toastT = null;
+function toast(msg, ms = 2200){
+  const el = $("#toast"); el.textContent = msg; el.classList.add("show");
+  clearTimeout(toastT); toastT = setTimeout(()=>el.classList.remove("show"), ms);
+}
+
+/* ---------------- loading ---------------- */
+function naturalSort(a, b){ return a.name.localeCompare(b.name, undefined, {numeric:true}); }
+
+async function entriesFromDrop(dt){
+  const roots = [...(dt.items||[])].map(i => i.webkitGetAsEntry && i.webkitGetAsEntry()).filter(Boolean);
+  if(!roots.length) return [...dt.files];          // fallback for browsers w/o entries API
+  const out = [];
+  async function walk(entry){
+    if(entry.isFile){ await new Promise(r => entry.file(f => { out.push(f); r(); }, r)); }
+    else if(entry.isDirectory){
+      const rd = entry.createReader();
+      let batch;
+      do { batch = await new Promise(r => rd.readEntries(r, ()=>r([]))); for(const e of batch) await walk(e); }
+      while(batch.length);
+    }
+  }
+  for(const r of roots) await walk(r);
+  return out;
+}
+
+function loadFiles(fileList){
+  const files = [...fileList].filter(f => f.type.startsWith("image/") || /\.(png|jpe?g|bmp|tiff?)$/i.test(f.name));
+  if(!files.length){ toast("No image files found in that drop."); return; }
+  let pending = files.length, added = 0;
+  const done = () => { if(--pending === 0) afterLoad(added); };
+  files.forEach(f => {
+    const key = f.webkitRelativePath || f.name;
+    if(items.some(it => it.key === key)){ done(); return; }
+    const url = URL.createObjectURL(f);
+    const img = new Image();
+    img.onload = () => {
+      items.push({ name:f.name, key, url, thumb:makeThumb(img), w:img.naturalWidth, h:img.naturalHeight,
+        status:"unlabeled", grade:null, types:new Set(), masks:{damage:null,false:null},
+        maskPx:0, falsePx:0, area:null });
+      added++; done();
+    };
+    img.onerror = () => { URL.revokeObjectURL(url); done(); };
+    img.src = url;
+  });
+}
+function makeThumb(img){
+  const t = document.createElement("canvas"); const W = 150;
+  t.width = W; t.height = Math.max(1, Math.round(W * img.height / img.width));
+  t.getContext("2d").drawImage(img, 0, 0, t.width, t.height);
+  return t.toDataURL("image/jpeg", 0.62);
+}
+function afterLoad(added){
+  items.sort(naturalSort);
+  $("#empty").classList.toggle("hidden", items.length > 0);
+  renderThumbs(); refreshCounts();
+  if(idx < 0 && items.length) select(0);
+  if(added) toast(`Loaded ${added} image${added>1?"s":""}.`);
+}
+
+/* ---------------- thumbnails / counts ---------------- */
+function visibleList(){
+  return items.map((_, i) => i).filter(i =>
+    filter==="flagged" ? chipIssues(items[i]).length>0
+                       : (filter === "all" || items[i].status === filter));
+}
+function renderThumbs(){
+  const host = $("#thumbs"); host.innerHTML = "";
+  const frag = document.createDocumentFragment();
+  visibleList().forEach(i => {
+    const it = items[i];
+    const el = document.createElement("div");
+    el.className = "thumb" + (i === idx ? " sel" : "");
+    const cls = it.status === "pristine" ? "pr" : it.status === "damaged" ? "dm" : "un";
+    const flag = chipIssues(it).length ? '<div class="flag" title="Needs attention">!</div>' : '';
+    el.innerHTML = `<img src="${it.thumb}" loading="lazy">
+      <div class="dot ${cls}"></div>${flag}
+      <div class="tag"><span class="nm">${it.name}</span>
+      <span class="gr">${it.status==="damaged"&&it.grade!=null?("G"+it.grade):""}</span></div>`;
+    el.onclick = () => select(i);
+    frag.appendChild(el);
+  });
+  host.appendChild(frag);
+  const sel = host.querySelector(".thumb.sel");
+  if(sel) sel.scrollIntoView({block:"nearest"});
+}
+function refreshCounts(){
+  let un=0, pr=0, dm=0;
+  items.forEach(it => it.status==="pristine"?pr++:it.status==="damaged"?dm++:un++);
+  $("#fAll").textContent = items.length; $("#fUn").textContent = un;
+  $("#fPr").textContent = pr; $("#fDm").textContent = dm;
+  const fl = flaggedCount();
+  $("#fFlag").textContent = fl;
+  document.querySelector('.filters button[data-f="flagged"]').classList.toggle("has", fl>0);
+  const done = pr + dm, pct = items.length ? Math.round(done/items.length*100) : 0;
+  $("#progTxt").textContent = items.length ? `${done} / ${items.length} labeled · ${pct}%` : "no images loaded";
+  $("#progBar").style.width = pct + "%";
+}
+
+/* ---------------- selection / view ---------------- */
+function select(i){
+  if(i < 0 || i >= items.length) return;
+  idx = i; undoStack = [];
+  const it = items[i], token = ++loadToken;
+  baseImg = new Image();
+  baseImg.onload = () => { if(token === loadToken){ fitView(); draw(); } };
+  baseImg.src = it.url;
+  $("#curName").textContent = it.name;
+  $("#curIx").textContent = `${i+1} / ${items.length}`;
+  syncPanel(); renderThumbs();
+}
+function go(d){
+  const vis = visibleList(); if(!vis.length) return;
+  let p = vis.indexOf(idx);
+  if(p < 0){ select(vis[0]); return; }
+  p = Math.min(vis.length-1, Math.max(0, p + d));
+  select(vis[p]);
+}
+function nextUnlabeled(){
+  for(let k=1;k<=items.length;k++){
+    const j=(idx+k)%items.length;
+    if(items[j].status==="unlabeled"){ select(j); return; }
+  }
+  toast("No unlabeled images left 🎉");
+}
+function fitView(){
+  const it = items[idx], r = cv.getBoundingClientRect();
+  const s = Math.min(r.width/it.w, r.height/it.h) * 0.94;
+  scale = s; ox = (r.width - it.w*s)/2; oy = (r.height - it.h*s)/2;
+  updateZoom();
+}
+function updateZoom(){ $("#zoomTxt").textContent = idx<0 ? "" : Math.round(scale*100)+"%"; }
+function resizeCanvas(){
+  const r = $("#wrap").getBoundingClientRect();
+  cv.width = r.width*devicePixelRatio; cv.height = r.height*devicePixelRatio;
+  ctx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0);
+}
+function draw(){
+  if(idx < 0 || !baseImg) return;
+  const it = items[idx], r = $("#wrap").getBoundingClientRect();
+  ctx.clearRect(0,0,r.width,r.height);
+  ctx.imageSmoothingEnabled = false;
+  ctx.drawImage(baseImg, ox, oy, it.w*scale, it.h*scale);
+  for(const cls of ["false","damage"]){
+    if(it.masks[cls]){ ctx.globalAlpha = cls==="damage"?0.5:0.45;
+      ctx.drawImage(it.masks[cls], ox, oy, it.w*scale, it.h*scale); ctx.globalAlpha = 1; }
+  }
+  if(it.area){ const a=it.area; ctx.strokeStyle="#37D9C4"; ctx.setLineDash([6,5]); ctx.lineWidth=1.5;
+    ctx.strokeRect(ox+a.x*scale, oy+a.y*scale, a.w*scale, a.h*scale); ctx.setLineDash([]); }
+}
+function toImg(e){ const r=cv.getBoundingClientRect();
+  return { x:(e.clientX-r.left-ox)/scale, y:(e.clientY-r.top-oy)/scale }; }
+
+/* ---------------- masks ---------------- */
+function ensureMask(it, cls){
+  if(!it.masks[cls]){ const m=document.createElement("canvas"); m.width=it.w; m.height=it.h; it.masks[cls]=m; }
+  return it.masks[cls];
+}
+function countClass(it, cls){
+  const c=it.masks[cls]; if(!c) return 0;
+  const d=c.getContext("2d").getImageData(0,0,c.width,c.height).data;
+  let n=0; for(let i=3;i<d.length;i+=4) if(d[i]>8) n++; return n;
+}
+function recount(it){ it.maskPx=countClass(it,"damage"); it.falsePx=countClass(it,"false"); }
+
+let painting=false, last=null, panning=false, panStart=null, spaceDown=false;
+function snapshot(){
+  const it=items[idx], c=it.masks[maskClass];
+  undoStack.push({cls:maskClass, data: c ? c.getContext("2d").getImageData(0,0,c.width,c.height) : null});
+  if(undoStack.length>15) undoStack.shift();
+}
+function paintAt(p){
+  const it=items[idx], m=ensureMask(it,maskClass), g=m.getContext("2d");
+  if(tool==="erase"){ g.globalCompositeOperation="destination-out"; g.fillStyle="rgba(0,0,0,1)"; }
+  else { g.globalCompositeOperation="source-over"; g.fillStyle=`rgb(${COLORS[maskClass].join(",")})`; }
+  const rad=brushSize/2;
+  if(last){ const dx=p.x-last.x, dy=p.y-last.y, dist=Math.hypot(dx,dy), steps=Math.max(1,dist/(rad/2));
+    for(let k=0;k<=steps;k++){ const x=last.x+dx*k/steps, y=last.y+dy*k/steps; g.beginPath(); g.arc(x,y,rad,0,7); g.fill(); } }
+  else { g.beginPath(); g.arc(p.x,p.y,rad,0,7); g.fill(); }
+  g.globalCompositeOperation="source-over"; last=p;
+}
+function undo(){
+  const it=items[idx]; if(!it||!undoStack.length){ return; }
+  const s=undoStack.pop(), m=ensureMask(it,s.cls), g=m.getContext("2d");
+  if(s.data) g.putImageData(s.data,0,0); else g.clearRect(0,0,m.width,m.height);
+  recount(it); syncReadout(); markDirty(); draw();
+}
+function clearMasks(){
+  const it=items[idx]; if(!it) return;
+  if(!it.masks.damage && !it.masks.false) return;
+  snapshot();
+  ["damage","false"].forEach(c => { if(it.masks[c]) it.masks[c].getContext("2d").clearRect(0,0,it.w,it.h); });
+  recount(it); syncReadout(); markDirty(); draw(); toast("Masks cleared on this image.");
+}
+
+/* ---------------- pointer ---------------- */
+cv.addEventListener("pointerdown", e => {
+  if(idx<0) return; cv.setPointerCapture(e.pointerId);
+  if(tool==="pan" || spaceDown || e.button===1){ panning=true; panStart={x:e.clientX-ox,y:e.clientY-oy}; return; }
+  if(tool==="brush" || tool==="erase"){
+    if(maskClass==="damage" && tool==="brush" && items[idx].status!=="damaged") setVerdict("damaged");
+    snapshot(); painting=true; last=null; paintAt(toImg(e)); draw();
+  }
+});
+cv.addEventListener("pointermove", e => {
+  moveRing(e);
+  if(panning){ ox=e.clientX-panStart.x; oy=e.clientY-panStart.y; draw(); return; }
+  if(painting){ paintAt(toImg(e)); draw(); }
+});
+window.addEventListener("pointerup", () => {
+  if(painting){ painting=false; last=null; recount(items[idx]); syncReadout(); markDirty(); }
+  panning=false;
+});
+$("#wrap").addEventListener("wheel", e => {
+  if(idx<0) return; e.preventDefault();
+  const r=cv.getBoundingClientRect(), mx=e.clientX-r.left, my=e.clientY-r.top;
+  const f=e.deltaY<0?1.12:1/1.12, ns=Math.min(40,Math.max(0.05,scale*f));
+  ox=mx-(mx-ox)*(ns/scale); oy=my-(my-oy)*(ns/scale); scale=ns; updateZoom(); draw();
+}, {passive:false});
+
+/* brush-size cursor ring */
+const ring=$("#ring");
+function moveRing(e){
+  if(idx<0 || (tool!=="brush" && tool!=="erase")){ ring.style.display="none"; return; }
+  const wr=$("#wrap").getBoundingClientRect();
+  const d=brushSize*scale;
+  ring.style.display="block"; ring.style.width=d+"px"; ring.style.height=d+"px";
+  ring.style.left=(e.clientX-wr.left)+"px"; ring.style.top=(e.clientY-wr.top)+"px";
+}
+$("#wrap").addEventListener("pointerleave", ()=> ring.style.display="none");
+
+/* ---------------- panel state ---------------- */
+function markDirty(){ dirty++; const s=$("#savedInd"); s.classList.add("dirty"); $("#savedTxt").textContent=`${dirty} unsaved`;
+  if(dirty===30) toast("30 changes unsaved — press Ctrl+S to export your progress.", 3200); }
+function markSaved(){ dirty=0; $("#savedInd").classList.remove("dirty"); $("#savedTxt").textContent="all saved"; }
+
+function setTool(t){ tool=t;
+  [["#tBrush","brush"],["#tErase","erase"],["#tPan","pan"]].forEach(([id,n])=>$(id).classList.toggle("on",n===t));
+  if(t!=="brush"&&t!=="erase") ring.style.display="none";
+}
+function setClass(c){ maskClass=c;
+  $("#clsDmg").classList.toggle("on",c==="damage"); $("#clsFls").classList.toggle("on",c==="false");
+  if(tool!=="brush"&&tool!=="erase") setTool("brush");
+}
+/* ---------------- validation ----------------
+   Central rule check used by the panel warning, the thumbnail badges, and the
+   ⚠ filter. It only READS state and returns human-readable issues — it never
+   alters labels or the exported JSON. */
+function chipIssues(it){
+  if(!it) return [];
+  const out=[];
+  const realType = it.types.has("scratch") || it.types.has("bubble");
+  const red = (it.maskPx||0) > 0;
+  if(it.status==="pristine"){
+    if(realType) out.push("Pristine chip has a real-damage type ticked — untick it, or mark it damaged.");
+    if(red) out.push("Pristine chip has red damage painted — erase it, or mark it damaged.");
+  }
+  if(it.status==="damaged"){
+    if(it.grade==null) out.push("Marked damaged — pick a 1–5 grade.");
+    else if(it.grade===0) out.push("Damaged but grade is 0 — set 1–5, or mark pristine.");
+    if(!it.types.size) out.push("Damaged but no damage type selected — tick at least one.");
+    if(it.grade!=null && it.grade>=1 && !red) out.push("Graded but no red damage painted — paint the damaged area.");
+  }
+  return out;
+}
+function flaggedCount(){ let n=0; for(const it of items) if(chipIssues(it).length) n++; return n; }
+
+function buildGrades(){ const g=$("#grades"); g.innerHTML="";
+  for(let n=0;n<=5;n++){ const b=document.createElement("button"); b.textContent=n; b.onclick=()=>setGrade(n); g.appendChild(b); } }
+function clearRealTypes(it){            // OK chips may only carry 'false' (or nothing)
+  let cleared=false;
+  if(it.types.delete("scratch")) cleared=true;
+  if(it.types.delete("bubble"))  cleared=true;
+  if(cleared) toast("Cleared scratch/bubble — pristine chips can only have ‘false’.", 1900);
+}
+function setVerdict(v){ const it=items[idx]; if(!it) return; it.status=v;
+  if(v==="pristine"){ it.grade=0; clearRealTypes(it); }
+  else if(it.grade==null||it.grade===0) it.grade=null;
+  markDirty(); syncPanel(); refreshCounts(); renderThumbs(); }
+function setGrade(n){ const it=items[idx]; if(!it) return; it.grade=n; it.status=n===0?"pristine":"damaged";
+  if(n===0) clearRealTypes(it);
+  markDirty(); syncPanel(); refreshCounts(); renderThumbs(); }
+function toggleType(t){ const it=items[idx]; if(!it) return;
+  it.types.has(t)?it.types.delete(t):it.types.add(t);
+  if(it.status!=="damaged" && (it.types.has("scratch")||it.types.has("bubble"))) setVerdict("damaged");
+  markDirty(); syncPanel(); }
+
+function syncPanel(){
+  const it=items[idx];
+  $("#vPr").classList.toggle("on", !!it && it.status==="pristine");
+  $("#vDm").classList.toggle("on", !!it && it.status==="damaged");
+  [...$("#grades").children].forEach((b,n)=>{ b.classList.toggle("on", !!it && it.grade===n); b.disabled=!it; });
+  $("#types").querySelectorAll(".typ").forEach(l=>{
+    const on = !!it && it.types.has(l.dataset.t);
+    l.classList.toggle("on", on); l.classList.toggle("dis", !it);
+  });
+  syncReadout();
+}
+function syncReadout(){
+  const it=items[idx];
+  $("#roPx").textContent = it ? (it.maskPx||0).toLocaleString() : "0";
+  $("#roFls").textContent = it ? (it.falsePx||0).toLocaleString() : "0";
+  let pct="—";
+  if(it && it.maskPx){ const denom = it.area? it.area.w*it.area.h : it.w*it.h; pct=(it.maskPx/denom*100).toFixed(2)+"%"; }
+  $("#roPct").textContent = pct;
+  // validity warning (shows the first issue, if any)
+  const w=$("#gradeWarn"), iss=chipIssues(it);
+  if(iss.length){ w.style.display="block"; w.textContent="⚠ "+iss[0]; }
+  else { w.style.display="none"; }
+}
+
+/* ---------------- export / import ---------------- */
+function commonPrefix(){
+  if(!items.length) return "labels";
+  const keys=items.map(it=>it.key);
+  const parts=keys[0].split(/[\/\\]/);
+  if(parts.length>1) return parts[parts.length-2] || "labels";   // tray folder name
+  return "labels";
+}
+function exportLabels(){
+  if(!items.length){ toast("Load and label some images first."); return; }
+  items.forEach(recount);
+  const out = { tool:"SiPM Inspector", version:3, exportedAt:new Date().toISOString(), count:items.length,
+    images: items.map(it => ({
+      filename:it.name, key:it.key, width:it.w, height:it.h, status:it.status, grade:it.grade,
+      types:[...it.types],
+      activeArea: it.area?{x:Math.round(it.area.x),y:Math.round(it.area.y),w:Math.round(it.area.w),h:Math.round(it.area.h)}:null,
+      damagePixels:it.maskPx, falsePixels:it.falsePx,
+      affectedFraction: it.maskPx ? +(it.maskPx/((it.area? it.area.w*it.area.h : it.w*it.h))).toFixed(6) : 0,
+      damageMask: it.masks.damage && it.maskPx ? it.masks.damage.toDataURL("image/png") : null,
+      falseMask:  it.masks.false  && it.falsePx ? it.masks.false.toDataURL("image/png")  : null
+    }))
+  };
+  const blob = new Blob([JSON.stringify(out)], {type:"application/json"});
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = `sipm_labels_${commonPrefix()}_${new Date().toISOString().slice(0,10)}.json`;
+  a.click(); setTimeout(()=>URL.revokeObjectURL(a.href), 1000);
+  markSaved();
+  const fl = flaggedCount();
+  toast(fl ? `Exported. ${fl} chip${fl>1?"s":""} still flagged — use the ⚠ filter to review.`
+           : "Exported. Keep this file to resume later.", fl?3800:2200);
+}
+function importLabels(file){
+  const fr = new FileReader();
+  fr.onload = () => {
+    let data; try { data = JSON.parse(fr.result); } catch { toast("That isn't a valid labels file."); return; }
+    const by = {};
+    (data.images||[]).forEach(r => { by[r.filename]=r; if(r.key) by[r.key]=r; });
+    let matched=0;
+    items.forEach(it => {
+      const r = by[it.key] || by[it.name]; if(!r) return; matched++;
+      it.status=r.status||"unlabeled"; it.grade=r.grade; it.types=new Set(r.types||[]);
+      it.area=r.activeArea||null; it.maskPx=r.damagePixels||0; it.falsePx=r.falsePixels||0;
+      const restore=(url,cls)=>{ if(!url) return; const m=ensureMask(it,cls), im=new Image();
+        im.onload=()=>{ const g=m.getContext("2d"); g.clearRect(0,0,m.width,m.height); g.drawImage(im,0,0,m.width,m.height);
+          if(idx>=0 && items[idx]===it) draw(); }; im.src=url; };
+      restore(r.damageMask||r.mask,"damage"); restore(r.falseMask,"false");
+    });
+    refreshCounts(); renderThumbs(); if(idx>=0) syncPanel(); markSaved();
+    const fl = flaggedCount();
+    toast(matched ? `Restored ${matched} of ${items.length}.` + (fl?` ${fl} need review — see the ⚠ filter.`:"")
+                  : "No filenames matched — load this tray's images first, then Resume.",
+          fl?4200:2400);
+  };
+  fr.readAsText(file);
+}
+
+/* ---------------- wiring ---------------- */
+$("#loadBtn").onclick=()=>$("#fileIn").click();
+$("#loadFolderBtn").onclick=()=>$("#folderIn").click();
+$("#emptyFolder").onclick=()=>$("#folderIn").click();
+$("#importBtn").onclick=()=>$("#jsonIn").click();
+$("#emptyResume").onclick=()=>$("#jsonIn").click();
+$("#fileIn").onchange=e=>{ loadFiles(e.target.files); e.target.value=""; };
+$("#folderIn").onchange=e=>{ loadFiles(e.target.files); e.target.value=""; };
+$("#jsonIn").onchange=e=>{ if(e.target.files[0]) importLabels(e.target.files[0]); e.target.value=""; };
+$("#exportBtn").onclick=exportLabels;
+$("#vPr").onclick=()=>setVerdict("pristine");
+$("#vDm").onclick=()=>setVerdict("damaged");
+$("#prevBtn").onclick=()=>go(-1);
+$("#nextBtn").onclick=()=>go(1);
+$("#tBrush").onclick=()=>setTool("brush");
+$("#tErase").onclick=()=>setTool("erase");
+$("#tPan").onclick=()=>setTool("pan");
+$("#tUndo").onclick=undo;
+$("#tClear").onclick=clearMasks;
+$("#tFit").onclick=()=>{ if(idx>=0){ fitView(); draw(); } };
+$("#clsDmg").onclick=()=>setClass("damage");
+$("#clsFls").onclick=()=>setClass("false");
+$("#brush").oninput=e=>{ brushSize=+e.target.value; $("#brushN").textContent=brushSize; };
+$("#types").querySelectorAll(".typ").forEach(l=>l.onclick=()=>toggleType(l.dataset.t));
+document.querySelectorAll(".filters button").forEach(b=>b.onclick=()=>{
+  filter=b.dataset.f; document.querySelectorAll(".filters button").forEach(x=>x.classList.toggle("on",x===b)); renderThumbs(); });
+$("#helpBtn").onclick=()=>$("#help").classList.add("show");
+$("#helpClose").onclick=()=>$("#help").classList.remove("show");
+$("#help").onclick=e=>{ if(e.target.id==="help") $("#help").classList.remove("show"); };
+
+/* drag & drop (files OR folders) */
+const drop=$("#drop");
+let dragDepth=0;
+window.addEventListener("dragenter",e=>{ e.preventDefault(); dragDepth++; drop&&drop.classList.add("hot"); });
+window.addEventListener("dragover",e=>{ e.preventDefault(); });
+window.addEventListener("dragleave",e=>{ e.preventDefault(); if(--dragDepth<=0){ dragDepth=0; drop&&drop.classList.remove("hot"); } });
+window.addEventListener("drop", async e=>{
+  e.preventDefault(); dragDepth=0; drop&&drop.classList.remove("hot");
+  if(!e.dataTransfer) return;
+  toast("Reading dropped files…", 1200);
+  const files = await entriesFromDrop(e.dataTransfer);
+  loadFiles(files);
+});
+
+/* keyboard */
+window.addEventListener("keydown", e=>{
+  if(e.code==="Space"){ spaceDown=true; }
+  const meta = e.ctrlKey||e.metaKey;
+  if(meta && e.key.toLowerCase()==="s"){ e.preventDefault(); exportLabels(); return; }
+  if(meta && e.key.toLowerCase()==="z"){ e.preventDefault(); undo(); return; }
+  if(e.key==="?"){ $("#help").classList.toggle("show"); return; }
+  if(e.key==="Escape"){ $("#help").classList.remove("show"); return; }
+  if(idx<0) return;
+  switch(e.key){
+    case "ArrowRight": go(1); break;
+    case "ArrowLeft": go(-1); break;
+    case "n": case "N": nextUnlabeled(); break;
+    case "0": setGrade(0); go(1); break;
+    case "1": case "2": case "3": case "4": case "5": setGrade(+e.key); break;
+    case "b": case "B": setTool("brush"); break;
+    case "e": case "E": setTool("erase"); break;
+    case "d": case "D": setClass("damage"); break;
+    case "a": case "A": setClass("false"); break;
+    case "v": case "V": setTool("pan"); break;
+    case "f": case "F": fitView(); draw(); break;
+    case "[": brushSize=Math.max(1,brushSize-3); $("#brush").value=brushSize; $("#brushN").textContent=brushSize; break;
+    case "]": brushSize=Math.min(80,brushSize+3); $("#brush").value=brushSize; $("#brushN").textContent=brushSize; break;
+  }
+});
+window.addEventListener("keyup", e=>{ if(e.code==="Space") spaceDown=false; });
+window.addEventListener("beforeunload", e=>{ if(dirty>0){ e.preventDefault(); e.returnValue=""; } });
+
+const ro=new ResizeObserver(()=>{ resizeCanvas(); if(idx>=0) draw(); });
+ro.observe($("#wrap"));
+resizeCanvas(); buildGrades(); syncPanel(); setClass("damage"); updateZoom();
+</script>

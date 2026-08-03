@@ -1,0 +1,15 @@
+# Cropping and the label-stats reports only need these three.
+numpy>=1.24
+pillow>=10.0
+opencv-python>=4.8
+
+# Everything that touches the model (run_inference, spot_check, update_tray)
+# additionally needs torch. Install the build that matches your machine from
+# https://pytorch.org — the plain pip wheel below is CPU-only, which works but
+# is slow for a full 460-chip tray.
+torch>=2.0
+torchvision>=0.15
+segmentation-models-pytorch>=0.3.3
+
+# Training augmentation only. Not needed for inference.
+albumentations>=1.4
